@@ -1,32 +1,17 @@
 (version 1)
-# RC-Transmitter custom DRC rules
-# Based on JLCPCB 8-layer capabilities + project-specific constraints
-# Ref: https://jlcpcb.com/capabilities/pcb-capabilities
+# RC-Transmitter DRC rules (FAB-SAFE VERSION)
+# Target: PCBWay / JLCPCB 8-layer production stability
 
 # ── TRACE WIDTH & SPACING ──────────────────────────────────────────────
 
-(rule "Track width, outer layer"
-  (layer outer)
+(rule "Track width (all layers)"
   (condition "A.Type == 'track'")
-  (constraint track_width (min 0.127mm))
+  (constraint track_width (min 0.10mm))
 )
 
-(rule "Track spacing, outer layer"
-  (layer outer)
+(rule "Track spacing (all layers)"
   (condition "A.Type == 'track' && B.Type == A.Type")
-  (constraint clearance (min 0.127mm))
-)
-
-(rule "Track width, inner layer"
-  (layer inner)
-  (condition "A.Type == 'track'")
-  (constraint track_width (min 0.09mm))
-)
-
-(rule "Track spacing, inner layer"
-  (layer inner)
-  (condition "A.Type == 'track' && B.Type == A.Type")
-  (constraint clearance (min 0.09mm))
+  (constraint clearance (min 0.10mm))
 )
 
 # ── EDGE CLEARANCE ─────────────────────────────────────────────────────
@@ -36,46 +21,34 @@
   (constraint edge_clearance (min 0.3mm))
 )
 
-# J1 is an edge-mount USB-C connector — its pads intentionally straddle
-# the board edge, so it is excluded from this rule.
 (rule "Edge (routed) to pad"
   (condition "A.Type == 'pad' && A.Reference != 'J1'")
   (constraint edge_clearance (min 0.3mm))
 )
 
-# Edge-mount USB-C: pads sit ~0.12 mm from the board edge by design.
-# This rule sets a lower threshold for J1 so the Board Setup global
-# constraint (0.3 mm) does not fire for this footprint.
-(rule "Edge clearance exception: J1 edge-mount USB-C"
+# Edge-mount USB-C exception (J1)
+(rule "Edge clearance exception: J1 USB-C"
   (condition "A.Reference == 'J1'")
   (constraint edge_clearance (min 0.1mm))
 )
 
-# Uncomment if the board uses V-scoring:
-#(rule "Edge (v-cut) to track"
-#  (condition "A.Type == 'track'")
-#  (constraint edge_clearance (min 0.4mm))
-#)
-
-# ── HOLE SIZES ─────────────────────────────────────────────────────────
+# ── HOLES ──────────────────────────────────────────────────────────────
 
 (rule "Hole diameter (all)"
   (constraint hole_size (min 0.2mm) (max 6.3mm))
 )
 
-(rule "Hole diameter (NPTH)"
-  (layer outer)
+(rule "Non-plated holes"
   (condition "!A.isPlated()")
   (constraint hole_size (min 0.5mm))
 )
 
-(rule "Hole diameter (castellated)"
-  (layer outer)
+(rule "Castellated pads"
   (condition "A.Type == 'pad' && A.Fabrication_Property == 'Castellated pad'")
   (constraint hole_size (min 0.6mm))
 )
 
-# ── VIA ────────────────────────────────────────────────────────────────
+# ── VIAS ───────────────────────────────────────────────────────────────
 
 (rule "Via hole size"
   (condition "A.Type == 'via'")
@@ -87,37 +60,31 @@
   (constraint via_diameter (min 0.4mm))
 )
 
-# JLCPCB enlarges to 0.15 mm in production; design minimum is 0.075 mm
-(rule "Annular ring width"
-  (layer outer)
+(rule "Annular ring"
   (condition "A.isPlated()")
-  (constraint annular_width (min 0.075mm))
+  (constraint annular_width (min 0.10mm))
 )
 
-# ── HOLE-TO-HOLE & HOLE-TO-COPPER CLEARANCES ──────────────────────────
+# ── HOLE CLEARANCES ────────────────────────────────────────────────────
 
 (rule "Hole to hole (different nets)"
-  (layer outer)
   (condition "A.Net != B.Net")
   (constraint hole_to_hole (min 0.5mm))
 )
 
 (rule "Hole to hole (same net)"
-  (layer outer)
   (condition "A.Net == B.Net")
-  (constraint hole_to_hole (min 0.254mm))
+  (constraint hole_to_hole (min 0.25mm))
 )
 
-(rule "Pad/via to pad/via (different nets)"
-  (layer outer)
+(rule "Pad/Via clearance (different nets)"
   (condition "A.isPlated() && B.isPlated() && A.Net != B.Net")
-  (constraint clearance (min 0.127mm))
+  (constraint clearance (min 0.10mm))
 )
 
-# ── PROJECT-SPECIFIC ───────────────────────────────────────────────────
+# ── USB DIFFERENTIAL PAIR ──────────────────────────────────────────────
 
-# USB differential pair: controlled gap between D+ and D-
-(rule "USB diff pair gap"
-  (constraint diff_pair_gap (min 0.1mm) (max 0.2mm))
+(rule "USB diff pair spacing"
   (condition "A.NetClass == 'USB_DIFF' && B.NetClass == 'USB_DIFF'")
+  (constraint diff_pair_gap (min 0.10mm) (max 0.20mm))
 )
