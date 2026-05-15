@@ -1,0 +1,11 @@
+(sym_lib_table
+	(version 7)
+	(lib (name "TSX-3225 24.0000MF20G-AC3_EPS") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_TSX-3225-24-0000MF20G-AC3/KiCADv6/TSX-3225 24.0000MF20G-AC3_EPS.kicad_sym") (options "") (descr ""))
+	(lib (name "CONN_532610001-SD_08_MOL") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_532610871/KiCADv6/CONN_532610001-SD_08_MOL.kicad_sym") (options "") (descr ""))
+	(lib (name "CONN_532610001-SD_06_MOL") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_532610671/KiCADv6/CONN_532610001-SD_06_MOL.kicad_sym") (options "") (descr ""))
+	(lib (name "CONN_532610001-SD_07_MOL") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_532610771/KiCADv6/CONN_532610001-SD_07_MOL.kicad_sym") (options "") (descr ""))
+	(lib (name "CONN_532610001-SD_04_MOL") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_532610471/KiCADv6/CONN_532610001-SD_04_MOL.kicad_sym") (options "") (descr ""))
+	(lib (name "CONN_532610001-SD_02_MOL") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_532610271/KiCADv6/CONN_532610001-SD_02_MOL.kicad_sym") (options "") (descr ""))
+	(lib (name "usb_c_receptacle_usb2.0") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbol Libraries/usb_c_receptacle_usb/usb_c_receptacle_usb2.0.kicad_sym") (options "") (descr ""))
+	(lib (name "CON_5034800800_MOL") (type "KiCad") (uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_5034800800/KiCADv6/CON_5034800800_MOL.kicad_sym") (options "") (descr ""))
+)

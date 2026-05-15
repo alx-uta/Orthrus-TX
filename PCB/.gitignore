@@ -1,0 +1,40 @@
+# KiCad editor state
+.history
+
+# KiCad lock files (created while project is open, machine-specific)
+*.lck
+~*.lck
+
+# KiCad local project settings (machine-specific: zoom, layer visibility, open views)
+*.kicad_prl
+
+# KiCad auto-backups (git handles versioning)
+*-backups/
+
+# KiCad backup files
+*.bak
+*.kicad_sch-bak
+*.kicad_pcb-bak
+
+# KiCad timestamped auto-backup symbol files (generated during edits)
+????-??-??_??-??-??.kicad_sym
+
+# KiCad footprint info cache (auto-regenerated on open)
+fp-info-cache
+
+# KiCad autosave files
+_autosave-*
+
+# Windows
+Thumbs.db
+desktop.ini
+
+# Linux / macOS
+*~
+.DS_Store
+
+# Generated files
+gerber/
+
+# Dev files
+notes.txt
