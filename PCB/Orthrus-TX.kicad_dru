@@ -11,7 +11,7 @@
 
 (rule "Track spacing (all layers)"
   (condition "A.Type == 'track' && B.Type == A.Type")
-  (constraint clearance (min 0.10mm))
+  (constraint clearance (min 0.15mm))
 )
 
 # ── EDGE CLEARANCE ─────────────────────────────────────────────────────
