@@ -1000,7 +1000,7 @@
         "uuid": "96e81b93-0369-470d-8547-b925c1f9f96d"
       }
     ],
-    "used_designators": "",
+    "used_designators": "#PWR17,#PWR19,#PWR66-67",
     "variants": []
   },
   "sheets": [
