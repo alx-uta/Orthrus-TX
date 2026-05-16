@@ -70,7 +70,12 @@
         }
       },
       "diff_pair_dimensions": [],
-      "drc_exclusions": [],
+      "drc_exclusions": [
+        [
+          "clearance|165190000|39883600|eac3491a-4f87-4dbb-a5c6-cd6bd29327cf|1b6a4981-23e8-49ef-a873-3edf5f8e6c4b",
+          ""
+        ]
+      ],
       "meta": {
         "version": 2
       },
