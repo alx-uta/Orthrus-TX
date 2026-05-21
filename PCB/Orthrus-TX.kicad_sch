@@ -16986,6 +16986,16 @@
 	)
 	(wire
 		(pts
+			(xy 424.18 69.85) (xy 424.18 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "68b76440-5426-4336-90a7-7698149c019d")
+	)
+	(wire
+		(pts
 			(xy 285.75 245.11) (xy 285.75 209.55)
 		)
 		(stroke
@@ -17743,6 +17753,16 @@
 			(type default)
 		)
 		(uuid "881bc4d6-345b-47ab-ac2d-c0f2accb46bd")
+	)
+	(wire
+		(pts
+			(xy 424.18 66.04) (xy 417.83 66.04)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "882511cc-3144-4d05-87b9-a03c59cc0136")
 	)
 	(wire
 		(pts
@@ -19663,6 +19683,16 @@
 			(type default)
 		)
 		(uuid "d518f9cd-7e97-4a2f-b421-ff7cec16cca4")
+	)
+	(wire
+		(pts
+			(xy 408.94 60.96) (xy 417.83 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d5721b6c-1d02-4300-8894-c79b53fc2fff")
 	)
 	(wire
 		(pts
@@ -40448,7 +40478,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "4.7µF"
+		(property "Value" "10µF"
 			(at 375.92 137.2869 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -41852,6 +41882,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 417.83 63.5 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "eab1539c-e75a-4e26-acc8-458b6f3671e6")
+		(property "Reference" "C61"
+			(at 410.21 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "220pF"
+			(at 410.21 64.516 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 417.83 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 417.83 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "capacitor, small US symbol"
+			(at 417.83 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 417.83 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "3421d8aa-e944-4ace-9654-267b50603e02")
+		)
+		(pin "1"
+			(uuid "22aceb80-5d07-4fe4-86b9-2940c0a634da")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "C61")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "CONN_532610001-SD_08_MOL:532610871")
 		(at 59.69 115.57 0)
 		(unit 1)
@@ -42572,6 +42694,83 @@
 			(project "Orthrus-TX"
 				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
 					(reference "#PWR055")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 408.94 60.96 180)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "f1ea912c-3532-43d6-9b29-d747243493bb")
+		(property "Reference" "#PWR078"
+			(at 408.94 54.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 405.13 58.928 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 408.94 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 408.94 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 408.94 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "b8ec650c-e709-4423-9614-9c0680373020")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "#PWR078")
 					(unit 1)
 				)
 			)
