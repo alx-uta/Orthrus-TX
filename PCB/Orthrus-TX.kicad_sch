@@ -13341,6 +13341,12 @@
 		(uuid "fe11e714-24db-4f93-82a1-064dc19650ee")
 	)
 	(junction
+		(at 275.59 78.74)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "00c018ca-3068-49bc-8ade-7bbe91a83b4d")
+	)
+	(junction
 		(at 41.91 247.65)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13443,6 +13449,12 @@
 		(uuid "207a74b2-758c-4989-9f0f-494a10d75f0d")
 	)
 	(junction
+		(at 284.48 73.66)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "21bda139-bbdd-4aaa-a528-f5328037dbea")
+	)
+	(junction
 		(at 415.29 299.72)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13461,7 +13473,7 @@
 		(uuid "2af98733-7485-41f9-8530-8a7bf6425fc4")
 	)
 	(junction
-		(at 234.95 72.39)
+		(at 219.71 73.66)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "2ea64c59-f7e6-40a5-82ae-bd45e2145d8d")
@@ -13503,7 +13515,7 @@
 		(uuid "42be5967-2ef8-40de-b52f-0c1215073837")
 	)
 	(junction
-		(at 218.44 67.31)
+		(at 203.2 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "47ac2b29-e35e-4531-a1de-815d8a416a4b")
@@ -13525,6 +13537,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "4b0e2ead-d9cd-49c6-8fa0-e754f661819f")
+	)
+	(junction
+		(at 267.97 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "4cb48f7a-884e-4524-b683-48bd84624956")
 	)
 	(junction
 		(at 236.22 132.08)
@@ -13701,6 +13719,12 @@
 		(uuid "91f63314-7d22-42ee-a84d-56e880e137a6")
 	)
 	(junction
+		(at 294.64 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "9225c956-228b-4ca2-a5f0-417095a41628")
+	)
+	(junction
 		(at 41.91 196.85)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13767,13 +13791,13 @@
 		(uuid "9d7a76c0-14a3-47ac-9475-6ea854ad8e3c")
 	)
 	(junction
-		(at 209.55 66.04)
+		(at 194.31 67.31)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "9ea1e8db-7b54-45dd-8b40-3b76d0672436")
 	)
 	(junction
-		(at 245.11 67.31)
+		(at 229.87 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "a00c398a-1ed4-4a4e-af09-cb60319043bc")
@@ -13813,6 +13837,12 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "aede8e5b-58eb-4fae-b050-4c9e4796bb9b")
+	)
+	(junction
+		(at 284.48 68.58)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "aefd2bf1-ee19-4a6b-b178-0f437085a794")
 	)
 	(junction
 		(at 170.18 46.99)
@@ -14001,7 +14031,7 @@
 		(uuid "dfb0b91c-5189-4c1a-881d-3bfd427e11e0")
 	)
 	(junction
-		(at 234.95 67.31)
+		(at 219.71 68.58)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "e3ece268-19fb-48a1-9b04-ee82d195f66b")
@@ -14055,13 +14085,25 @@
 		(uuid "f256f9bb-b137-49b3-944f-4d39bada6d0f")
 	)
 	(junction
+		(at 259.08 72.39)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f2d459c6-6543-4263-9652-7ec9d70a7c5d")
+	)
+	(junction
+		(at 259.08 67.31)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "f649368c-b99d-41eb-8e69-e11a8db9721b")
+	)
+	(junction
 		(at 120.65 316.23)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7906417-79e6-4d67-ac4c-b509c5532039")
 	)
 	(junction
-		(at 209.55 71.12)
+		(at 194.31 72.39)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f7bca502-a657-453b-b965-b788d083a8ff")
@@ -14085,7 +14127,7 @@
 		(uuid "f9b9bed8-32ae-4eb2-871d-8e1425bdf44b")
 	)
 	(junction
-		(at 226.06 77.47)
+		(at 210.82 78.74)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "f9d913ad-c3fb-4419-8122-caa09c8bbbc1")
@@ -14244,7 +14286,7 @@
 	)
 	(wire
 		(pts
-			(xy 233.68 67.31) (xy 245.11 67.31)
+			(xy 218.44 68.58) (xy 229.87 68.58)
 		)
 		(stroke
 			(width 0)
@@ -14551,6 +14593,16 @@
 			(type default)
 		)
 		(uuid "1081f346-dfbd-45b0-95e0-e50d58e20e5c")
+	)
+	(wire
+		(pts
+			(xy 281.94 78.74) (xy 275.59 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "109a1899-5eee-4f71-8296-0071cad9cd95")
 	)
 	(wire
 		(pts
@@ -14954,7 +15006,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 77.47) (xy 218.44 71.12)
+			(xy 203.2 78.74) (xy 203.2 72.39)
 		)
 		(stroke
 			(width 0)
@@ -15264,6 +15316,26 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 72.39) (xy 259.08 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b1f1477-d12e-45fc-ab2d-42676daeccb8")
+	)
+	(wire
+		(pts
+			(xy 283.21 68.58) (xy 284.48 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2b7d7321-363f-4610-8c9a-691dc1f1dfbb")
+	)
+	(wire
+		(pts
 			(xy 481.33 35.56) (xy 509.27 35.56)
 		)
 		(stroke
@@ -15304,7 +15376,17 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 72.39) (xy 245.11 72.39)
+			(xy 284.48 73.66) (xy 281.94 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2ce8cf39-6303-46be-8441-842257387a28")
+	)
+	(wire
+		(pts
+			(xy 219.71 73.66) (xy 229.87 73.66)
 		)
 		(stroke
 			(width 0)
@@ -15401,6 +15483,16 @@
 			(type default)
 		)
 		(uuid "330afa64-8d4d-4540-867d-663c7a661d1a")
+	)
+	(wire
+		(pts
+			(xy 267.97 78.74) (xy 267.97 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "33e7d984-044f-4290-8f0b-c718dd6c03b2")
 	)
 	(wire
 		(pts
@@ -15864,7 +15956,7 @@
 	)
 	(wire
 		(pts
-			(xy 226.06 77.47) (xy 218.44 77.47)
+			(xy 210.82 78.74) (xy 203.2 78.74)
 		)
 		(stroke
 			(width 0)
@@ -16224,6 +16316,16 @@
 	)
 	(wire
 		(pts
+			(xy 284.48 73.66) (xy 294.64 73.66)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5562bad7-042b-40a3-aa90-aefc965b8341")
+	)
+	(wire
+		(pts
 			(xy 154.94 77.47) (xy 147.32 77.47)
 		)
 		(stroke
@@ -16291,6 +16393,26 @@
 			(type default)
 		)
 		(uuid "575fc47a-00af-42e9-ad5a-710ee412b051")
+	)
+	(wire
+		(pts
+			(xy 275.59 78.74) (xy 267.97 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5762f44a-6d40-4f39-a1ff-80a8460a286c")
+	)
+	(wire
+		(pts
+			(xy 259.08 72.39) (xy 255.27 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "577084ea-bf86-437d-a88b-3512c150c568")
 	)
 	(wire
 		(pts
@@ -16924,7 +17046,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 66.04) (xy 218.44 66.04)
+			(xy 194.31 67.31) (xy 203.2 67.31)
 		)
 		(stroke
 			(width 0)
@@ -16981,6 +17103,16 @@
 			(type default)
 		)
 		(uuid "6bcfc848-e1e4-4692-9e85-b13e081982e8")
+	)
+	(wire
+		(pts
+			(xy 267.97 67.31) (xy 267.97 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6c158bfa-88b3-434a-8ef5-369dee1cfe27")
 	)
 	(wire
 		(pts
@@ -17194,7 +17326,7 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 66.04) (xy 209.55 66.04)
+			(xy 190.5 67.31) (xy 194.31 67.31)
 		)
 		(stroke
 			(width 0)
@@ -17544,7 +17676,7 @@
 	)
 	(wire
 		(pts
-			(xy 209.55 71.12) (xy 205.74 71.12)
+			(xy 194.31 72.39) (xy 190.5 72.39)
 		)
 		(stroke
 			(width 0)
@@ -17584,6 +17716,16 @@
 	)
 	(wire
 		(pts
+			(xy 267.97 68.58) (xy 267.97 71.12)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87c2163a-7bdb-4742-bd13-197168ee9fc6")
+	)
+	(wire
+		(pts
 			(xy 519.43 171.45) (xy 527.05 171.45)
 		)
 		(stroke
@@ -17601,6 +17743,16 @@
 			(type default)
 		)
 		(uuid "881bc4d6-345b-47ab-ac2d-c0f2accb46bd")
+	)
+	(wire
+		(pts
+			(xy 294.64 68.58) (xy 304.8 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "882b4fbc-8b8b-49da-b37f-0e4704afe61d")
 	)
 	(wire
 		(pts
@@ -17974,7 +18126,7 @@
 	)
 	(wire
 		(pts
-			(xy 234.95 72.39) (xy 232.41 72.39)
+			(xy 219.71 73.66) (xy 217.17 73.66)
 		)
 		(stroke
 			(width 0)
@@ -18504,7 +18656,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 67.31) (xy 218.44 69.85)
+			(xy 203.2 68.58) (xy 203.2 71.12)
 		)
 		(stroke
 			(width 0)
@@ -19134,7 +19286,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 66.04) (xy 218.44 67.31)
+			(xy 203.2 67.31) (xy 203.2 68.58)
 		)
 		(stroke
 			(width 0)
@@ -19284,7 +19436,7 @@
 	)
 	(wire
 		(pts
-			(xy 218.44 71.12) (xy 209.55 71.12)
+			(xy 203.2 72.39) (xy 194.31 72.39)
 		)
 		(stroke
 			(width 0)
@@ -19554,7 +19706,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 77.47) (xy 226.06 77.47)
+			(xy 217.17 78.74) (xy 210.82 78.74)
 		)
 		(stroke
 			(width 0)
@@ -19804,6 +19956,16 @@
 	)
 	(wire
 		(pts
+			(xy 259.08 67.31) (xy 267.97 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e33a46e0-c2bb-41a5-a686-e748118bdb48")
+	)
+	(wire
+		(pts
 			(xy 237.49 287.02) (xy 224.79 287.02)
 		)
 		(stroke
@@ -19914,6 +20076,16 @@
 	)
 	(wire
 		(pts
+			(xy 284.48 68.58) (xy 294.64 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "e7dcde22-7883-41de-811a-3d81e1b4adc1")
+	)
+	(wire
+		(pts
 			(xy 147.32 71.12) (xy 138.43 71.12)
 		)
 		(stroke
@@ -19971,6 +20143,16 @@
 			(type default)
 		)
 		(uuid "e9caf7cd-a554-48e5-856e-0994efccb3ac")
+	)
+	(wire
+		(pts
+			(xy 281.94 73.66) (xy 281.94 78.74)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "eaf127fc-9dba-4f16-8077-0d6b2a57a2ab")
 	)
 	(wire
 		(pts
@@ -20144,6 +20326,16 @@
 	)
 	(wire
 		(pts
+			(xy 255.27 67.31) (xy 259.08 67.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "f4c404d1-284b-4a1b-b1f9-361f09e740c6")
+	)
+	(wire
+		(pts
 			(xy 180.34 41.91) (xy 170.18 41.91)
 		)
 		(stroke
@@ -20234,7 +20426,7 @@
 	)
 	(wire
 		(pts
-			(xy 232.41 72.39) (xy 232.41 77.47)
+			(xy 217.17 73.66) (xy 217.17 78.74)
 		)
 		(stroke
 			(width 0)
@@ -20304,7 +20496,7 @@
 	)
 	(wire
 		(pts
-			(xy 245.11 67.31) (xy 255.27 67.31)
+			(xy 229.87 68.58) (xy 240.03 68.58)
 		)
 		(stroke
 			(width 0)
@@ -20512,7 +20704,7 @@
 		)
 		(uuid "0e53a9a2-6334-4c1a-b53a-2264c3d3add5")
 	)
-	(label "LD1_3.3v"
+	(label "LD4_3.3v"
 		(at 135.89 345.44 0)
 		(effects
 			(font
@@ -21022,7 +21214,7 @@
 		)
 		(uuid "506ffede-aedd-41db-9dbc-97b280431f4c")
 	)
-	(label "LD1_3.3v"
+	(label "LD4_3.3v"
 		(at 116.84 377.19 0)
 		(effects
 			(font
@@ -21221,6 +21413,16 @@
 			(justify left bottom)
 		)
 		(uuid "663abd6a-3257-495b-8813-4a9add8273b7")
+	)
+	(label "LD4_3.3v"
+		(at 295.91 68.58 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "66acf6ad-2b9b-4ec1-b699-97232d6a0d63")
 	)
 	(label "PG6"
 		(at 425.45 92.71 0)
@@ -21632,7 +21834,7 @@
 		)
 		(uuid "93a6002c-3e17-4ac1-b066-27c965a1d917")
 	)
-	(label "LD1_3.3v"
+	(label "LD4_3.3v"
 		(at 60.96 358.14 0)
 		(effects
 			(font
@@ -21723,7 +21925,7 @@
 		(uuid "9edb922c-5632-4002-969a-e0735a5b307f")
 	)
 	(label "LD3_3.3v"
-		(at 246.38 67.31 0)
+		(at 231.14 68.58 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -22152,7 +22354,7 @@
 		)
 		(uuid "d4dfb228-4ee5-49d6-a966-ccba4bdafb44")
 	)
-	(label "LD1_3.3v"
+	(label "LD4_3.3v"
 		(at 30.48 356.87 0)
 		(effects
 			(font
@@ -22372,7 +22574,7 @@
 		)
 		(uuid "eaffab97-93d9-4e80-b032-2ce122c150f1")
 	)
-	(label "LD1_3.3v"
+	(label "LD4_3.3v"
 		(at 54.61 377.19 0)
 		(effects
 			(font
@@ -22422,7 +22624,7 @@
 		)
 		(uuid "f029e92c-0d3b-457b-a247-5c334fbcbfb7")
 	)
-	(label "LD1_3.3v"
+	(label "LD4_3.3v"
 		(at 149.86 356.87 0)
 		(effects
 			(font
@@ -22892,6 +23094,99 @@
 			(project "Orthrus-TX"
 				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
 					(reference "C13")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 284.48 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "023f325e-0951-4ca3-9be5-745bdf6d62ff")
+		(property "Reference" "C59"
+			(at 287.02 69.9769 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2µF"
+			(at 287.02 72.5169 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 284.48 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 284.48 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "capacitor, small US symbol"
+			(at 284.48 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
+			(at 284.48 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "be4e494a-043c-4115-a1e3-0d2bf9232b65")
+		)
+		(pin "1"
+			(uuid "0e78498a-05b0-4f50-8fef-4c4ff4441b1e")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "C59")
 					(unit 1)
 				)
 			)
@@ -26555,7 +26850,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small_US")
-		(at 234.95 69.85 0)
+		(at 219.71 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -26566,7 +26861,7 @@
 		(fields_autoplaced yes)
 		(uuid "316bd569-caf4-4a09-a0cd-d4062d25975e")
 		(property "Reference" "C30"
-			(at 237.49 68.7069 0)
+			(at 222.25 69.9769 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26577,7 +26872,7 @@
 			)
 		)
 		(property "Value" "2.2µF"
-			(at 237.49 71.2469 0)
+			(at 222.25 72.5169 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -26588,7 +26883,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 234.95 69.85 0)
+			(at 219.71 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26599,7 +26894,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 234.95 69.85 0)
+			(at 219.71 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26610,7 +26905,7 @@
 			)
 		)
 		(property "Description" "capacitor, small US symbol"
-			(at 234.95 69.85 0)
+			(at 219.71 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -26621,7 +26916,7 @@
 			)
 		)
 		(property "LCSC" "C23630"
-			(at 234.95 69.85 0)
+			(at 219.71 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28924,7 +29219,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 205.74 71.12 0)
+		(at 190.5 72.39 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28935,7 +29230,7 @@
 		(fields_autoplaced yes)
 		(uuid "55a27ff0-df21-4cd1-b074-c99d840e4215")
 		(property "Reference" "#PWR028"
-			(at 205.74 77.47 0)
+			(at 190.5 78.74 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28946,7 +29241,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 205.74 76.2 0)
+			(at 190.5 77.47 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28956,7 +29251,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 71.12 0)
+			(at 190.5 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28967,7 +29262,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 71.12 0)
+			(at 190.5 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28978,7 +29273,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 205.74 71.12 0)
+			(at 190.5 72.39 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29094,7 +29389,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small_US")
-		(at 245.11 69.85 0)
+		(at 229.87 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29105,7 +29400,7 @@
 		(fields_autoplaced yes)
 		(uuid "57ac54b8-154a-4f3c-8449-50fe940a4987")
 		(property "Reference" "C31"
-			(at 247.65 68.7069 0)
+			(at 232.41 69.9769 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29116,7 +29411,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 247.65 71.2469 0)
+			(at 232.41 72.5169 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29127,7 +29422,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 245.11 69.85 0)
+			(at 229.87 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29138,7 +29433,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 245.11 69.85 0)
+			(at 229.87 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29149,7 +29444,7 @@
 			)
 		)
 		(property "Description" "capacitor, small US symbol"
-			(at 245.11 69.85 0)
+			(at 229.87 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29160,7 +29455,7 @@
 			)
 		)
 		(property "LCSC" "C24452"
-			(at 245.11 69.85 0)
+			(at 229.87 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -30955,6 +31250,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 255.27 67.31 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "6d0362ab-6843-43d1-b07d-556622832662")
+		(property "Reference" "#PWR076"
+			(at 255.27 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "VCC"
+			(at 255.27 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 255.27 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "375df954-2f8a-402a-9903-fb784f2fba3e")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "#PWR076")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "MOLEX_1040310811:1040310811")
 		(at 69.85 350.52 0)
 		(unit 1)
@@ -31858,7 +32231,7 @@
 	)
 	(symbol
 		(lib_id "power:VCC")
-		(at 205.74 66.04 0)
+		(at 190.5 67.31 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -31869,7 +32242,7 @@
 		(fields_autoplaced yes)
 		(uuid "7a85a17e-ba44-4c5b-8a67-9e059ab11e17")
 		(property "Reference" "#PWR027"
-			(at 205.74 69.85 0)
+			(at 190.5 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31880,7 +32253,7 @@
 			)
 		)
 		(property "Value" "VCC"
-			(at 205.74 60.96 0)
+			(at 190.5 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -31890,7 +32263,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 205.74 66.04 0)
+			(at 190.5 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31901,7 +32274,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 205.74 66.04 0)
+			(at 190.5 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31912,7 +32285,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VCC\""
-			(at 205.74 66.04 0)
+			(at 190.5 67.31 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35556,7 +35929,7 @@
 	)
 	(symbol
 		(lib_id "Regulator_Linear:AP2112K-3.3")
-		(at 226.06 69.85 0)
+		(at 210.82 71.12 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -35567,7 +35940,7 @@
 		(fields_autoplaced yes)
 		(uuid "a61b7f9f-6095-4d19-9c77-63a6dc0270b7")
 		(property "Reference" "LD3"
-			(at 226.06 60.96 0)
+			(at 210.82 62.23 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35577,7 +35950,7 @@
 			)
 		)
 		(property "Value" "AP2112K-3.3"
-			(at 226.06 63.5 0)
+			(at 210.82 64.77 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -35587,7 +35960,7 @@
 			)
 		)
 		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
-			(at 226.06 61.595 0)
+			(at 210.82 62.865 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35598,7 +35971,7 @@
 			)
 		)
 		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
-			(at 226.06 67.31 0)
+			(at 210.82 68.58 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35609,7 +35982,7 @@
 			)
 		)
 		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
-			(at 226.06 69.85 0)
+			(at 210.82 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -35620,7 +35993,7 @@
 			)
 		)
 		(property "LCSC" "C23380830"
-			(at 226.06 69.85 0)
+			(at 210.82 71.12 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36336,7 +36709,7 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small_US")
-		(at 209.55 68.58 0)
+		(at 194.31 69.85 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -36347,7 +36720,7 @@
 		(fields_autoplaced yes)
 		(uuid "acbf2540-a4ba-41c5-a7d3-46a1b704492f")
 		(property "Reference" "C29"
-			(at 212.09 67.4369 0)
+			(at 196.85 68.7069 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36358,7 +36731,7 @@
 			)
 		)
 		(property "Value" "4.7µF"
-			(at 212.09 69.9769 0)
+			(at 196.85 71.2469 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -36369,7 +36742,7 @@
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 209.55 68.58 0)
+			(at 194.31 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36380,7 +36753,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 209.55 68.58 0)
+			(at 194.31 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36391,7 +36764,7 @@
 			)
 		)
 		(property "Description" "capacitor, small US symbol"
-			(at 209.55 68.58 0)
+			(at 194.31 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -36402,7 +36775,7 @@
 			)
 		)
 		(property "LCSC" "C19666"
-			(at 209.55 68.58 0)
+			(at 194.31 69.85 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -37026,6 +37399,106 @@
 		)
 	)
 	(symbol
+		(lib_id "Regulator_Linear:AP2112K-3.3")
+		(at 275.59 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "b42d2ee9-43cd-4907-bbac-809071128525")
+		(property "Reference" "LD4"
+			(at 275.59 62.23 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "AP2112K-3.3"
+			(at 275.59 64.77 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Package_TO_SOT_SMD:SOT-23-5"
+			(at 275.59 62.865 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://www.diodes.com/assets/Datasheets/AP2112.pdf"
+			(at 275.59 68.58 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "600mA low dropout linear regulator, with enable pin, 3.8V-6V input voltage range, 3.3V fixed positive output, SOT-23-5"
+			(at 275.59 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23380830"
+			(at 275.59 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "14942375-a4bc-4156-a346-3fc3ef946476")
+		)
+		(pin "2"
+			(uuid "ec175160-2578-4439-a409-c68d2c510abc")
+		)
+		(pin "3"
+			(uuid "284a2def-5918-47ab-a277-00c228abce23")
+		)
+		(pin "4"
+			(uuid "b901ce58-4dad-4aee-b7ef-ea7a3e23df93")
+		)
+		(pin "5"
+			(uuid "8fe25179-9ff8-41ae-9ec2-97b3b696896f")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "LD4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 48.26 247.65 90)
 		(unit 1)
@@ -37593,6 +38066,99 @@
 			(project "Orthrus-TX"
 				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
 					(reference "U4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 259.08 69.85 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "c0337e30-8851-44fd-9c35-e06c03892641")
+		(property "Reference" "C40"
+			(at 261.62 68.7069 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "4.7µF"
+			(at 261.62 71.2469 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 259.08 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 259.08 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "capacitor, small US symbol"
+			(at 259.08 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C19666"
+			(at 259.08 69.85 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "48551348-4661-47f8-9e3b-8cbd1b143fe0")
+		)
+		(pin "1"
+			(uuid "b01da801-adb7-41be-9696-52430a6ccccb")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "C40")
 					(unit 1)
 				)
 			)
@@ -39597,6 +40163,99 @@
 	)
 	(symbol
 		(lib_id "Device:C_Small_US")
+		(at 294.64 71.12 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "cf0417f9-2f11-46fb-8352-ed0453e2b0b1")
+		(property "Reference" "C60"
+			(at 297.18 69.9769 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 297.18 72.5169 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 294.64 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 294.64 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "capacitor, small US symbol"
+			(at 294.64 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C24452"
+			(at 294.64 71.12 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "14c8f4d4-b80a-4e96-9634-8ddb4d9a49df")
+		)
+		(pin "1"
+			(uuid "4ef36df3-b7ab-4cf5-a19a-cecca43cd060")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "C60")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small_US")
 		(at 170.18 44.45 0)
 		(unit 1)
 		(body_style 1)
@@ -40492,6 +41151,84 @@
 			(project "Orthrus-TX"
 				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
 					(reference "SWITCHES_1")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 255.27 72.39 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e16a610d-ed6e-49ab-8bd6-3af6c301ab1a")
+		(property "Reference" "#PWR077"
+			(at 255.27 78.74 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 255.27 77.47 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 255.27 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 255.27 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 255.27 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "98ea6c52-eb8c-4fdf-9c12-506dbec60232")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "#PWR077")
 					(unit 1)
 				)
 			)
@@ -42533,24 +43270,6 @@
 			"b40e15b0-f775-4b8a-a935-9d70eb2a5b30" "b4b14ffe-ee3d-4a83-84d9-80b3409baadc"
 			"bbd5069b-8d55-4f54-8cbe-56ac011db1bd" "db389b65-295e-4b60-9f2b-bbc108282f1d"
 			"e0ca9179-7a64-4e66-a5e1-133dcdf7794f" "e9565e5c-0c01-47fc-966e-6469b846fff9"
-		)
-	)
-	(group ""
-		(uuid "b32e3adc-5a22-43c5-950b-1da09b8a3ffc")
-		(members "05ec4598-a9a9-488e-9c6b-fd4abb28fc5e" "211258cf-9c0b-4483-ad9d-7aa73d17e7f9"
-			"2dd0de1a-6eb7-47d6-8f5f-b4f614dc6914" "2ea64c59-f7e6-40a5-82ae-bd45e2145d8d"
-			"316bd569-caf4-4a09-a0cd-d4062d25975e" "4671a3f6-782a-4a7e-be23-70d26c98656c"
-			"47ac2b29-e35e-4531-a1de-815d8a416a4b" "55a27ff0-df21-4cd1-b074-c99d840e4215"
-			"57ac54b8-154a-4f3c-8449-50fe940a4987" "6b013726-e94f-4bcb-83fa-bb971e1af62f"
-			"77197252-5d79-4565-a4c3-31a49cf003ac" "7a85a17e-ba44-4c5b-8a67-9e059ab11e17"
-			"845351a6-246c-42c7-9440-4916cfa414da" "96acb3b2-9617-4c87-b27d-b94d870dfc7b"
-			"9ea1e8db-7b54-45dd-8b40-3b76d0672436" "9ff6383d-ef69-4ff2-ab83-c901ad734d23"
-			"a00c398a-1ed4-4a4e-af09-cb60319043bc" "a61b7f9f-6095-4d19-9c77-63a6dc0270b7"
-			"ab4d8968-9bb0-4fd7-83dd-312651bdab63" "acbf2540-a4ba-41c5-a7d3-46a1b704492f"
-			"c1d48994-d6fe-4760-b413-595c40a7f4e0" "c6d51a96-06c3-4646-91e6-c4b8101b96de"
-			"d6983446-792e-4434-8a8d-b088dfaca02b" "e3ece268-19fb-48a1-9b04-ee82d195f66b"
-			"f7bca502-a657-453b-b965-b788d083a8ff" "f9d913ad-c3fb-4419-8122-caa09c8bbbc1"
-			"f9d9832c-87bf-455a-89b2-67c7fb2221df" "fb1a4c6a-bb20-4ae1-8b8e-05733d91bf24"
 		)
 	)
 	(group ""
