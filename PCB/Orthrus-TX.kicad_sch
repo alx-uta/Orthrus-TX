@@ -13437,6 +13437,12 @@
 		(uuid "1a4f4dad-d4d0-4368-b13c-20a801904f7d")
 	)
 	(junction
+		(at 243.84 177.8)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "1bf2323c-088f-46b3-90b3-eca8b8eaa686")
+	)
+	(junction
 		(at 483.87 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13821,6 +13827,12 @@
 		(uuid "a7600e77-1830-4740-a830-202426d1f695")
 	)
 	(junction
+		(at 237.49 172.72)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "a8c37114-9537-4f25-aeb6-a48d38c894be")
+	)
+	(junction
 		(at 367.03 133.35)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -13987,12 +13999,6 @@
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "d34a7ca7-eedf-4e24-9209-9e8d76142445")
-	)
-	(junction
-		(at 240.03 181.61)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d428692f-878c-4e7a-aafd-2192a2eb61bc")
 	)
 	(junction
 		(at 499.11 307.34)
@@ -14273,6 +14279,16 @@
 			(type default)
 		)
 		(uuid "0495a1f0-60e4-47ca-bcbc-121afb449730")
+	)
+	(wire
+		(pts
+			(xy 237.49 170.18) (xy 237.49 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "05b1be89-ba8a-4b35-9589-0140a9695f88")
 	)
 	(wire
 		(pts
@@ -14866,6 +14882,16 @@
 	)
 	(wire
 		(pts
+			(xy 229.87 172.72) (xy 229.87 171.45)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "17b9838a-33d4-47bb-ad2c-0ce29c879aad")
+	)
+	(wire
+		(pts
 			(xy 138.43 311.15) (xy 138.43 308.61)
 		)
 		(stroke
@@ -15013,6 +15039,16 @@
 			(type default)
 		)
 		(uuid "211258cf-9c0b-4483-ad9d-7aa73d17e7f9")
+	)
+	(wire
+		(pts
+			(xy 243.84 170.18) (xy 237.49 170.18)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "217ef2a6-699e-4914-be54-12ffff884f2e")
 	)
 	(wire
 		(pts
@@ -15906,16 +15942,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 181.61) (xy 240.03 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "42af6c61-7208-45c5-905c-276bf481b87d")
-	)
-	(wire
-		(pts
 			(xy 458.47 27.94) (xy 458.47 25.4)
 		)
 		(stroke
@@ -15923,6 +15949,16 @@
 			(type default)
 		)
 		(uuid "432ee9ec-09fd-42df-af92-1514e3b5190d")
+	)
+	(wire
+		(pts
+			(xy 237.49 172.72) (xy 229.87 172.72)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "441a2fe8-d3fa-4ea6-837a-278a7ff2d685")
 	)
 	(wire
 		(pts
@@ -16253,16 +16289,6 @@
 			(type default)
 		)
 		(uuid "50a4394a-5d05-4e85-ac59-0bb57c56fc5c")
-	)
-	(wire
-		(pts
-			(xy 240.03 181.61) (xy 236.22 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "510cf6d4-f47b-4b1f-95da-99355526d96a")
 	)
 	(wire
 		(pts
@@ -17906,6 +17932,16 @@
 	)
 	(wire
 		(pts
+			(xy 243.84 177.8) (xy 247.65 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8d911bb3-61c9-4b3c-8a1d-a186e6fb5bf7")
+	)
+	(wire
+		(pts
 			(xy 463.55 27.94) (xy 464.82 27.94)
 		)
 		(stroke
@@ -18823,16 +18859,6 @@
 			(type default)
 		)
 		(uuid "b170722a-e0b4-490f-8c70-830cdd3561e6")
-	)
-	(wire
-		(pts
-			(xy 240.03 185.42) (xy 240.03 181.61)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "b17e88ea-c1df-486e-9f5e-9671c0bfdfab")
 	)
 	(wire
 		(pts
@@ -20236,16 +20262,6 @@
 	)
 	(wire
 		(pts
-			(xy 240.03 177.8) (xy 247.65 177.8)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "eddf6ec4-6bd5-4a28-94ef-0989420e9dc0")
-	)
-	(wire
-		(pts
 			(xy 137.16 355.6) (xy 137.16 354.33)
 		)
 		(stroke
@@ -20613,6 +20629,16 @@
 			(type default)
 		)
 		(uuid "fd60b1dc-58ea-4d21-9070-1c39056c984a")
+	)
+	(wire
+		(pts
+			(xy 237.49 177.8) (xy 243.84 177.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "fe7a8733-473a-4720-9f3f-e76e516b909c")
 	)
 	(wire
 		(pts
@@ -24790,6 +24816,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 229.87 171.45 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "13e48711-5f96-4398-89f1-36950e0a3bb1")
+		(property "Reference" "#PWR079"
+			(at 223.52 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 233.68 170.688 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 229.87 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 229.87 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 229.87 171.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "f0bcf0fa-d028-403b-ab5b-9b5ab682cb6d")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "#PWR079")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 48.26 209.55 90)
 		(unit 1)
@@ -27696,6 +27800,98 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:R_US")
+		(at 243.84 173.99 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "41679809-ab44-4671-aeab-760cab663946")
+		(property "Reference" "R55"
+			(at 246.126 176.022 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "1MΩ"
+			(at 241.808 176.784 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 244.856 174.244 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 243.84 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Resistor, US symbol"
+			(at 243.84 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" ""
+			(at 243.84 173.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "ed67dcda-d96d-4e65-b5f1-f1e93999cfc3")
+		)
+		(pin "1"
+			(uuid "e9e61198-7b37-4735-b1f4-df73088f33c1")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "R55")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 259.08 116.84 270)
 		(unit 1)
@@ -29624,7 +29820,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "22Ω"
+		(property "Value" "47Ω"
 			(at 409.448 66.548 90)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29668,7 +29864,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C2907129"
+		(property "LCSC" ""
 			(at 407.67 68.58 0)
 			(hide yes)
 			(show_name no)
@@ -32254,6 +32450,98 @@
 			(project "Orthrus-TX"
 				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
 					(reference "C27")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 237.49 175.26 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7a21067e-c855-4445-b959-1ad64617c669")
+		(property "Reference" "C62"
+			(at 236.22 171.45 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "100nF"
+			(at 234.95 179.07 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 237.49 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 237.49 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "capacitor, small US symbol"
+			(at 237.49 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C24452"
+			(at 237.49 175.26 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "08da3370-199e-4f97-ae93-7f2303a4be01")
+		)
+		(pin "1"
+			(uuid "dc394a8d-2c0c-4caa-a4d1-d39956186f01")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "C62")
 					(unit 1)
 				)
 			)
@@ -34874,7 +35162,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 236.22 181.61 270)
+		(at 240.03 185.42 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -34884,7 +35172,7 @@
 		(dnp no)
 		(uuid "9d38b54f-558f-4109-b601-1d6d96bb39ce")
 		(property "Reference" "#PWR044"
-			(at 229.87 181.61 0)
+			(at 233.68 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34895,7 +35183,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 240.03 180.848 90)
+			(at 243.84 184.658 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -34906,7 +35194,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 236.22 181.61 0)
+			(at 240.03 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34917,7 +35205,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 236.22 181.61 0)
+			(at 240.03 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -34928,7 +35216,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 236.22 181.61 0)
+			(at 240.03 185.42 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
