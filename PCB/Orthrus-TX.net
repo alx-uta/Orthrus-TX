@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "D:\\KiCad\\Projects\\Orthrus-TX\\PCB\\Orthrus-TX.kicad_sch")
-		(date "2026-05-23T17:48:52")
+		(date "2026-05-23T17:54:56")
 		(tool "Eeschema 10.0.2")
 		(sheet
 			(number "1")
@@ -12164,8 +12164,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "1")
-				(pinfunction "G_1")
+				(pin "2")
+				(pinfunction "S_2")
 				(pintype "unspecified")
 			)
 		)
@@ -15643,7 +15643,7 @@
 		)
 		(net
 			(code "109")
-			(name "Net-(U1-S)")
+			(name "Net-(U1-G)")
 			(class "Default")
 			(node
 				(ref "R57")
@@ -15652,8 +15652,8 @@
 			)
 			(node
 				(ref "U1")
-				(pin "2")
-				(pinfunction "S_2")
+				(pin "1")
+				(pinfunction "G_1")
 				(pintype "unspecified")
 			)
 		)

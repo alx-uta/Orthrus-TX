@@ -14851,6 +14851,16 @@
 	)
 	(wire
 		(pts
+			(xy 48.26 34.29) (xy 52.07 34.29)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "008deefb-38b0-4b53-bb7f-403211bcd6b1")
+	)
+	(wire
+		(pts
 			(xy 180.34 46.99) (xy 170.18 46.99)
 		)
 		(stroke
@@ -15591,16 +15601,6 @@
 	)
 	(wire
 		(pts
-			(xy 43.18 34.29) (xy 52.07 34.29)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "194a35b0-3621-4d2d-8ba9-dc3fc476e589")
-	)
-	(wire
-		(pts
 			(xy 452.12 29.21) (xy 452.12 25.4)
 		)
 		(stroke
@@ -15678,16 +15678,6 @@
 			(type default)
 		)
 		(uuid "1cbd698d-9384-4a93-9d6a-3960b2faa422")
-	)
-	(wire
-		(pts
-			(xy 92.71 36.83) (xy 96.52 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1d57fa79-d28b-4eee-bfd8-998f3fdffe7a")
 	)
 	(wire
 		(pts
@@ -18381,6 +18371,16 @@
 	)
 	(wire
 		(pts
+			(xy 92.71 36.83) (xy 101.6 36.83)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "818eb086-094c-478a-b306-0e77f222c2a7")
+	)
+	(wire
+		(pts
 			(xy 502.92 20.32) (xy 509.27 20.32)
 		)
 		(stroke
@@ -19941,7 +19941,7 @@
 	)
 	(wire
 		(pts
-			(xy 90.17 44.45) (xy 96.52 44.45)
+			(xy 41.91 41.91) (xy 48.26 41.91)
 		)
 		(stroke
 			(width 0)
@@ -21919,16 +21919,6 @@
 		)
 		(uuid "37658f3a-a950-4ebe-934a-3a93b95e62f4")
 	)
-	(label "BATT_IN"
-		(at 43.18 34.29 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "392c53a5-2e32-4df9-9993-1e46e3ccd15e")
-	)
 	(label "PG13"
 		(at 128.27 350.52 0)
 		(effects
@@ -22728,6 +22718,16 @@
 			(justify left bottom)
 		)
 		(uuid "98cf8fa2-cbe7-4ff1-9967-7a813d06e3c5")
+	)
+	(label "BATT_IN"
+		(at 93.98 36.83 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9aa8594e-b0ab-4673-8a31-cb8993c30888")
 	)
 	(label "PD0"
 		(at 259.08 119.38 0)
@@ -28124,7 +28124,7 @@
 	)
 	(symbol
 		(lib_id "Device:R_US")
-		(at 96.52 40.64 0)
+		(at 48.26 38.1 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -28134,7 +28134,7 @@
 		(dnp no)
 		(uuid "334f15ae-d8df-4e2d-b86c-3d68010237cd")
 		(property "Reference" "R57"
-			(at 94.234 42.418 90)
+			(at 45.974 39.878 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28145,7 +28145,7 @@
 			)
 		)
 		(property "Value" "100kΩ"
-			(at 98.552 43.688 90)
+			(at 50.292 41.148 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -28156,7 +28156,7 @@
 			)
 		)
 		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 97.536 40.894 90)
+			(at 49.276 38.354 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28167,7 +28167,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 96.52 40.64 0)
+			(at 48.26 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28178,7 +28178,7 @@
 			)
 		)
 		(property "Description" "Resistor, US symbol"
-			(at 96.52 40.64 0)
+			(at 48.26 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -28189,7 +28189,7 @@
 			)
 		)
 		(property "LCSC" "C122538"
-			(at 96.52 40.64 0)
+			(at 48.26 38.1 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29676,7 +29676,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 90.17 44.45 0)
+		(at 41.91 41.91 0)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -29686,7 +29686,7 @@
 		(dnp no)
 		(uuid "49696323-7a11-4f13-b2a2-69e49cdc4c72")
 		(property "Reference" "#PWR080"
-			(at 90.17 50.8 0)
+			(at 41.91 48.26 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29697,7 +29697,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 90.17 48.006 0)
+			(at 41.91 45.466 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -29707,7 +29707,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 90.17 44.45 0)
+			(at 41.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29718,7 +29718,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 90.17 44.45 0)
+			(at 41.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -29729,7 +29729,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 90.17 44.45 0)
+			(at 41.91 41.91 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
