@@ -851,6 +851,22 @@
       {
         "netclass": "Analog",
         "pattern": "^/PC[0-5]$"
+      },
+      {
+        "netclass": "USB_DIFF",
+        "pattern": "USB_P"
+      },
+      {
+        "netclass": "USB_DIFF",
+        "pattern": "USB_N"
+      },
+      {
+        "netclass": "USB_DIFF",
+        "pattern": "USB_P_OUT"
+      },
+      {
+        "netclass": "USB_DIFF",
+        "pattern": "USB_N_OUT"
       }
     ]
   },
@@ -1000,7 +1016,7 @@
         "uuid": "96e81b93-0369-470d-8547-b925c1f9f96d"
       }
     ],
-    "used_designators": "R55,C62,#PWR79",
+    "used_designators": "FL1,R56-57,U1,#PWR80",
     "variants": []
   },
   "sheets": [
