@@ -808,9 +808,9 @@
         "via_drill": 0.3
       },
       {
-        "clearance": 0.15,
+        "clearance": 0.2,
         "diff_pair_gap": 0.18,
-        "diff_pair_width": 0.2,
+        "diff_pair_width": 0.18,
         "name": "USB_DIFF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
         "priority": 0,
@@ -1042,7 +1042,7 @@
         "uuid": "96e81b93-0369-470d-8547-b925c1f9f96d"
       }
     ],
-    "used_designators": "#PWR55,#PWR83-84,L3",
+    "used_designators": "",
     "variants": []
   },
   "sheets": [
