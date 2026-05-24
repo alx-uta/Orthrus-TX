@@ -725,7 +725,9 @@
     }
   },
   "libraries": {
-    "pinned_footprint_libs": [],
+    "pinned_footprint_libs": [
+      "Custom-Library"
+    ],
     "pinned_symbol_libs": []
   },
   "meta": {
@@ -1016,7 +1018,7 @@
         "uuid": "96e81b93-0369-470d-8547-b925c1f9f96d"
       }
     ],
-    "used_designators": "",
+    "used_designators": "L2",
     "variants": []
   },
   "sheets": [

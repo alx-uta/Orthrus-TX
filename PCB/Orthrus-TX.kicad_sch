@@ -6535,59 +6535,60 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Filter:0603USB-601"
+		(symbol "IND_DLW21S_0805_MUR:DLW21SN900SQ2L"
 			(pin_names
 				(offset 0.254)
-				(hide yes)
 			)
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
 			(in_pos_files yes)
 			(duplicate_pin_numbers_are_jumpers no)
-			(property "Reference" "FL"
-				(at 0 4.445 0)
+			(property "Reference" "L"
+				(at 7.62 2.54 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Value" "0603USB-601"
-				(at 0 -4.445 0)
+			(property "Value" "DLW21SN900SQ2L"
+				(at 7.62 -12.7 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(effects
 					(font
-						(size 1.27 1.27)
+						(size 1.524 1.524)
 					)
 				)
 			)
-			(property "Footprint" "Inductor_SMD:L_CommonModeChoke_Coilcraft_0603USB"
-				(at 0 -6.35 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Datasheet" "https://www.coilcraft.com/pdfs/0603usb.pdf"
-				(at 0 -8.255 0)
+			(property "Footprint" "IND_DLW21S_0805_MUR"
+				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
 				(hide yes)
 				(effects
 					(font
 						(size 1.27 1.27)
+						(italic yes)
 					)
 				)
 			)
-			(property "Description" "Coilcraft common mode choke, 500mA, 250VAC, 37nH, 109mohm, 3.4Ghz"
+			(property "Datasheet" "DLW21SN900SQ2L"
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(hide yes)
+				(effects
+					(font
+						(size 1.27 1.27)
+						(italic yes)
+					)
+				)
+			)
+			(property "Description" ""
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6598,7 +6599,17 @@
 					)
 				)
 			)
-			(property "ki_keywords" "signal line filter"
+			(property "ki_locked" ""
+				(at 0 0 0)
+				(show_name no)
+				(do_not_autoplace no)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "ki_keywords" "DLW21SN900SQ2L"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6609,7 +6620,7 @@
 					)
 				)
 			)
-			(property "ki_fp_filters" "L*CommonModeChoke*Coilcraft*0603USB*"
+			(property "ki_fp_filters" "IND_DLW21S_0805_MUR IND_DLW21S_0805_MUR-M IND_DLW21S_0805_MUR-L"
 				(at 0 0 0)
 				(show_name no)
 				(do_not_autoplace no)
@@ -6620,24 +6631,13 @@
 					)
 				)
 			)
-			(symbol "0603USB-601_0_1"
-				(circle
-					(center -2.794 1.27)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
+			(symbol "DLW21SN900SQ2L_0_1"
 				(polyline
 					(pts
-						(xy -2.794 0.381) (xy -2.286 0.381)
+						(xy 2.54 0) (xy 2.54 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -6646,33 +6646,10 @@
 				)
 				(polyline
 					(pts
-						(xy -2.794 -0.381) (xy -2.286 -0.381)
+						(xy 2.54 -5.715) (xy 12.7 -5.715)
 					)
 					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(circle
-					(center -2.794 -1.27)
-					(radius 0.254)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type outline)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.54 2.032) (xy -2.54 2.54)
-					)
-					(stroke
-						(width 0)
+						(width 0.127)
 						(type default)
 					)
 					(fill
@@ -6681,10 +6658,10 @@
 				)
 				(polyline
 					(pts
-						(xy -2.54 -2.032) (xy -2.54 -2.54)
+						(xy 2.54 -10.16) (xy 2.54 -8.89)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -6692,9 +6669,9 @@
 					)
 				)
 				(arc
-					(start -1.524 2.032)
-					(mid -2.032 1.5262)
-					(end -2.54 2.032)
+					(start 5.08 -1.27)
+					(mid 3.81 -2.5344)
+					(end 2.54 -1.27)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -6704,9 +6681,9 @@
 					)
 				)
 				(arc
-					(start -2.54 -2.032)
-					(mid -2.032 -1.5262)
-					(end -1.524 -2.032)
+					(start 2.54 -8.89)
+					(mid 3.81 -7.6255)
+					(end 5.08 -8.89)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -6717,10 +6694,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.778 0.381) (xy -1.27 0.381)
+						(xy 5.08 0) (xy 5.08 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -6729,10 +6706,10 @@
 				)
 				(polyline
 					(pts
-						(xy -1.778 -0.381) (xy -1.27 -0.381)
+						(xy 5.08 -10.16) (xy 5.08 -8.89)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -6740,9 +6717,9 @@
 					)
 				)
 				(arc
-					(start -0.508 2.032)
-					(mid -1.016 1.5262)
-					(end -1.524 2.032)
+					(start 7.62 -1.27)
+					(mid 6.35 -2.5344)
+					(end 5.08 -1.27)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -6752,57 +6729,9 @@
 					)
 				)
 				(arc
-					(start -1.524 -2.032)
-					(mid -1.016 -1.5262)
-					(end -0.508 -2.032)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 0.381) (xy -0.254 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -0.762 -0.381) (xy -0.254 -0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 0.508 2.032)
-					(mid 0 1.5262)
-					(end -0.508 2.032)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start -0.508 -2.032)
-					(mid 0 -1.5262)
-					(end 0.508 -2.032)
+					(start 5.08 -8.89)
+					(mid 6.35 -7.6255)
+					(end 7.62 -8.89)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -6813,10 +6742,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 0.381) (xy 0.762 0.381)
+						(xy 7.62 0) (xy 7.62 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -6825,10 +6754,10 @@
 				)
 				(polyline
 					(pts
-						(xy 0.254 -0.381) (xy 0.762 -0.381)
+						(xy 7.62 -10.16) (xy 7.62 -8.89)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -6836,9 +6765,9 @@
 					)
 				)
 				(arc
-					(start 1.524 2.032)
-					(mid 1.016 1.5262)
-					(end 0.508 2.032)
+					(start 10.16 -1.27)
+					(mid 8.89 -2.5344)
+					(end 7.62 -1.27)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -6848,57 +6777,9 @@
 					)
 				)
 				(arc
-					(start 0.508 -2.032)
-					(mid 1.016 -1.5262)
-					(end 1.524 -2.032)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 0.381) (xy 1.778 0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 1.27 -0.381) (xy 1.778 -0.381)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 2.54 2.032)
-					(mid 2.032 1.5262)
-					(end 1.524 2.032)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(arc
-					(start 1.524 -2.032)
-					(mid 2.032 -1.5262)
-					(end 2.54 -2.032)
+					(start 7.62 -8.89)
+					(mid 8.89 -7.6255)
+					(end 10.16 -8.89)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -6909,10 +6790,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.286 0.381) (xy 2.794 0.381)
+						(xy 10.16 0) (xy 10.16 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -6921,10 +6802,34 @@
 				)
 				(polyline
 					(pts
-						(xy 2.286 -0.381) (xy 2.794 -0.381)
+						(xy 10.16 -10.16) (xy 10.16 -8.89)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 12.7 -1.27)
+					(mid 11.43 -2.5344)
+					(end 10.16 -1.27)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(arc
+					(start 10.16 -8.89)
+					(mid 11.43 -7.6255)
+					(end 12.7 -8.89)
+					(stroke
+						(width 0.254)
 						(type default)
 					)
 					(fill
@@ -6933,10 +6838,10 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 2.54) (xy 2.54 2.032)
+						(xy 12.7 0) (xy 12.7 -1.27)
 					)
 					(stroke
-						(width 0)
+						(width 0.2032)
 						(type default)
 					)
 					(fill
@@ -6945,20 +6850,30 @@
 				)
 				(polyline
 					(pts
-						(xy 2.54 -2.032) (xy 2.54 -2.54)
+						(xy 12.7 -4.445) (xy 2.54 -4.445)
 					)
 					(stroke
-						(width 0)
+						(width 0.127)
 						(type default)
 					)
 					(fill
 						(type none)
 					)
 				)
-			)
-			(symbol "0603USB-601_1_1"
-				(pin passive line
-					(at -5.08 2.54 0)
+				(polyline
+					(pts
+						(xy 12.7 -10.16) (xy 12.7 -8.89)
+					)
+					(stroke
+						(width 0.2032)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin unspecified line
+					(at 0 0 0)
 					(length 2.54)
 					(name "1"
 						(effects
@@ -6975,8 +6890,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 2.54 180)
+				(pin unspecified line
+					(at 15.24 0 180)
 					(length 2.54)
 					(name "2"
 						(effects
@@ -6993,8 +6908,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at 5.08 -2.54 180)
+				(pin unspecified line
+					(at 15.24 -10.16 180)
 					(length 2.54)
 					(name "3"
 						(effects
@@ -7011,8 +6926,8 @@
 						)
 					)
 				)
-				(pin passive line
-					(at -5.08 -2.54 0)
+				(pin unspecified line
+					(at 0 -10.16 0)
 					(length 2.54)
 					(name "4"
 						(effects
@@ -14346,6 +14261,12 @@
 		(uuid "6a47c0ec-09a8-4136-8619-8fc881c0d38f")
 	)
 	(junction
+		(at 433.07 184.15)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "6b9825cd-2545-4d9d-9d9a-df6f02a7ad63")
+	)
+	(junction
 		(at 214.63 292.1)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14790,6 +14711,12 @@
 		(uuid "ebc4c30e-4865-4b38-b10d-dd73125fe01d")
 	)
 	(junction
+		(at 433.07 189.23)
+		(diameter 0)
+		(color 0 0 0 0)
+		(uuid "ec6e3d0c-2804-4e73-96db-7167293256e4")
+	)
+	(junction
 		(at 553.72 35.56)
 		(diameter 0)
 		(color 0 0 0 0)
@@ -14911,16 +14838,6 @@
 	)
 	(wire
 		(pts
-			(xy 205.74 218.44) (xy 213.36 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "01ad8bd9-f01d-4095-b5a4-0ae42cb4fd20")
-	)
-	(wire
-		(pts
 			(xy 466.09 27.94) (xy 471.17 27.94)
 		)
 		(stroke
@@ -14958,6 +14875,16 @@
 			(type default)
 		)
 		(uuid "0268e766-de0e-4133-bbd3-496ea3a0fdfd")
+	)
+	(wire
+		(pts
+			(xy 433.07 189.23) (xy 422.91 189.23)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0331167a-8be7-418c-9ccf-0b5ffb26c173")
 	)
 	(wire
 		(pts
@@ -15158,16 +15085,6 @@
 			(type default)
 		)
 		(uuid "0a7ebd99-a44a-4712-9b95-5b5605f6de55")
-	)
-	(wire
-		(pts
-			(xy 205.74 213.36) (xy 213.36 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0abfdcb8-1194-474a-b239-e3cf824792d8")
 	)
 	(wire
 		(pts
@@ -17421,6 +17338,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 212.09) (xy 207.01 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "5f84088d-075d-453e-91ed-3827ed912e87")
+	)
+	(wire
+		(pts
 			(xy 528.32 20.32) (xy 538.48 20.32)
 		)
 		(stroke
@@ -17791,6 +17718,16 @@
 	)
 	(wire
 		(pts
+			(xy 422.91 184.15) (xy 433.07 184.15)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6a243e24-5a51-48b2-a663-319bb30e65c6")
+	)
+	(wire
+		(pts
 			(xy 270.51 334.01) (xy 284.48 334.01)
 		)
 		(stroke
@@ -17828,6 +17765,16 @@
 			(type default)
 		)
 		(uuid "6b013726-e94f-4bcb-83fa-bb971e1af62f")
+	)
+	(wire
+		(pts
+			(xy 222.25 201.93) (xy 232.41 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "6b217dcc-9cf2-451c-8b3e-357113e28295")
 	)
 	(wire
 		(pts
@@ -18001,6 +17948,16 @@
 	)
 	(wire
 		(pts
+			(xy 415.29 179.07) (xy 422.91 179.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7236d94a-8dcc-4fcb-900b-956c4280132e")
+	)
+	(wire
+		(pts
 			(xy 30.48 356.87) (xy 40.64 356.87)
 		)
 		(stroke
@@ -18141,6 +18098,16 @@
 	)
 	(wire
 		(pts
+			(xy 415.29 194.31) (xy 422.91 194.31)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7837e35b-31a8-40d7-b574-79efc56a5f68")
+	)
+	(wire
+		(pts
 			(xy 519.43 110.49) (xy 524.51 110.49)
 		)
 		(stroke
@@ -18228,6 +18195,16 @@
 			(type default)
 		)
 		(uuid "7b583a62-b7ed-4397-a767-bf4dabefcd6c")
+	)
+	(wire
+		(pts
+			(xy 222.25 212.09) (xy 233.68 212.09)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "7b791614-2c90-41a0-8ed1-36ea7e6f16aa")
 	)
 	(wire
 		(pts
@@ -19881,6 +19858,16 @@
 	)
 	(wire
 		(pts
+			(xy 200.66 201.93) (xy 207.01 201.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "ba65ac2d-d839-48cd-8bd7-77da7233b742")
+	)
+	(wire
+		(pts
 			(xy 422.91 68.58) (xy 420.37 68.58)
 		)
 		(stroke
@@ -20331,16 +20318,6 @@
 	)
 	(wire
 		(pts
-			(xy 223.52 218.44) (xy 231.14 218.44)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "cd9d683f-3ed4-4d62-b0c3-ab7f1aa961c6")
-	)
-	(wire
-		(pts
 			(xy 133.35 210.82) (xy 153.67 210.82)
 		)
 		(stroke
@@ -20548,16 +20525,6 @@
 			(type default)
 		)
 		(uuid "d6983446-792e-4434-8a8d-b088dfaca02b")
-	)
-	(wire
-		(pts
-			(xy 223.52 213.36) (xy 231.14 213.36)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "d6a523cd-6e16-49a7-bb44-ffa0a8562139")
 	)
 	(wire
 		(pts
@@ -21719,26 +21686,6 @@
 		)
 		(uuid "23b533b5-88b5-4437-8787-1129cb13edf5")
 	)
-	(label "USB_P_OUT"
-		(at 224.79 218.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "24abef5a-5c1e-4196-99d7-0bdfdb40951b")
-	)
-	(label "USB_N"
-		(at 205.74 213.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "25bf1939-3d99-4955-a312-d7f47b895a35")
-	)
 	(label "PA4"
 		(at 520.7 69.85 0)
 		(effects
@@ -22038,6 +21985,16 @@
 			(justify left bottom)
 		)
 		(uuid "45cdb986-a4cd-42f2-bf05-7194b16c812d")
+	)
+	(label "USB_N"
+		(at 200.66 201.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "4718345a-b811-4c05-89a8-849a020aea1c")
 	)
 	(label "LD1_3.3v"
 		(at 355.6 92.71 0)
@@ -22469,6 +22426,16 @@
 		)
 		(uuid "7756d31a-f973-4c10-87d4-28c3adaf912e")
 	)
+	(label "USB_P"
+		(at 200.66 212.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "79743180-e0e2-4a46-ad4c-65cc836528fb")
+	)
 	(label "PE4"
 		(at 44.45 128.27 0)
 		(effects
@@ -22779,6 +22746,16 @@
 		)
 		(uuid "9e62a15d-20ff-45dd-aa0a-48a4a808bcf8")
 	)
+	(label "USB_N_OUT"
+		(at 223.52 201.93 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "9e9d7c22-5092-489f-98e6-50a2c802058f")
+	)
 	(label "PA9"
 		(at 355.6 170.18 0)
 		(effects
@@ -22989,6 +22966,16 @@
 		)
 		(uuid "b9b81fd3-3b74-4954-88e1-b525c16444bf")
 	)
+	(label "USB_P_OUT"
+		(at 223.52 212.09 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "bade0316-888b-4941-bd54-c1aaf7e55718")
+	)
 	(label "PB14"
 		(at 521.97 138.43 0)
 		(effects
@@ -23038,16 +23025,6 @@
 			(justify left bottom)
 		)
 		(uuid "bdb36956-801f-4d4f-9bcf-0745dc4706b2")
-	)
-	(label "USB_N_OUT"
-		(at 224.79 213.36 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "be2f7ddd-8512-4dac-a029-e7831642654a")
 	)
 	(label "LD1_3.3v"
 		(at 105.41 308.61 0)
@@ -23438,16 +23415,6 @@
 			(justify left bottom)
 		)
 		(uuid "e64953a6-83cb-4b2e-945a-f178c6686653")
-	)
-	(label "USB_P"
-		(at 205.74 218.44 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "e7f35870-b1e4-45be-8f81-89da73852cde")
 	)
 	(label "PG12"
 		(at 425.45 107.95 0)
@@ -28209,6 +28176,99 @@
 			(project "Orthrus-TX"
 				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
 					(reference "R57")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 422.91 181.61 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "34675651-a33d-47ea-85c4-612b583f64e6")
+		(property "Reference" "C63"
+			(at 425.45 180.4669 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2µF"
+			(at 425.45 183.0069 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 422.91 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 422.91 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "capacitor, small US symbol"
+			(at 422.91 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
+			(at 422.91 181.61 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "9df3cfa2-bbcb-4e7a-b8e3-bea345f697ac")
+		)
+		(pin "1"
+			(uuid "53266a91-2102-4975-acd0-0cae9bf538fd")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "C63")
 					(unit 1)
 				)
 			)
@@ -34075,6 +34135,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 415.29 194.31 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "7feeb98e-dfbf-414c-81b4-b2f3b42a67ab")
+		(property "Reference" "#PWR082"
+			(at 408.94 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 418.084 195.326 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 415.29 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 415.29 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 415.29 194.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "38a2fa0f-f598-4464-b7e4-e74805cea6ee")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "#PWR082")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:C_Small_US")
 		(at 34.29 363.22 0)
 		(unit 1)
@@ -35064,6 +35202,99 @@
 		)
 	)
 	(symbol
+		(lib_id "Device:C_Small_US")
+		(at 422.91 191.77 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8efa5142-e46e-4f25-aedf-04283c2ae6c0")
+		(property "Reference" "C64"
+			(at 425.45 190.6269 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "2.2µF"
+			(at 425.45 193.1669 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
+			(at 422.91 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 422.91 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "capacitor, small US symbol"
+			(at 422.91 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C23630"
+			(at 422.91 191.77 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "d38f46f8-9ab1-4520-b4be-8cd440b55e51")
+		)
+		(pin "1"
+			(uuid "1a68c833-92f1-4c53-8b81-e18721e9cd20")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "C64")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 149.86 19.05 0)
 		(unit 1)
@@ -35413,6 +35644,93 @@
 			(project "Orthrus-TX"
 				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
 					(reference "C17")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "IND_DLW21S_0805_MUR:DLW21SN900SQ2L")
+		(at 207.01 201.93 0)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "90933e27-8258-4ef2-a33c-5d6d95049138")
+		(property "Reference" "L2"
+			(at 214.63 196.088 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Value" "DLW21SN900SQ2L"
+			(at 214.63 198.628 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.524 1.524)
+				)
+			)
+		)
+		(property "Footprint" "IND_DLW21S_0805_MUR"
+			(at 207.01 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Datasheet" "DLW21SN900SQ2L"
+			(at 207.01 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+					(italic yes)
+				)
+			)
+		)
+		(property "Description" ""
+			(at 207.01 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "2"
+			(uuid "29dfc8b4-382e-4410-b2e9-0d0ba55e44bb")
+		)
+		(pin "3"
+			(uuid "6aaedd08-eb9f-43c5-84fd-0b2203535e7d")
+		)
+		(pin "4"
+			(uuid "1de43259-9bc1-496b-a5e4-0bb38c55f74b")
+		)
+		(pin "1"
+			(uuid "307d4709-20b9-40ce-a672-f6e618987e29")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "L2")
 					(unit 1)
 				)
 			)
@@ -42053,6 +42371,84 @@
 		)
 	)
 	(symbol
+		(lib_id "power:GND")
+		(at 415.29 179.07 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "d7892005-5dbb-4f58-b3bd-ef2d44e1638a")
+		(property "Reference" "#PWR081"
+			(at 408.94 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "GND"
+			(at 418.084 180.086 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 415.29 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" ""
+			(at 415.29 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 415.29 179.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "6c86521e-9107-462d-9bdb-1963f82a3c56")
+		)
+		(instances
+			(project "Orthrus-TX"
+				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
+					(reference "#PWR081")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "Device:R_US")
 		(at 48.26 222.25 90)
 		(unit 1)
@@ -44198,102 +44594,6 @@
 			(project "Orthrus-TX"
 				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
 					(reference "#PWR055")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Filter:0603USB-601")
-		(at 218.44 215.9 0)
-		(unit 1)
-		(body_style 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(in_pos_files yes)
-		(dnp no)
-		(uuid "f18ef92c-a814-4123-93b8-e55206eb7eef")
-		(property "Reference" "FL1"
-			(at 218.44 208.534 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Value" "0603USB-601"
-			(at 218.567 210.566 0)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" "Inductor_SMD:L_CommonModeChoke_Coilcraft_0603USB"
-			(at 218.44 222.25 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Datasheet" ""
-			(at 218.44 224.155 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Description" "DDY WBA0603D900PT-F-HF, 90Ω CM @ 100MHz, 300mA"
-			(at 218.44 215.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "LCSC" "C22463736"
-			(at 218.44 215.9 0)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(pin "4"
-			(uuid "55ecb997-0a8d-4a06-bee7-6d44c753e14b")
-		)
-		(pin "1"
-			(uuid "1eb32747-52db-4913-a053-cbfb443ee356")
-		)
-		(pin "2"
-			(uuid "2ab10937-94ba-47f7-a23a-b9beb0b9f5c2")
-		)
-		(pin "3"
-			(uuid "03c94dcb-70df-4d9a-a6e5-c8138e78ce6b")
-		)
-		(instances
-			(project "Orthrus-TX"
-				(path "/96e81b93-0369-470d-8547-b925c1f9f96d"
-					(reference "FL1")
 					(unit 1)
 				)
 			)
