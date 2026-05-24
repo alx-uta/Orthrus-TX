@@ -38,3 +38,5 @@ gerber/
 
 # Dev files
 notes.txt
+reports/
+.github/

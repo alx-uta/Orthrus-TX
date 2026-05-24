@@ -31267,7 +31267,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33pF"
+		(property "Value" "12pF"
 			(at 501.65 315.0869 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -31311,7 +31311,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C472790"
+		(property "LCSC" "C882527"
 			(at 499.11 313.69 0)
 			(hide yes)
 			(show_name no)
@@ -35705,6 +35705,17 @@
 			)
 		)
 		(property "Description" ""
+			(at 207.01 201.93 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "LCSC" "C97856"
 			(at 207.01 201.93 0)
 			(hide yes)
 			(show_name no)
@@ -42739,7 +42750,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "33pF"
+		(property "Value" "12pF"
 			(at 417.83 293.4969 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -42783,7 +42794,7 @@
 				)
 			)
 		)
-		(property "LCSC" "C472790"
+		(property "LCSC" "C882527"
 			(at 415.29 292.1 0)
 			(hide yes)
 			(show_name no)

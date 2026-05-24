@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "D:\\KiCad\\Projects\\Orthrus-TX\\PCB\\Orthrus-TX.kicad_sch")
-		(date "2026-05-23T17:54:56")
+		(date "2026-05-24T10:09:33")
 		(tool "Eeschema 10.0.2")
 		(sheet
 			(number "1")
@@ -3901,6 +3901,126 @@
 			)
 		)
 		(comp
+			(ref "C63")
+			(value "2.2µF")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "capacitor, small US symbol")
+			(fields
+				(field
+					(name "LCSC") "C23630")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "capacitor, small US symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small_US")
+				(description "capacitor, small US symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C23630")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Orthrus-TX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "34675651-a33d-47ea-85c4-612b583f64e6")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "C64")
+			(value "2.2µF")
+			(footprint "Capacitor_SMD:C_0603_1608Metric")
+			(description "capacitor, small US symbol")
+			(fields
+				(field
+					(name "LCSC") "C23630")
+				(field
+					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "capacitor, small US symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "C_Small_US")
+				(description "capacitor, small US symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C23630")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Orthrus-TX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "cap capacitor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "C_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "8efa5142-e46e-4f25-aedf-04283c2ae6c0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "D1")
 			(value "D_Schottky")
 			(footprint "Diode_SMD:D_SOD-123")
@@ -4285,72 +4405,6 @@
 			)
 		)
 		(comp
-			(ref "FL1")
-			(value "0603USB-601")
-			(footprint "Inductor_SMD:L_CommonModeChoke_Coilcraft_0603USB")
-			(description "DDY WBA0603D900PT-F-HF, 90Ω CM @ 100MHz, 300mA")
-			(fields
-				(field
-					(name "LCSC") "C22463736")
-				(field
-					(name "Footprint") "Inductor_SMD:L_CommonModeChoke_Coilcraft_0603USB")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "DDY WBA0603D900PT-F-HF, 90Ω CM @ 100MHz, 300mA")
-			)
-			(libsource
-				(lib "Filter")
-				(part "0603USB-601")
-				(description "Coilcraft common mode choke, 500mA, 250VAC, 37nH, 109mohm, 3.4Ghz")
-			)
-			(property
-				(name "LCSC")
-				(value "C22463736")
-			)
-			(property
-				(name "Sheetname")
-				(value "Root")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Orthrus-TX.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "signal line filter")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "L*CommonModeChoke*Coilcraft*0603USB*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "f18ef92c-a814-4123-93b8-e55206eb7eef")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "4")
-						)
-						(pin
-							(num "2")
-						)
-						(pin
-							(num "3")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "J1")
 			(value "HRO-TYPE-C-31-M-13x")
 			(footprint "Custom-Library:Molex-216990_GCT-USB45xx_HRO-TYPE-C-31-M-13x-PiMicro_1_DOUBLESIDED")
@@ -4654,6 +4708,72 @@
 						)
 						(pin
 							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "L2")
+			(value "DLW21SN900SQ2L")
+			(footprint "IND_DLW21S_0805_MUR")
+			(datasheet "DLW21SN900SQ2L")
+			(fields
+				(field
+					(name "LCSC") "C97856")
+				(field
+					(name "Footprint") "IND_DLW21S_0805_MUR")
+				(field
+					(name "Datasheet") "DLW21SN900SQ2L")
+				(field
+					(name "Description")
+				)
+			)
+			(libsource
+				(lib "IND_DLW21S_0805_MUR")
+				(part "DLW21SN900SQ2L")
+				(description "")
+			)
+			(property
+				(name "LCSC")
+				(value "C97856")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Orthrus-TX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "DLW21SN900SQ2L")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "IND_DLW21S_0805_MUR IND_DLW21S_0805_MUR-M IND_DLW21S_0805_MUR-L")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "90933e27-8258-4ef2-a33c-5d6d95049138")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "2")
+						)
+						(pin
+							(num "3")
 						)
 					)
 				)
@@ -10134,10 +10254,10 @@
 			(lib_id "")
 			(members
 				(member
-					(uuid "2ce4b5a8-b06e-4a55-b58a-d09ff50db65b")
+					(uuid "5e681e0c-a140-41fe-b15e-9b4dc106fe95")
 				)
 				(member
-					(uuid "71222ec5-f713-460a-9703-b4b1c7ef9a27")
+					(uuid "2ce4b5a8-b06e-4a55-b58a-d09ff50db65b")
 				)
 				(member
 					(uuid "3c56f5f8-6605-476c-8224-4f30f709e018")
@@ -10146,10 +10266,10 @@
 					(uuid "4286aff8-4589-4076-9fd1-f155c74ffe3f")
 				)
 				(member
-					(uuid "c59d4054-7c67-4f69-91b4-1c6f6a202710")
+					(uuid "71222ec5-f713-460a-9703-b4b1c7ef9a27")
 				)
 				(member
-					(uuid "5e681e0c-a140-41fe-b15e-9b4dc106fe95")
+					(uuid "c59d4054-7c67-4f69-91b4-1c6f6a202710")
 				)
 				(member
 					(uuid "ddfe2b7a-67ad-432a-b3c9-544db67c3731")
@@ -10162,62 +10282,28 @@
 			(lib_id "")
 			(members
 				(member
-					(uuid "1d4bbb75-c6c9-4ceb-a7ec-75024628ba88")
-				)
-				(member
-					(uuid "8d0f4b20-9376-48b4-b86f-8f3b57dc3093")
+					(uuid "1827340b-614d-4dc6-bb0a-a29b5759e411")
 				)
 				(member
 					(uuid "07f520ca-1825-44bf-9a70-38ece1a8c055")
 				)
 				(member
-					(uuid "1827340b-614d-4dc6-bb0a-a29b5759e411")
+					(uuid "4b4ec7ef-654a-4a6d-9ca3-3755fc8f3939")
 				)
 				(member
-					(uuid "eff8203d-9689-4ee0-b65e-e370e3144ff3")
+					(uuid "1d4bbb75-c6c9-4ceb-a7ec-75024628ba88")
 				)
 				(member
 					(uuid "209b0c2a-5673-4b4b-bbe8-406e8304204e")
 				)
 				(member
-					(uuid "4b4ec7ef-654a-4a6d-9ca3-3755fc8f3939")
-				)
-				(member
 					(uuid "8563db83-887b-42c6-ae82-29a1cb26cc5a")
 				)
-			)
-		)
-		(group
-			(name "")
-			(uuid "c9840d4d-f801-414a-9675-36ac1263a3d2")
-			(lib_id "")
-			(members
 				(member
-					(uuid "1025be6c-516c-4e69-9604-730b549f3f1f")
+					(uuid "8d0f4b20-9376-48b4-b86f-8f3b57dc3093")
 				)
 				(member
-					(uuid "3d098c03-b100-40ae-8ede-224928a3f1b9")
-				)
-				(member
-					(uuid "0a94cb18-46ac-42c1-953a-4532c8d9bd67")
-				)
-				(member
-					(uuid "2297dbec-4d9a-46c6-9920-73d7b65cfb61")
-				)
-				(member
-					(uuid "f9fd51ec-1fa4-45d4-ae91-ab7d1c78e247")
-				)
-				(member
-					(uuid "19e7b672-fbc5-4385-afd5-4964fb4118b0")
-				)
-				(member
-					(uuid "be215190-2806-4872-8d17-80f6bb3e5cea")
-				)
-				(member
-					(uuid "c438fca1-d18f-4da7-a095-b8cfc0b565cb")
-				)
-				(member
-					(uuid "c60ca770-e093-4c47-9681-07977fe06892")
+					(uuid "eff8203d-9689-4ee0-b65e-e370e3144ff3")
 				)
 			)
 		)
@@ -10227,22 +10313,22 @@
 			(lib_id "")
 			(members
 				(member
+					(uuid "5b8a54fa-2edb-4b8d-ac99-4c998fd04bc4")
+				)
+				(member
 					(uuid "389eea9e-82ae-407e-bbfc-a74580f986c7")
 				)
 				(member
 					(uuid "bd4c5e17-14d8-431a-9a7d-0609aa1effe5")
 				)
 				(member
-					(uuid "e9a28fb1-0a10-4baf-80ef-5aa6ee11b772")
-				)
-				(member
-					(uuid "5b8a54fa-2edb-4b8d-ac99-4c998fd04bc4")
+					(uuid "c83fa84b-517a-41d4-b75e-c80d0569a7f5")
 				)
 				(member
 					(uuid "c9386443-5434-4321-b424-34b106aac8ec")
 				)
 				(member
-					(uuid "c83fa84b-517a-41d4-b75e-c80d0569a7f5")
+					(uuid "e9a28fb1-0a10-4baf-80ef-5aa6ee11b772")
 				)
 			)
 		)
@@ -10302,6 +10388,19 @@
 		)
 		(group
 			(name "")
+			(uuid "de0b2f99-0105-48ac-9cae-eb76732e1254")
+			(lib_id "")
+			(members
+				(member
+					(uuid "4d465f9f-4365-4af2-aedd-f7027348ed0a")
+				)
+				(member
+					(uuid "eb38a690-934f-4261-ae2c-f4181b7ab692")
+				)
+			)
+		)
+		(group
+			(name "")
 			(uuid "82f7270c-8a1a-4d2c-a895-84880efdcd9f")
 			(lib_id "")
 			(members
@@ -10321,14 +10420,48 @@
 		)
 		(group
 			(name "")
+			(uuid "c9840d4d-f801-414a-9675-36ac1263a3d2")
+			(lib_id "")
+			(members
+				(member
+					(uuid "c438fca1-d18f-4da7-a095-b8cfc0b565cb")
+				)
+				(member
+					(uuid "2297dbec-4d9a-46c6-9920-73d7b65cfb61")
+				)
+				(member
+					(uuid "0a94cb18-46ac-42c1-953a-4532c8d9bd67")
+				)
+				(member
+					(uuid "19e7b672-fbc5-4385-afd5-4964fb4118b0")
+				)
+				(member
+					(uuid "1025be6c-516c-4e69-9604-730b549f3f1f")
+				)
+				(member
+					(uuid "be215190-2806-4872-8d17-80f6bb3e5cea")
+				)
+				(member
+					(uuid "3d098c03-b100-40ae-8ede-224928a3f1b9")
+				)
+				(member
+					(uuid "c60ca770-e093-4c47-9681-07977fe06892")
+				)
+				(member
+					(uuid "f9fd51ec-1fa4-45d4-ae91-ab7d1c78e247")
+				)
+			)
+		)
+		(group
+			(name "")
 			(uuid "ca662fef-2bfb-4da3-b6c4-00011d54af20")
 			(lib_id "")
 			(members
 				(member
-					(uuid "74736dd4-587b-46f9-9d24-58d06196645b")
+					(uuid "a8987f92-d577-40e0-ab11-3bb0cee0692d")
 				)
 				(member
-					(uuid "a8987f92-d577-40e0-ab11-3bb0cee0692d")
+					(uuid "74736dd4-587b-46f9-9d24-58d06196645b")
 				)
 				(member
 					(uuid "8920f453-a902-40a5-aa80-6d60049becd1")
@@ -10343,33 +10476,20 @@
 		)
 		(group
 			(name "")
-			(uuid "de0b2f99-0105-48ac-9cae-eb76732e1254")
-			(lib_id "")
-			(members
-				(member
-					(uuid "4d465f9f-4365-4af2-aedd-f7027348ed0a")
-				)
-				(member
-					(uuid "eb38a690-934f-4261-ae2c-f4181b7ab692")
-				)
-			)
-		)
-		(group
-			(name "")
 			(uuid "e90e075e-08e3-4beb-90e8-5068adbbc9f1")
 			(lib_id "")
 			(members
 				(member
-					(uuid "659f1e0c-dad7-4252-8509-85414cfa4412")
-				)
-				(member
-					(uuid "b1a9f37d-5f9e-498a-81e1-f642f6ba12ce")
-				)
-				(member
 					(uuid "8af352c0-8616-48c6-b9a2-06fefc04c205")
 				)
 				(member
+					(uuid "659f1e0c-dad7-4252-8509-85414cfa4412")
+				)
+				(member
 					(uuid "a7fd1941-a086-43f3-bdfe-517a694b4a3f")
+				)
+				(member
+					(uuid "b1a9f37d-5f9e-498a-81e1-f642f6ba12ce")
 				)
 				(member
 					(uuid "f0742203-8b07-4533-a46b-277217c4a637")
@@ -10913,45 +11033,47 @@
 			)
 		)
 		(libpart
-			(lib "Filter")
-			(part "0603USB-601")
-			(description "Coilcraft common mode choke, 500mA, 250VAC, 37nH, 109mohm, 3.4Ghz")
-			(docs "https://www.coilcraft.com/pdfs/0603usb.pdf")
+			(lib "IND_DLW21S_0805_MUR")
+			(part "DLW21SN900SQ2L")
+			(docs "DLW21SN900SQ2L")
 			(footprints
-				(fp "L*CommonModeChoke*Coilcraft*0603USB*")
+				(fp "IND_DLW21S_0805_MUR")
+				(fp "IND_DLW21S_0805_MUR-M")
+				(fp "IND_DLW21S_0805_MUR-L")
 			)
 			(fields
 				(field
-					(name "Reference") "FL")
+					(name "Reference") "L")
 				(field
-					(name "Value") "0603USB-601")
+					(name "Value") "DLW21SN900SQ2L")
 				(field
-					(name "Footprint") "Inductor_SMD:L_CommonModeChoke_Coilcraft_0603USB")
+					(name "Footprint") "IND_DLW21S_0805_MUR")
 				(field
-					(name "Datasheet") "https://www.coilcraft.com/pdfs/0603usb.pdf")
+					(name "Datasheet") "DLW21SN900SQ2L")
 				(field
-					(name "Description") "Coilcraft common mode choke, 500mA, 250VAC, 37nH, 109mohm, 3.4Ghz")
+					(name "Description")
+				)
 			)
 			(pins
 				(pin
 					(num "1")
 					(name "1")
-					(type "passive")
+					(type "unspecified")
 				)
 				(pin
 					(num "2")
 					(name "2")
-					(type "passive")
+					(type "unspecified")
 				)
 				(pin
 					(num "3")
 					(name "3")
-					(type "passive")
+					(type "unspecified")
 				)
 				(pin
 					(num "4")
 					(name "4")
-					(type "passive")
+					(type "unspecified")
 				)
 			)
 		)
@@ -12109,8 +12231,8 @@
 			(uri "${KICAD10_SYMBOL_DIR}/Device.kicad_sym")
 		)
 		(library
-			(logical "Filter")
-			(uri "${KICAD10_SYMBOL_DIR}/Filter.kicad_sym")
+			(logical "IND_DLW21S_0805_MUR")
+			(uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_DLW21SN900SQ2L/KiCADv6/IND_DLW21S_0805_MUR.kicad_sym")
 		)
 		(library
 			(logical "MCU_ST_STM32H7")
@@ -12130,7 +12252,7 @@
 		)
 		(library
 			(logical "SOT-23-3L_AOS")
-			(uri "D:\\KiCad\\Projects\\RC-Transmitter\\libraries\\Symbol Libraries\\ul_AO3407A\\KiCADv6\\SOT-23-3L_AOS.kicad_sym")
+			(uri "D:/KiCad/Projects/RC-Transmitter/libraries/Symbol Libraries/ul_AO3407A/KiCADv6/SOT-23-3L_AOS.kicad_sym")
 		)
 		(library
 			(logical "TSX-3225 24.0000MF20G-AC3_EPS")
@@ -14437,12 +14559,6 @@
 			(name "/USB_N")
 			(class "Default")
 			(node
-				(ref "FL1")
-				(pin "1")
-				(pinfunction "1_1")
-				(pintype "passive")
-			)
-			(node
 				(ref "J1")
 				(pin "A7")
 				(pinfunction "D-_A7")
@@ -14453,6 +14569,12 @@
 				(pin "B7")
 				(pinfunction "D-_B7")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "L2")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
 			)
 			(node
 				(ref "U2")
@@ -14466,10 +14588,10 @@
 			(name "/USB_N_OUT")
 			(class "Default")
 			(node
-				(ref "FL1")
+				(ref "L2")
 				(pin "2")
 				(pinfunction "2_2")
-				(pintype "passive")
+				(pintype "unspecified")
 			)
 			(node
 				(ref "STM32H745ZIT6")
@@ -14483,12 +14605,6 @@
 			(name "/USB_P")
 			(class "Default")
 			(node
-				(ref "FL1")
-				(pin "4")
-				(pinfunction "4_4")
-				(pintype "passive")
-			)
-			(node
 				(ref "J1")
 				(pin "A6")
 				(pinfunction "D+_A6")
@@ -14499,6 +14615,12 @@
 				(pin "B6")
 				(pinfunction "D+_B6")
 				(pintype "bidirectional")
+			)
+			(node
+				(ref "L2")
+				(pin "4")
+				(pinfunction "4_4")
+				(pintype "unspecified")
 			)
 			(node
 				(ref "U2")
@@ -14512,10 +14634,10 @@
 			(name "/USB_P_OUT")
 			(class "Default")
 			(node
-				(ref "FL1")
+				(ref "L2")
 				(pin "3")
 				(pinfunction "3_3")
-				(pintype "passive")
+				(pintype "unspecified")
 			)
 			(node
 				(ref "STM32H745ZIT6")
@@ -14530,6 +14652,16 @@
 			(class "SMPS,Default")
 			(node
 				(ref "C22")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C63")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C64")
 				(pin "1")
 				(pintype "passive")
 			)
@@ -14915,6 +15047,16 @@
 			(node
 				(ref "C62")
 				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C63")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "C64")
+				(pin "2")
 				(pintype "passive")
 			)
 			(node
