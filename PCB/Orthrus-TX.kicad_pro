@@ -69,7 +69,13 @@
           "thermal_relief_spoke_width": 0.5
         }
       },
-      "diff_pair_dimensions": [],
+      "diff_pair_dimensions": [
+        {
+          "gap": 0.0,
+          "via_gap": 0.0,
+          "width": 0.0
+        }
+      ],
       "drc_exclusions": [
         [
           "clearance|165190000|39883600|eac3491a-4f87-4dbb-a5c6-cd6bd29327cf|1b6a4981-23e8-49ef-a873-3edf5f8e6c4b",
@@ -208,7 +214,9 @@
           "td_width_to_size_filter_ratio": 0.9
         }
       ],
-      "track_widths": [],
+      "track_widths": [
+        0.0
+      ],
       "tuning_pattern_settings": {
         "diff_pair_defaults": {
           "corner_radius_percentage": 80,
@@ -235,7 +243,12 @@
           "spacing": 0.6
         }
       },
-      "via_dimensions": [],
+      "via_dimensions": [
+        {
+          "diameter": 0.0,
+          "drill": 0.0
+        }
+      ],
       "zones_allow_external_fillets": false
     },
     "ipc2581": {
@@ -757,11 +770,11 @@
       },
       {
         "clearance": 0.2,
-        "diff_pair_gap": 0.15,
+        "diff_pair_gap": 0.18,
         "diff_pair_width": 0.18,
         "name": "Analog",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 0,
+        "priority": 1,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.15,
         "tuning_profile": "",
@@ -787,7 +800,7 @@
         "diff_pair_width": 0.18,
         "name": "SMPS",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 1,
+        "priority": 2,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
         "track_width": 0.3,
         "tuning_profile": "",
@@ -797,15 +810,22 @@
       {
         "clearance": 0.15,
         "diff_pair_gap": 0.18,
-        "diff_pair_width": 0.35,
+        "diff_pair_width": 0.2,
         "name": "USB_DIFF",
         "pcb_color": "rgba(0, 0, 0, 0.000)",
-        "priority": 2,
+        "priority": 0,
         "schematic_color": "rgba(0, 0, 0, 0.000)",
-        "track_width": 0.15,
+        "track_width": 0.2,
         "tuning_profile": "",
         "via_diameter": 0.4,
         "via_drill": 0.2
+      }
+    ],
+    "differential_pairs": [
+      {
+        "name": "USB_DP_DM",
+        "negative": "/USB_N_OUT_N",
+        "positive": "/USB_P_OUT_P"
       }
     ],
     "meta": {
@@ -856,19 +876,23 @@
       },
       {
         "netclass": "USB_DIFF",
-        "pattern": "USB_P"
+        "pattern": "^/USB_(P|N)$"
       },
       {
         "netclass": "USB_DIFF",
-        "pattern": "USB_N"
+        "pattern": "^/USB_(P|N)(_OUT_(P|N))?$"
       },
       {
         "netclass": "USB_DIFF",
-        "pattern": "USB_P_OUT"
+        "pattern": "/USB_P_OUT_P"
       },
       {
         "netclass": "USB_DIFF",
-        "pattern": "USB_N_OUT"
+        "pattern": "/USB_N_OUT_N"
+      },
+      {
+        "netclass": "USB_DIFF",
+        "pattern": "/USB_(N_OUT_N|P_OUT_P)"
       }
     ]
   },
@@ -1018,7 +1042,7 @@
         "uuid": "96e81b93-0369-470d-8547-b925c1f9f96d"
       }
     ],
-    "used_designators": "L3",
+    "used_designators": "#PWR55,#PWR83-84,L3",
     "variants": []
   },
   "sheets": [

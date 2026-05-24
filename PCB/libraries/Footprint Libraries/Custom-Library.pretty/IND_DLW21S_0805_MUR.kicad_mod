@@ -8,7 +8,7 @@
 		(at 0 -2.625 0)
 		(unlocked yes)
 		(layer "F.SilkS")
-		(uuid "ba4a2cd8-d9b8-49bb-8653-c3fb35133793")
+		(uuid "4d449055-83a9-4e84-b4a5-64f9b1851c24")
 		(effects
 			(font
 				(size 1 1)
@@ -20,7 +20,7 @@
 		(at -0.05 -1.65 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "ac91bd23-8002-4fee-bb6e-d419a4609ed0")
+		(uuid "a7f2bef8-aca6-44e7-8a9e-a219e7b5a37f")
 		(effects
 			(font
 				(size 1 1)
@@ -32,7 +32,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "2d2039e3-85d5-4734-a690-d9be087ad45c")
+		(uuid "dec8ba6d-66fd-4214-83f1-c83557fe15da")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -43,7 +43,7 @@
 		(at 0 0 0)
 		(layer "F.Fab")
 		(hide yes)
-		(uuid "39917bdf-ed86-46e0-8576-0792520d5112")
+		(uuid "b123927b-1148-42f9-848b-5eb76f6c238b")
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -60,7 +60,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "e3a660bb-9635-4986-9f8c-de0c2af4f6c5")
+		(uuid "e1bd7caa-4ba3-4406-8b45-f55f0dfb931c")
 	)
 	(fp_line
 		(start 0.354213 -0.7)
@@ -70,7 +70,7 @@
 			(type solid)
 		)
 		(layer "F.SilkS")
-		(uuid "bc84890d-6b0b-4cab-86c9-9e69b0ff66e7")
+		(uuid "27dbda52-f889-4964-85eb-2d08e87119ca")
 	)
 	(fp_circle
 		(center -1.775 -0.725)
@@ -81,7 +81,7 @@
 		)
 		(fill no)
 		(layer "F.SilkS")
-		(uuid "45685fd8-2ad5-4ed8-8b58-de6b3b6685e9")
+		(uuid "1b3acd39-f178-4663-82da-2acf0452fcc2")
 	)
 	(fp_line
 		(start -1.525 -0.85)
@@ -91,7 +91,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "6da97422-a9b4-418f-92bf-24afe4d766ce")
+		(uuid "0daf403f-4657-4011-92df-4125ec76b233")
 	)
 	(fp_line
 		(start -1.525 0.85)
@@ -101,7 +101,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "054d0113-42eb-489a-9d97-f9b1c6c36241")
+		(uuid "b2009834-bf27-4051-971d-0c50fd38b3de")
 	)
 	(fp_line
 		(start 1.525 -0.85)
@@ -111,7 +111,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "c4fb87a1-56c8-4f39-b9ed-8f1ff2ee195e")
+		(uuid "3f009f5e-6398-4b41-8893-96964b2ada4e")
 	)
 	(fp_line
 		(start 1.525 0.85)
@@ -121,7 +121,7 @@
 			(type solid)
 		)
 		(layer "F.CrtYd")
-		(uuid "55c0044b-022d-4422-bbbf-2ad7d83384d3")
+		(uuid "6cb33a7d-e670-44a1-8acd-279b7b71e66f")
 	)
 	(fp_line
 		(start -1.1 -0.7)
@@ -131,7 +131,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "5e24ede6-605c-4756-a618-3e3ad0c58a79")
+		(uuid "b296a6dc-d235-4687-9bb7-1eac098a13db")
 	)
 	(fp_line
 		(start -1.1 0.7)
@@ -141,7 +141,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "b8450f88-2ed3-485a-929e-df1cbb6986fb")
+		(uuid "e7e056d9-27c3-470c-87b3-daa847ae1f79")
 	)
 	(fp_line
 		(start 1.1 -0.7)
@@ -151,7 +151,7 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "6f4f40d7-9cd8-4c83-bcca-ad52a8533070")
+		(uuid "b2eb7dfa-9f7f-4735-aa43-1a7e146292ac")
 	)
 	(fp_line
 		(start 1.1 0.7)
@@ -161,13 +161,13 @@
 			(type solid)
 		)
 		(layer "F.Fab")
-		(uuid "c0ee2ecb-6dda-4951-b217-89ed9cedd309")
+		(uuid "46c2c674-f745-4ad4-9292-53b1693001d1")
 	)
 	(fp_text user "${REFERENCE}"
 		(at 0.375 1.65 0)
 		(unlocked yes)
 		(layer "F.Fab")
-		(uuid "7bea9f72-7f2d-42a1-a4e9-e13ef62f8694")
+		(uuid "0fa1403a-54ba-490b-84ab-26be240ef528")
 		(effects
 			(font
 				(size 1 1)
@@ -179,25 +179,25 @@
 		(at -1.0274 -0.499999)
 		(size 0.7548 0.3492)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "00cf5097-26fa-42cd-ac53-82ad2f0952b6")
+		(uuid "078a02fc-5a47-4695-8159-00edbd140f14")
 	)
 	(pad "2" smd rect
 		(at 1.0274 -0.499999)
 		(size 0.7548 0.3492)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "f6319736-30e5-4cd4-b38e-dd40f6d28e80")
+		(uuid "2e753f20-b9ca-44c1-a155-1360a9a76574")
 	)
 	(pad "3" smd rect
 		(at 1.0274 0.499999)
 		(size 0.7548 0.3492)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "9568d975-e5c3-40f7-976a-a86fd5c21783")
+		(uuid "327b625e-6f89-42f4-8682-d98a84a616f9")
 	)
 	(pad "4" smd rect
 		(at -1.0274 0.499999)
 		(size 0.7548 0.3492)
 		(layers "F.Cu" "F.Mask" "F.Paste")
-		(uuid "3e083051-b679-4e66-bb11-a2e14c43fde8")
+		(uuid "2e1b9dbc-86a8-4f9a-a70c-5c2a4ab22b6b")
 	)
 	(embedded_fonts no)
 	(model "${KIPRJMOD}/libraries/Symbol Libraries/ul_DLW21SN900SQ2L/IND_DLW21S_0805_MUR.step"
