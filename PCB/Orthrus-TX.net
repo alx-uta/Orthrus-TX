@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "D:\\KiCad\\Projects\\Orthrus-TX\\PCB\\Orthrus-TX.kicad_sch")
-		(date "2026-05-31T16:16:08")
+		(date "2026-05-31T18:24:06")
 		(tool "Eeschema 10.0.2")
 		(sheet
 			(number "1")
@@ -1267,7 +1267,7 @@
 			(description "capacitor, small US symbol")
 			(fields
 				(field
-					(name "LCSC") "C24452")
+					(name "LCSC") "C3836718")
 				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
@@ -1283,7 +1283,7 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C24452")
+				(value "C3836718")
 			)
 			(property
 				(name "Sheetname")
@@ -2827,7 +2827,7 @@
 			(description "capacitor, small US symbol")
 			(fields
 				(field
-					(name "LCSC") "C24452")
+					(name "LCSC") "C3836718")
 				(field
 					(name "Footprint") "Capacitor_SMD:C_0603_1608Metric")
 				(field
@@ -2843,7 +2843,7 @@
 			)
 			(property
 				(name "LCSC")
-				(value "C24452")
+				(value "C3836718")
 			)
 			(property
 				(name "Sheetname")
@@ -8830,6 +8830,306 @@
 			)
 		)
 		(comp
+			(ref "R58")
+			(value "33Ω")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor, US symbol")
+			(fields
+				(field
+					(name "LCSC") "C403478")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, US symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_US")
+				(description "Resistor, US symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C403478")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Orthrus-TX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "ae31c6d8-848b-47a8-88b1-25f12c02263a")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R59")
+			(value "33Ω")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor, US symbol")
+			(fields
+				(field
+					(name "LCSC") "C403478")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, US symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_US")
+				(description "Resistor, US symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C403478")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Orthrus-TX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "11dbd446-8d34-4101-a7da-59fe9696e7a0")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R60")
+			(value "33Ω")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor, US symbol")
+			(fields
+				(field
+					(name "LCSC") "C403478")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, US symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_US")
+				(description "Resistor, US symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C403478")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Orthrus-TX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "821de9ec-f44c-4e04-85cf-78626e217366")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R61")
+			(value "33Ω")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor, US symbol")
+			(fields
+				(field
+					(name "LCSC") "C403478")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, US symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_US")
+				(description "Resistor, US symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C403478")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Orthrus-TX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "61e765a1-d3cb-41ea-8cb1-93faf7b6c1a1")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
+			(ref "R62")
+			(value "33Ω")
+			(footprint "Resistor_SMD:R_0603_1608Metric")
+			(description "Resistor, US symbol")
+			(fields
+				(field
+					(name "LCSC") "C403478")
+				(field
+					(name "Footprint") "Resistor_SMD:R_0603_1608Metric")
+				(field
+					(name "Datasheet")
+				)
+				(field
+					(name "Description") "Resistor, US symbol")
+			)
+			(libsource
+				(lib "Device")
+				(part "R_US")
+				(description "Resistor, US symbol")
+			)
+			(property
+				(name "LCSC")
+				(value "C403478")
+			)
+			(property
+				(name "Sheetname")
+				(value "Root")
+			)
+			(property
+				(name "Sheetfile")
+				(value "Orthrus-TX.kicad_sch")
+			)
+			(property
+				(name "ki_keywords")
+				(value "R res resistor")
+			)
+			(property
+				(name "ki_fp_filters")
+				(value "R_*")
+			)
+			(sheetpath
+				(names "/")
+				(tstamps "/")
+			)
+			(tstamps "d1f09b9d-85db-4c32-bebe-ab0144f2cd5c")
+			(units
+				(unit
+					(name "A")
+					(pins
+						(pin
+							(num "1")
+						)
+						(pin
+							(num "2")
+						)
+					)
+				)
+			)
+		)
+		(comp
 			(ref "SCREEN_1")
 			(value "532610871")
 			(footprint "Custom-Library:CONN_532610001-SD_08_MOL")
@@ -10354,47 +10654,20 @@
 		)
 		(group
 			(name "")
-			(uuid "21578446-f26c-4313-88b0-dbfe195401a5")
+			(uuid "d1a08f5d-6f70-4454-a0d2-3402ffad681f")
 			(lib_id "")
 			(members
 				(member
-					(uuid "6705d335-77d3-4151-a269-646abc3bd863")
+					(uuid "6bff8497-40bd-4aab-8805-6cfdaea860d9")
 				)
 				(member
-					(uuid "1a1e5429-276b-49a0-a5a0-a5780ac4bab4")
+					(uuid "1dc7a7de-717b-4f89-8c47-7c37e6c20cee")
 				)
 				(member
-					(uuid "802f4c3e-90f4-4e1f-8c45-fa3ecf1f8fda")
+					(uuid "3d0def63-a46b-4c72-b671-92ae99568243")
 				)
 				(member
-					(uuid "063f96e5-8451-464c-a481-b790293323c7")
-				)
-				(member
-					(uuid "695593c0-4d51-42ca-bf46-514f3416dc44")
-				)
-				(member
-					(uuid "2f256527-998b-4ff9-ba22-134560b7293d")
-				)
-				(member
-					(uuid "a59bb3b9-fc06-40e5-825f-4d83f4285853")
-				)
-				(member
-					(uuid "4d5a1204-b2ea-4ef7-a712-404e05e62ec1")
-				)
-				(member
-					(uuid "6df1673f-5a7f-4231-8220-85e4eef0856e")
-				)
-				(member
-					(uuid "a1c1892a-eefd-4dc8-8826-d10940c526a2")
-				)
-				(member
-					(uuid "c1d500e1-310c-44d7-8686-865160b78946")
-				)
-				(member
-					(uuid "cdb2b4c5-031a-4457-a282-4e5225d390ec")
-				)
-				(member
-					(uuid "e5e40e1e-44b2-4c68-a551-330f284aa9df")
+					(uuid "74cd4fca-b724-49c9-92dc-7aee4c344579")
 				)
 			)
 		)
@@ -10422,22 +10695,9 @@
 		)
 		(group
 			(name "")
-			(uuid "d1a08f5d-6f70-4454-a0d2-3402ffad681f")
+			(uuid "21578446-f26c-4313-88b0-dbfe195401a5")
 			(lib_id "")
-			(members
-				(member
-					(uuid "6bff8497-40bd-4aab-8805-6cfdaea860d9")
-				)
-				(member
-					(uuid "1dc7a7de-717b-4f89-8c47-7c37e6c20cee")
-				)
-				(member
-					(uuid "3d0def63-a46b-4c72-b671-92ae99568243")
-				)
-				(member
-					(uuid "74cd4fca-b724-49c9-92dc-7aee4c344579")
-				)
-			)
+			(members)
 		)
 		(group
 			(name "")
@@ -13455,10 +13715,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "SD_CARD_1")
-				(pin "7")
-				(pinfunction "DAT0_7")
-				(pintype "bidirectional")
+				(ref "R62")
+				(pin "1")
+				(pintype "passive")
 			)
 			(node
 				(ref "STM32H745ZIT6")
@@ -13483,10 +13742,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "SD_CARD_1")
-				(pin "8")
-				(pinfunction "DAT1_8")
-				(pintype "bidirectional")
+				(ref "R61")
+				(pin "1")
+				(pintype "passive")
 			)
 			(node
 				(ref "STM32H745ZIT6")
@@ -13917,10 +14175,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "SD_CARD_1")
-				(pin "3")
-				(pinfunction "CMD_3")
-				(pintype "unspecified")
+				(ref "R60")
+				(pin "2")
+				(pintype "passive")
 			)
 			(node
 				(ref "STM32H745ZIT6")
@@ -14471,10 +14728,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "SD_CARD_1")
-				(pin "1")
-				(pinfunction "DAT2_1")
-				(pintype "bidirectional")
+				(ref "R58")
+				(pin "2")
+				(pintype "passive")
 			)
 			(node
 				(ref "STM32H745ZIT6")
@@ -14499,10 +14755,9 @@
 				(pintype "passive")
 			)
 			(node
-				(ref "SD_CARD_1")
+				(ref "R59")
 				(pin "2")
-				(pinfunction "CD/DAT3_2")
-				(pintype "bidirectional")
+				(pintype "passive")
 			)
 			(node
 				(ref "STM32H745ZIT6")
@@ -15522,6 +15777,18 @@
 				(pintype "passive")
 			)
 			(node
+				(ref "U2")
+				(pin "4")
+				(pinfunction "IO3_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U2")
+				(pin "6")
+				(pinfunction "IO4_6")
+				(pintype "passive")
+			)
+			(node
 				(ref "U3")
 				(pin "2")
 				(pinfunction "VN_2")
@@ -15531,6 +15798,12 @@
 				(ref "U4")
 				(pin "2")
 				(pinfunction "VN_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U4")
+				(pin "4")
+				(pinfunction "IO3_4")
 				(pintype "passive")
 			)
 			(node
@@ -15555,6 +15828,18 @@
 				(ref "U8")
 				(pin "2")
 				(pinfunction "VN_2")
+				(pintype "passive")
+			)
+			(node
+				(ref "U8")
+				(pin "4")
+				(pinfunction "IO3_4")
+				(pintype "passive")
+			)
+			(node
+				(ref "U8")
+				(pin "6")
+				(pinfunction "IO4_6")
 				(pintype "passive")
 			)
 			(node
@@ -15884,6 +16169,86 @@
 		)
 		(net
 			(code "110")
+			(name "Net-(SD_CARD_1-CD{slash}DAT3)")
+			(class "Default")
+			(node
+				(ref "R59")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SD_CARD_1")
+				(pin "2")
+				(pinfunction "CD/DAT3_2")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "111")
+			(name "Net-(SD_CARD_1-CMD)")
+			(class "Default")
+			(node
+				(ref "R60")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SD_CARD_1")
+				(pin "3")
+				(pinfunction "CMD_3")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "112")
+			(name "Net-(SD_CARD_1-DAT0)")
+			(class "Default")
+			(node
+				(ref "R62")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SD_CARD_1")
+				(pin "7")
+				(pinfunction "DAT0_7")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "113")
+			(name "Net-(SD_CARD_1-DAT1)")
+			(class "Default")
+			(node
+				(ref "R61")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "SD_CARD_1")
+				(pin "8")
+				(pinfunction "DAT1_8")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "114")
+			(name "Net-(SD_CARD_1-DAT2)")
+			(class "Default")
+			(node
+				(ref "R58")
+				(pin "1")
+				(pintype "passive")
+			)
+			(node
+				(ref "SD_CARD_1")
+				(pin "1")
+				(pinfunction "DAT2_1")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "115")
 			(name "Net-(U1-G)")
 			(class "Default")
 			(node
@@ -15899,7 +16264,7 @@
 			)
 		)
 		(net
-			(code "111")
+			(code "116")
 			(name "VCC")
 			(class "Power,Default")
 			(node
@@ -15984,7 +16349,7 @@
 			)
 		)
 		(net
-			(code "112")
+			(code "117")
 			(name "unconnected-(J1-SBU1-PadA8)")
 			(class "Default")
 			(node
@@ -15995,7 +16360,7 @@
 			)
 		)
 		(net
-			(code "113")
+			(code "118")
 			(name "unconnected-(J1-SBU2-PadB8)")
 			(class "Default")
 			(node
@@ -16006,7 +16371,7 @@
 			)
 		)
 		(net
-			(code "114")
+			(code "119")
 			(name "unconnected-(LD1-NC-Pad4)")
 			(class "Default")
 			(node
@@ -16017,7 +16382,7 @@
 			)
 		)
 		(net
-			(code "115")
+			(code "120")
 			(name "unconnected-(LD2-NC-Pad4)")
 			(class "Default")
 			(node
@@ -16028,7 +16393,7 @@
 			)
 		)
 		(net
-			(code "116")
+			(code "121")
 			(name "unconnected-(LD3-NC-Pad4)")
 			(class "Default")
 			(node
@@ -16039,7 +16404,7 @@
 			)
 		)
 		(net
-			(code "117")
+			(code "122")
 			(name "unconnected-(LD4-NC-Pad4)")
 			(class "Default")
 			(node
@@ -16050,7 +16415,7 @@
 			)
 		)
 		(net
-			(code "118")
+			(code "123")
 			(name "unconnected-(STM32H745ZIT6-PA15-Pad108)")
 			(class "Default")
 			(node
@@ -16061,7 +16426,7 @@
 			)
 		)
 		(net
-			(code "119")
+			(code "124")
 			(name "unconnected-(STM32H745ZIT6-PB9-Pad137)")
 			(class "Default")
 			(node
@@ -16072,7 +16437,7 @@
 			)
 		)
 		(net
-			(code "120")
+			(code "125")
 			(name "unconnected-(STM32H745ZIT6-PB10-Pad66)")
 			(class "Default")
 			(node
@@ -16083,7 +16448,7 @@
 			)
 		)
 		(net
-			(code "121")
+			(code "126")
 			(name "unconnected-(STM32H745ZIT6-PB11-Pad67)")
 			(class "Default")
 			(node
@@ -16094,7 +16459,7 @@
 			)
 		)
 		(net
-			(code "122")
+			(code "127")
 			(name "unconnected-(STM32H745ZIT6-PB12-Pad72)")
 			(class "Default")
 			(node
@@ -16105,7 +16470,7 @@
 			)
 		)
 		(net
-			(code "123")
+			(code "128")
 			(name "unconnected-(STM32H745ZIT6-PB13-Pad73)")
 			(class "Default")
 			(node
@@ -16116,7 +16481,7 @@
 			)
 		)
 		(net
-			(code "124")
+			(code "129")
 			(name "unconnected-(STM32H745ZIT6-PC13-Pad9)")
 			(class "Default")
 			(node
@@ -16127,7 +16492,7 @@
 			)
 		)
 		(net
-			(code "125")
+			(code "130")
 			(name "unconnected-(STM32H745ZIT6-PC14-Pad10)")
 			(class "Default")
 			(node
@@ -16138,7 +16503,7 @@
 			)
 		)
 		(net
-			(code "126")
+			(code "131")
 			(name "unconnected-(STM32H745ZIT6-PC15-Pad11)")
 			(class "Default")
 			(node
@@ -16149,7 +16514,7 @@
 			)
 		)
 		(net
-			(code "127")
+			(code "132")
 			(name "unconnected-(STM32H745ZIT6-PD5-Pad117)")
 			(class "Default")
 			(node
@@ -16160,7 +16525,7 @@
 			)
 		)
 		(net
-			(code "128")
+			(code "133")
 			(name "unconnected-(STM32H745ZIT6-PE0-Pad138)")
 			(class "Default")
 			(node
@@ -16171,7 +16536,7 @@
 			)
 		)
 		(net
-			(code "129")
+			(code "134")
 			(name "unconnected-(STM32H745ZIT6-PE1-Pad139)")
 			(class "Default")
 			(node
@@ -16182,7 +16547,7 @@
 			)
 		)
 		(net
-			(code "130")
+			(code "135")
 			(name "unconnected-(STM32H745ZIT6-PE13-Pad63)")
 			(class "Default")
 			(node
@@ -16193,7 +16558,7 @@
 			)
 		)
 		(net
-			(code "131")
+			(code "136")
 			(name "unconnected-(STM32H745ZIT6-PE14-Pad64)")
 			(class "Default")
 			(node
@@ -16204,7 +16569,7 @@
 			)
 		)
 		(net
-			(code "132")
+			(code "137")
 			(name "unconnected-(STM32H745ZIT6-PE15-Pad65)")
 			(class "Default")
 			(node
@@ -16215,7 +16580,7 @@
 			)
 		)
 		(net
-			(code "133")
+			(code "138")
 			(name "unconnected-(STM32H745ZIT6-PF6-Pad20)")
 			(class "Default")
 			(node
@@ -16226,7 +16591,7 @@
 			)
 		)
 		(net
-			(code "134")
+			(code "139")
 			(name "unconnected-(STM32H745ZIT6-PF7-Pad21)")
 			(class "Default")
 			(node
@@ -16237,7 +16602,7 @@
 			)
 		)
 		(net
-			(code "135")
+			(code "140")
 			(name "unconnected-(STM32H745ZIT6-PF8-Pad22)")
 			(class "Default")
 			(node
@@ -16248,7 +16613,7 @@
 			)
 		)
 		(net
-			(code "136")
+			(code "141")
 			(name "unconnected-(STM32H745ZIT6-PF9-Pad23)")
 			(class "Default")
 			(node
@@ -16259,7 +16624,7 @@
 			)
 		)
 		(net
-			(code "137")
+			(code "142")
 			(name "unconnected-(STM32H745ZIT6-PF10-Pad24)")
 			(class "Default")
 			(node
@@ -16270,7 +16635,7 @@
 			)
 		)
 		(net
-			(code "138")
+			(code "143")
 			(name "unconnected-(STM32H745ZIT6-PG9-Pad122)")
 			(class "Default")
 			(node
@@ -16281,7 +16646,7 @@
 			)
 		)
 		(net
-			(code "139")
+			(code "144")
 			(name "unconnected-(STM32H745ZIT6-PG10-Pad123)")
 			(class "Default")
 			(node
@@ -16292,7 +16657,7 @@
 			)
 		)
 		(net
-			(code "140")
+			(code "145")
 			(name "unconnected-(STM32H745ZIT6-PG14-Pad127)")
 			(class "Default")
 			(node
@@ -16300,61 +16665,6 @@
 				(pin "127")
 				(pinfunction "PG14_127")
 				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "141")
-			(name "unconnected-(U2-IO3-Pad4)")
-			(class "Default")
-			(node
-				(ref "U2")
-				(pin "4")
-				(pinfunction "IO3_4")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "142")
-			(name "unconnected-(U2-IO4-Pad6)")
-			(class "Default")
-			(node
-				(ref "U2")
-				(pin "6")
-				(pinfunction "IO4_6")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "143")
-			(name "unconnected-(U4-IO3-Pad4)")
-			(class "Default")
-			(node
-				(ref "U4")
-				(pin "4")
-				(pinfunction "IO3_4")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "144")
-			(name "unconnected-(U8-IO3-Pad4)")
-			(class "Default")
-			(node
-				(ref "U8")
-				(pin "4")
-				(pinfunction "IO3_4")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "145")
-			(name "unconnected-(U8-IO4-Pad6)")
-			(class "Default")
-			(node
-				(ref "U8")
-				(pin "6")
-				(pinfunction "IO4_6")
-				(pintype "passive")
 			)
 		)
 	)
