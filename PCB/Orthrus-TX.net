@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "D:\\KiCad\\Projects\\Orthrus-TX\\PCB\\Orthrus-TX.kicad_sch")
-		(date "2026-05-31T09:31:30")
+		(date "2026-05-31T16:16:08")
 		(tool "Eeschema 10.0.2")
 		(sheet
 			(number "1")
@@ -1262,7 +1262,7 @@
 		)
 		(comp
 			(ref "C19")
-			(value "100nF")
+			(value "10nF")
 			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "capacitor, small US symbol")
 			(fields
@@ -2822,7 +2822,7 @@
 		)
 		(comp
 			(ref "C45")
-			(value "100nF")
+			(value "10nF")
 			(footprint "Capacitor_SMD:C_0603_1608Metric")
 			(description "capacitor, small US symbol")
 			(fields
@@ -12871,11 +12871,6 @@
 				(pinfunction "2_2")
 				(pintype "unspecified")
 			)
-			(node
-				(ref "R54")
-				(pin "1")
-				(pintype "passive")
-			)
 		)
 		(net
 			(code "5")
@@ -14787,6 +14782,11 @@
 				(pin "1")
 				(pinfunction "1_1")
 				(pintype "unspecified")
+			)
+			(node
+				(ref "R54")
+				(pin "1")
+				(pintype "passive")
 			)
 			(node
 				(ref "STM32H745ZIT6")
