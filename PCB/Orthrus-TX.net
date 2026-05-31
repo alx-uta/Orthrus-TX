@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "D:\\KiCad\\Projects\\Orthrus-TX\\PCB\\Orthrus-TX.kicad_sch")
-		(date "2026-05-24T13:57:22")
+		(date "2026-05-31T09:31:30")
 		(tool "Eeschema 10.0.2")
 		(sheet
 			(number "1")
@@ -9717,14 +9717,14 @@
 		(comp
 			(ref "U2")
 			(value "SRV05-4")
-			(footprint "Package_TO_SOT_SMD:SOT-23-6")
+			(footprint "Custom-Library:SOT-23-6")
 			(datasheet "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 			(description "ESD Protection Diodes with Low Clamping Voltage, SOT-23-6")
 			(fields
 				(field
 					(name "LCSC") "C558418")
 				(field
-					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+					(name "Footprint") "Custom-Library:SOT-23-6")
 				(field
 					(name "Datasheet") "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 				(field
@@ -9789,14 +9789,14 @@
 		(comp
 			(ref "U3")
 			(value "SRV05-4")
-			(footprint "Package_TO_SOT_SMD:SOT-23-6")
+			(footprint "Custom-Library:SOT-23-6")
 			(datasheet "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 			(description "ESD Protection Diodes with Low Clamping Voltage, SOT-23-6")
 			(fields
 				(field
 					(name "LCSC") "C558418")
 				(field
-					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+					(name "Footprint") "Custom-Library:SOT-23-6")
 				(field
 					(name "Datasheet") "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 				(field
@@ -9861,14 +9861,14 @@
 		(comp
 			(ref "U4")
 			(value "SRV05-4")
-			(footprint "Package_TO_SOT_SMD:SOT-23-6")
+			(footprint "Custom-Library:SOT-23-6")
 			(datasheet "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 			(description "ESD Protection Diodes with Low Clamping Voltage, SOT-23-6")
 			(fields
 				(field
 					(name "LCSC") "C558418")
 				(field
-					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+					(name "Footprint") "Custom-Library:SOT-23-6")
 				(field
 					(name "Datasheet") "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 				(field
@@ -9933,14 +9933,14 @@
 		(comp
 			(ref "U5")
 			(value "SRV05-4")
-			(footprint "Package_TO_SOT_SMD:SOT-23-6")
+			(footprint "Custom-Library:SOT-23-6")
 			(datasheet "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 			(description "ESD Protection Diodes with Low Clamping Voltage, SOT-23-6")
 			(fields
 				(field
 					(name "LCSC") "C558418")
 				(field
-					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+					(name "Footprint") "Custom-Library:SOT-23-6")
 				(field
 					(name "Datasheet") "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 				(field
@@ -10005,14 +10005,14 @@
 		(comp
 			(ref "U6")
 			(value "SRV05-4")
-			(footprint "Package_TO_SOT_SMD:SOT-23-6")
+			(footprint "Custom-Library:SOT-23-6")
 			(datasheet "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 			(description "ESD Protection Diodes with Low Clamping Voltage, SOT-23-6")
 			(fields
 				(field
 					(name "LCSC") "C558418")
 				(field
-					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+					(name "Footprint") "Custom-Library:SOT-23-6")
 				(field
 					(name "Datasheet") "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 				(field
@@ -10077,14 +10077,14 @@
 		(comp
 			(ref "U7")
 			(value "SRV05-4")
-			(footprint "Package_TO_SOT_SMD:SOT-23-6")
+			(footprint "Custom-Library:SOT-23-6")
 			(datasheet "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 			(description "ESD Protection Diodes with Low Clamping Voltage, SOT-23-6")
 			(fields
 				(field
 					(name "LCSC") "C558418")
 				(field
-					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+					(name "Footprint") "Custom-Library:SOT-23-6")
 				(field
 					(name "Datasheet") "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 				(field
@@ -10149,14 +10149,14 @@
 		(comp
 			(ref "U8")
 			(value "SRV05-4")
-			(footprint "Package_TO_SOT_SMD:SOT-23-6")
+			(footprint "Custom-Library:SOT-23-6")
 			(datasheet "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 			(description "ESD Protection Diodes with Low Clamping Voltage, SOT-23-6")
 			(fields
 				(field
 					(name "LCSC") "C558418")
 				(field
-					(name "Footprint") "Package_TO_SOT_SMD:SOT-23-6")
+					(name "Footprint") "Custom-Library:SOT-23-6")
 				(field
 					(name "Datasheet") "http://www.onsemi.com/pub/Collateral/SRV05-4-D.PDF")
 				(field
@@ -10288,186 +10288,12 @@
 	(groups
 		(group
 			(name "")
-			(uuid "0b666d4d-f6ec-4574-b3d4-aa2ca4ddc43c")
-			(lib_id "")
-			(members
-				(member
-					(uuid "e9a28fb1-0a10-4baf-80ef-5aa6ee11b772")
-				)
-				(member
-					(uuid "389eea9e-82ae-407e-bbfc-a74580f986c7")
-				)
-				(member
-					(uuid "c9386443-5434-4321-b424-34b106aac8ec")
-				)
-				(member
-					(uuid "5b8a54fa-2edb-4b8d-ac99-4c998fd04bc4")
-				)
-				(member
-					(uuid "bd4c5e17-14d8-431a-9a7d-0609aa1effe5")
-				)
-				(member
-					(uuid "c83fa84b-517a-41d4-b75e-c80d0569a7f5")
-				)
-			)
-		)
-		(group
-			(name "")
-			(uuid "185e2177-42d3-4455-97e4-8736a341ac4a")
-			(lib_id "")
-			(members
-				(member
-					(uuid "05b9fca9-9c65-4185-9937-a79f8f4ed9a8")
-				)
-				(member
-					(uuid "93c5985d-4e2f-4e54-bd77-48391d3029ad")
-				)
-			)
-		)
-		(group
-			(name "")
-			(uuid "194581e4-9ded-4fff-ad7f-2790d72ea79b")
-			(lib_id "")
-			(members
-				(member
-					(uuid "89aa4b09-b305-4d9b-b2db-77e474f68ae4")
-				)
-				(member
-					(uuid "6b2ca2eb-d33b-47fb-b875-243a989ec4f1")
-				)
-				(member
-					(uuid "c42e4a09-f3a6-4404-85ff-72b79d6a2bdb")
-				)
-				(member
-					(uuid "d0cb1c76-b0f8-45f8-8c71-17a6f0888dc8")
-				)
-			)
-		)
-		(group
-			(name "")
-			(uuid "2e855b00-fd01-4027-979a-50038ab2c963")
-			(lib_id "")
-			(members
-				(member
-					(uuid "08035afb-c0fd-46cb-afdf-c1268190eb43")
-				)
-				(member
-					(uuid "11677266-c8c0-403c-baaa-f35c5cc8569f")
-				)
-				(member
-					(uuid "3cb1eb89-6ee9-4d12-b410-b727fd1201e4")
-				)
-				(member
-					(uuid "468a16a4-b22c-43dc-ba19-2de2ea7ab14d")
-				)
-				(member
-					(uuid "a04de206-75de-4de5-879b-ee59d318011c")
-				)
-			)
-		)
-		(group
-			(name "")
-			(uuid "82f7270c-8a1a-4d2c-a895-84880efdcd9f")
-			(lib_id "")
-			(members
-				(member
-					(uuid "55066a82-b63f-4bf4-bd00-c1d710186d8f")
-				)
-				(member
-					(uuid "7ae44565-4cb8-45ed-bfda-0a383e46d79e")
-				)
-				(member
-					(uuid "a8e2f768-2a3c-411f-bad2-25b2ba280bad")
-				)
-				(member
-					(uuid "e9565e5c-0c01-47fc-966e-6469b846fff9")
-				)
-			)
-		)
-		(group
-			(name "")
-			(uuid "ca662fef-2bfb-4da3-b6c4-00011d54af20")
-			(lib_id "")
-			(members
-				(member
-					(uuid "74736dd4-587b-46f9-9d24-58d06196645b")
-				)
-				(member
-					(uuid "9adb58e6-0aa1-456f-bb35-28bdb9b9d211")
-				)
-				(member
-					(uuid "8920f453-a902-40a5-aa80-6d60049becd1")
-				)
-				(member
-					(uuid "911ab1d4-4f31-4840-b442-7d9d902d65ca")
-				)
-				(member
-					(uuid "a8987f92-d577-40e0-ab11-3bb0cee0692d")
-				)
-			)
-		)
-		(group
-			(name "")
-			(uuid "de0b2f99-0105-48ac-9cae-eb76732e1254")
-			(lib_id "")
-			(members
-				(member
-					(uuid "eb38a690-934f-4261-ae2c-f4181b7ab692")
-				)
-				(member
-					(uuid "4d465f9f-4365-4af2-aedd-f7027348ed0a")
-				)
-			)
-		)
-		(group
-			(name "")
-			(uuid "e90e075e-08e3-4beb-90e8-5068adbbc9f1")
-			(lib_id "")
-			(members
-				(member
-					(uuid "659f1e0c-dad7-4252-8509-85414cfa4412")
-				)
-				(member
-					(uuid "8af352c0-8616-48c6-b9a2-06fefc04c205")
-				)
-				(member
-					(uuid "a7fd1941-a086-43f3-bdfe-517a694b4a3f")
-				)
-				(member
-					(uuid "b1a9f37d-5f9e-498a-81e1-f642f6ba12ce")
-				)
-				(member
-					(uuid "f0742203-8b07-4533-a46b-277217c4a637")
-				)
-			)
-		)
-		(group
-			(name "")
-			(uuid "58bd0e75-fffc-43a0-b5d2-61d2c58792d4")
-			(lib_id "")
-			(members
-				(member
-					(uuid "908d8a37-f0ab-4fdf-aee5-dfa8a77d7b32")
-				)
-				(member
-					(uuid "5108d189-1ace-4455-9736-e1acdf3d7970")
-				)
-				(member
-					(uuid "73dd156e-d509-4bd0-9c24-cfc33ea2f726")
-				)
-				(member
-					(uuid "9e5a3df1-21bb-4edd-9335-0cc40e847dd9")
-				)
-				(member
-					(uuid "f51ffbd8-30a1-4b23-8255-2b401947f5f7")
-				)
-			)
-		)
-		(group
-			(name "")
 			(uuid "5fd7481b-b08a-43f9-b507-7519c87c5ed2")
 			(lib_id "")
 			(members
+				(member
+					(uuid "ddfe2b7a-67ad-432a-b3c9-544db67c3731")
+				)
 				(member
 					(uuid "2ce4b5a8-b06e-4a55-b58a-d09ff50db65b")
 				)
@@ -10486,8 +10312,130 @@
 				(member
 					(uuid "c59d4054-7c67-4f69-91b4-1c6f6a202710")
 				)
+			)
+		)
+		(group
+			(name "")
+			(uuid "0b666d4d-f6ec-4574-b3d4-aa2ca4ddc43c")
+			(lib_id "")
+			(members
 				(member
-					(uuid "ddfe2b7a-67ad-432a-b3c9-544db67c3731")
+					(uuid "389eea9e-82ae-407e-bbfc-a74580f986c7")
+				)
+				(member
+					(uuid "5b8a54fa-2edb-4b8d-ac99-4c998fd04bc4")
+				)
+				(member
+					(uuid "bd4c5e17-14d8-431a-9a7d-0609aa1effe5")
+				)
+				(member
+					(uuid "c83fa84b-517a-41d4-b75e-c80d0569a7f5")
+				)
+				(member
+					(uuid "e9a28fb1-0a10-4baf-80ef-5aa6ee11b772")
+				)
+				(member
+					(uuid "c9386443-5434-4321-b424-34b106aac8ec")
+				)
+			)
+		)
+		(group
+			(name "")
+			(uuid "185e2177-42d3-4455-97e4-8736a341ac4a")
+			(lib_id "")
+			(members
+				(member
+					(uuid "05b9fca9-9c65-4185-9937-a79f8f4ed9a8")
+				)
+				(member
+					(uuid "93c5985d-4e2f-4e54-bd77-48391d3029ad")
+				)
+			)
+		)
+		(group
+			(name "")
+			(uuid "21578446-f26c-4313-88b0-dbfe195401a5")
+			(lib_id "")
+			(members
+				(member
+					(uuid "6705d335-77d3-4151-a269-646abc3bd863")
+				)
+				(member
+					(uuid "1a1e5429-276b-49a0-a5a0-a5780ac4bab4")
+				)
+				(member
+					(uuid "802f4c3e-90f4-4e1f-8c45-fa3ecf1f8fda")
+				)
+				(member
+					(uuid "063f96e5-8451-464c-a481-b790293323c7")
+				)
+				(member
+					(uuid "695593c0-4d51-42ca-bf46-514f3416dc44")
+				)
+				(member
+					(uuid "2f256527-998b-4ff9-ba22-134560b7293d")
+				)
+				(member
+					(uuid "a59bb3b9-fc06-40e5-825f-4d83f4285853")
+				)
+				(member
+					(uuid "4d5a1204-b2ea-4ef7-a712-404e05e62ec1")
+				)
+				(member
+					(uuid "6df1673f-5a7f-4231-8220-85e4eef0856e")
+				)
+				(member
+					(uuid "a1c1892a-eefd-4dc8-8826-d10940c526a2")
+				)
+				(member
+					(uuid "c1d500e1-310c-44d7-8686-865160b78946")
+				)
+				(member
+					(uuid "cdb2b4c5-031a-4457-a282-4e5225d390ec")
+				)
+				(member
+					(uuid "e5e40e1e-44b2-4c68-a551-330f284aa9df")
+				)
+			)
+		)
+		(group
+			(name "")
+			(uuid "58bd0e75-fffc-43a0-b5d2-61d2c58792d4")
+			(lib_id "")
+			(members
+				(member
+					(uuid "5108d189-1ace-4455-9736-e1acdf3d7970")
+				)
+				(member
+					(uuid "73dd156e-d509-4bd0-9c24-cfc33ea2f726")
+				)
+				(member
+					(uuid "9e5a3df1-21bb-4edd-9335-0cc40e847dd9")
+				)
+				(member
+					(uuid "908d8a37-f0ab-4fdf-aee5-dfa8a77d7b32")
+				)
+				(member
+					(uuid "f51ffbd8-30a1-4b23-8255-2b401947f5f7")
+				)
+			)
+		)
+		(group
+			(name "")
+			(uuid "d1a08f5d-6f70-4454-a0d2-3402ffad681f")
+			(lib_id "")
+			(members
+				(member
+					(uuid "6bff8497-40bd-4aab-8805-6cfdaea860d9")
+				)
+				(member
+					(uuid "1dc7a7de-717b-4f89-8c47-7c37e6c20cee")
+				)
+				(member
+					(uuid "3d0def63-a46b-4c72-b671-92ae99568243")
+				)
+				(member
+					(uuid "74cd4fca-b724-49c9-92dc-7aee4c344579")
 				)
 			)
 		)
@@ -10497,19 +10445,7 @@
 			(lib_id "")
 			(members
 				(member
-					(uuid "eff8203d-9689-4ee0-b65e-e370e3144ff3")
-				)
-				(member
-					(uuid "8d0f4b20-9376-48b4-b86f-8f3b57dc3093")
-				)
-				(member
-					(uuid "8563db83-887b-42c6-ae82-29a1cb26cc5a")
-				)
-				(member
 					(uuid "07f520ca-1825-44bf-9a70-38ece1a8c055")
-				)
-				(member
-					(uuid "1827340b-614d-4dc6-bb0a-a29b5759e411")
 				)
 				(member
 					(uuid "1d4bbb75-c6c9-4ceb-a7ec-75024628ba88")
@@ -10518,7 +10454,19 @@
 					(uuid "209b0c2a-5673-4b4b-bbe8-406e8304204e")
 				)
 				(member
+					(uuid "1827340b-614d-4dc6-bb0a-a29b5759e411")
+				)
+				(member
 					(uuid "4b4ec7ef-654a-4a6d-9ca3-3755fc8f3939")
+				)
+				(member
+					(uuid "8563db83-887b-42c6-ae82-29a1cb26cc5a")
+				)
+				(member
+					(uuid "8d0f4b20-9376-48b4-b86f-8f3b57dc3093")
+				)
+				(member
+					(uuid "eff8203d-9689-4ee0-b65e-e370e3144ff3")
 				)
 			)
 		)
@@ -10528,10 +10476,10 @@
 			(lib_id "")
 			(members
 				(member
-					(uuid "1025be6c-516c-4e69-9604-730b549f3f1f")
+					(uuid "0a94cb18-46ac-42c1-953a-4532c8d9bd67")
 				)
 				(member
-					(uuid "0a94cb18-46ac-42c1-953a-4532c8d9bd67")
+					(uuid "1025be6c-516c-4e69-9604-730b549f3f1f")
 				)
 				(member
 					(uuid "19e7b672-fbc5-4385-afd5-4964fb4118b0")
@@ -10549,10 +10497,45 @@
 					(uuid "be215190-2806-4872-8d17-80f6bb3e5cea")
 				)
 				(member
-					(uuid "c60ca770-e093-4c47-9681-07977fe06892")
+					(uuid "f9fd51ec-1fa4-45d4-ae91-ab7d1c78e247")
 				)
 				(member
-					(uuid "f9fd51ec-1fa4-45d4-ae91-ab7d1c78e247")
+					(uuid "c60ca770-e093-4c47-9681-07977fe06892")
+				)
+			)
+		)
+		(group
+			(name "")
+			(uuid "ca662fef-2bfb-4da3-b6c4-00011d54af20")
+			(lib_id "")
+			(members
+				(member
+					(uuid "9adb58e6-0aa1-456f-bb35-28bdb9b9d211")
+				)
+				(member
+					(uuid "74736dd4-587b-46f9-9d24-58d06196645b")
+				)
+				(member
+					(uuid "a8987f92-d577-40e0-ab11-3bb0cee0692d")
+				)
+				(member
+					(uuid "8920f453-a902-40a5-aa80-6d60049becd1")
+				)
+				(member
+					(uuid "911ab1d4-4f31-4840-b442-7d9d902d65ca")
+				)
+			)
+		)
+		(group
+			(name "")
+			(uuid "de0b2f99-0105-48ac-9cae-eb76732e1254")
+			(lib_id "")
+			(members
+				(member
+					(uuid "4d465f9f-4365-4af2-aedd-f7027348ed0a")
+				)
+				(member
+					(uuid "eb38a690-934f-4261-ae2c-f4181b7ab692")
 				)
 			)
 		)
@@ -13405,8 +13388,8 @@
 			(class "Default")
 			(node
 				(ref "ELRS_2")
-				(pin "7")
-				(pinfunction "7_7")
+				(pin "6")
+				(pinfunction "6_6")
 				(pintype "unspecified")
 			)
 			(node
@@ -13417,8 +13400,8 @@
 			)
 			(node
 				(ref "U6")
-				(pin "4")
-				(pinfunction "IO3_4")
+				(pin "6")
+				(pinfunction "IO4_6")
 				(pintype "passive")
 			)
 		)
@@ -13450,8 +13433,8 @@
 			(class "Default")
 			(node
 				(ref "ELRS_2")
-				(pin "8")
-				(pinfunction "8_8")
+				(pin "7")
+				(pinfunction "7_7")
 				(pintype "unspecified")
 			)
 			(node
@@ -13462,8 +13445,8 @@
 			)
 			(node
 				(ref "U6")
-				(pin "6")
-				(pinfunction "IO4_6")
+				(pin "4")
+				(pinfunction "IO3_4")
 				(pintype "passive")
 			)
 		)
@@ -13490,8 +13473,8 @@
 			)
 			(node
 				(ref "U3")
-				(pin "4")
-				(pinfunction "IO3_4")
+				(pin "6")
+				(pinfunction "IO4_6")
 				(pintype "passive")
 			)
 		)
@@ -13518,8 +13501,8 @@
 			)
 			(node
 				(ref "U3")
-				(pin "6")
-				(pinfunction "IO4_6")
+				(pin "4")
+				(pinfunction "IO3_4")
 				(pintype "passive")
 			)
 		)
@@ -13952,8 +13935,8 @@
 			)
 			(node
 				(ref "U3")
-				(pin "3")
-				(pinfunction "IO2_3")
+				(pin "1")
+				(pinfunction "IO1_1")
 				(pintype "passive")
 			)
 		)
@@ -13975,8 +13958,8 @@
 			)
 			(node
 				(ref "U5")
-				(pin "1")
-				(pinfunction "IO1_1")
+				(pin "3")
+				(pinfunction "IO2_3")
 				(pintype "passive")
 			)
 		)
@@ -13986,8 +13969,8 @@
 			(class "Default")
 			(node
 				(ref "ELRS_1")
-				(pin "5")
-				(pinfunction "5_5")
+				(pin "4")
+				(pinfunction "4_4")
 				(pintype "unspecified")
 			)
 			(node
@@ -13998,8 +13981,8 @@
 			)
 			(node
 				(ref "U5")
-				(pin "3")
-				(pinfunction "IO2_3")
+				(pin "1")
+				(pinfunction "IO1_1")
 				(pintype "passive")
 			)
 		)
@@ -14009,8 +13992,8 @@
 			(class "Default")
 			(node
 				(ref "ELRS_1")
-				(pin "7")
-				(pinfunction "7_7")
+				(pin "6")
+				(pinfunction "6_6")
 				(pintype "unspecified")
 			)
 			(node
@@ -14021,8 +14004,8 @@
 			)
 			(node
 				(ref "U5")
-				(pin "4")
-				(pinfunction "IO3_4")
+				(pin "6")
+				(pinfunction "IO4_6")
 				(pintype "passive")
 			)
 		)
@@ -14032,8 +14015,8 @@
 			(class "Default")
 			(node
 				(ref "ELRS_1")
-				(pin "8")
-				(pinfunction "8_8")
+				(pin "7")
+				(pinfunction "7_7")
 				(pintype "unspecified")
 			)
 			(node
@@ -14044,8 +14027,8 @@
 			)
 			(node
 				(ref "U5")
-				(pin "6")
-				(pinfunction "IO4_6")
+				(pin "4")
+				(pinfunction "IO3_4")
 				(pintype "passive")
 			)
 		)
@@ -14228,8 +14211,8 @@
 			(class "Default")
 			(node
 				(ref "ELRS_2")
-				(pin "5")
-				(pinfunction "5_5")
+				(pin "4")
+				(pinfunction "4_4")
 				(pintype "unspecified")
 			)
 			(node
@@ -14562,8 +14545,8 @@
 			)
 			(node
 				(ref "U4")
-				(pin "4")
-				(pinfunction "IO3_4")
+				(pin "6")
+				(pinfunction "IO4_6")
 				(pintype "passive")
 			)
 		)
@@ -14638,13 +14621,47 @@
 			)
 			(node
 				(ref "U3")
-				(pin "1")
-				(pinfunction "IO1_1")
+				(pin "3")
+				(pinfunction "IO2_3")
 				(pintype "passive")
 			)
 		)
 		(net
 			(code "84")
+			(name "/USB_D_N")
+			(class "Default")
+			(node
+				(ref "L2")
+				(pin "2")
+				(pinfunction "2_2")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "STM32H745ZIT6")
+				(pin "100")
+				(pinfunction "PA11_100")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "85")
+			(name "/USB_D_P")
+			(class "Default")
+			(node
+				(ref "L2")
+				(pin "3")
+				(pinfunction "3_3")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "STM32H745ZIT6")
+				(pin "101")
+				(pinfunction "PA12_101")
+				(pintype "bidirectional")
+			)
+		)
+		(net
+			(code "86")
 			(name "/USB_N")
 			(class "USB_DIFF,Default")
 			(node
@@ -14667,30 +14684,13 @@
 			)
 			(node
 				(ref "U2")
-				(pin "3")
-				(pinfunction "IO2_3")
+				(pin "1")
+				(pinfunction "IO1_1")
 				(pintype "passive")
 			)
 		)
 		(net
-			(code "85")
-			(name "/USB_D_N")
-			(class "USB_DIFF,Default")
-			(node
-				(ref "L2")
-				(pin "2")
-				(pinfunction "2_2")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "STM32H745ZIT6")
-				(pin "100")
-				(pinfunction "PA11_100")
-				(pintype "bidirectional")
-			)
-		)
-		(net
-			(code "86")
+			(code "87")
 			(name "/USB_P")
 			(class "USB_DIFF,Default")
 			(node
@@ -14713,26 +14713,9 @@
 			)
 			(node
 				(ref "U2")
-				(pin "1")
-				(pinfunction "IO1_1")
-				(pintype "passive")
-			)
-		)
-		(net
-			(code "87")
-			(name "/USB_D_P")
-			(class "USB_DIFF,Default")
-			(node
-				(ref "L2")
 				(pin "3")
-				(pinfunction "3_3")
-				(pintype "unspecified")
-			)
-			(node
-				(ref "STM32H745ZIT6")
-				(pin "101")
-				(pinfunction "PA12_101")
-				(pintype "bidirectional")
+				(pinfunction "IO2_3")
+				(pintype "passive")
 			)
 		)
 		(net
@@ -15204,14 +15187,14 @@
 			)
 			(node
 				(ref "ELRS_1")
-				(pin "4")
-				(pinfunction "4_4")
+				(pin "5")
+				(pinfunction "5_5")
 				(pintype "unspecified")
 			)
 			(node
 				(ref "ELRS_1")
-				(pin "6")
-				(pinfunction "6_6")
+				(pin "8")
+				(pinfunction "8_8")
 				(pintype "unspecified")
 			)
 			(node
@@ -15240,14 +15223,14 @@
 			)
 			(node
 				(ref "ELRS_2")
-				(pin "4")
-				(pinfunction "4_4")
+				(pin "5")
+				(pinfunction "5_5")
 				(pintype "unspecified")
 			)
 			(node
 				(ref "ELRS_2")
-				(pin "6")
-				(pinfunction "6_6")
+				(pin "8")
+				(pinfunction "8_8")
 				(pintype "unspecified")
 			)
 			(node
@@ -16343,12 +16326,12 @@
 		)
 		(net
 			(code "143")
-			(name "unconnected-(U4-IO4-Pad6)")
+			(name "unconnected-(U4-IO3-Pad4)")
 			(class "Default")
 			(node
 				(ref "U4")
-				(pin "6")
-				(pinfunction "IO4_6")
+				(pin "4")
+				(pinfunction "IO3_4")
 				(pintype "passive")
 			)
 		)

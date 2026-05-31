@@ -35,5 +35,5 @@
 "TP1","BFF_1","","TestPoint:TestPoint_Pad_1.0x1.0mm",""
 "TP2","BFF_2","","TestPoint:TestPoint_Pad_1.0x1.0mm",""
 "U1","AO3407A","","Custom-Library:SOT-23-3L_AOS","C15127"
-"U2,U3,U4,U5,U6,U7,U8","SRV05-4","","Package_TO_SOT_SMD:SOT-23-6","C558418"
+"U2,U3,U4,U5,U6,U7,U8","SRV05-4","","Custom-Library:SOT-23-6","C558418"
 "XTAL1","TSX-3225 24.0000MF20G-AC3","","Custom-Library:TSX-3225 24.0000MF20G-AC3_EPS","C2650460"
