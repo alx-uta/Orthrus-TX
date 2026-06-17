@@ -1,0 +1,663 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Orthrus-TX PCB Design Review Report</title>
+<style>
+  :root {
+    --critical: #c0392b; --high: #e67e22; --medium: #f1c40f; --low: #3498db; --info: #27ae60;
+    --bg: #f4f6f8; --surface: #ffffff; --border: #dde2e8; --text: #1a1a2e; --muted: #6c757d;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
+         background: var(--bg); color: var(--text); font-size: 14px; line-height: 1.6; }
+  .page-header { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 50%, #0f3460 100%);
+                  color: white; padding: 40px 48px; }
+  .page-header h1 { font-size: 28px; font-weight: 700; letter-spacing: -0.5px; }
+  .page-header .subtitle { color: rgba(255,255,255,0.7); margin-top: 6px; font-size: 15px; }
+  .meta-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+               gap: 16px; margin-top: 28px; }
+  .meta-item { background: rgba(255,255,255,0.08); border-radius: 8px; padding: 12px 16px; }
+  .meta-item .label { font-size: 11px; text-transform: uppercase; letter-spacing: 1px;
+                       color: rgba(255,255,255,0.5); }
+  .meta-item .value { font-size: 14px; font-weight: 600; color: white; margin-top: 2px; }
+  .container { max-width: 1200px; margin: 0 auto; padding: 32px 24px; }
+  .summary-bar { display: grid; grid-template-columns: repeat(5, 1fr); gap: 12px; margin-bottom: 32px; }
+  .summary-card { background: var(--surface); border-radius: 10px; padding: 16px 20px;
+                   border-left: 4px solid; box-shadow: 0 2px 8px rgba(0,0,0,0.06); text-align: center; }
+  .summary-card.critical { border-color: var(--critical); }
+  .summary-card.high { border-color: var(--high); }
+  .summary-card.medium { border-color: var(--medium); }
+  .summary-card.low { border-color: var(--low); }
+  .summary-card.pass { border-color: var(--info); }
+  .summary-card .count { font-size: 36px; font-weight: 700; line-height: 1; }
+  .summary-card.critical .count { color: var(--critical); }
+  .summary-card.high .count { color: var(--high); }
+  .summary-card.medium .count { color: var(--medium); }
+  .summary-card.low .count { color: var(--low); }
+  .summary-card.pass .count { color: var(--info); }
+  .summary-card .label { font-size: 12px; color: var(--muted); margin-top: 4px; font-weight: 500; }
+  .section { background: var(--surface); border-radius: 10px; margin-bottom: 24px;
+              box-shadow: 0 2px 8px rgba(0,0,0,0.06); overflow: hidden; }
+  .section-header { padding: 16px 24px; background: #f8f9fa; border-bottom: 1px solid var(--border);
+                     display: flex; align-items: center; gap: 10px; }
+  .section-header h2 { font-size: 15px; font-weight: 600; }
+  .section-icon { font-size: 18px; }
+  .section-body { padding: 16px 24px; }
+  .finding { border: 1px solid var(--border); border-radius: 8px; margin-bottom: 12px; overflow: hidden; }
+  .finding-header { padding: 10px 16px; display: flex; align-items: flex-start; gap: 12px; }
+  .finding.critical .finding-header { background: #fdf2f2; border-bottom: 1px solid #fac8c8; }
+  .finding.high .finding-header { background: #fef9f0; border-bottom: 1px solid #fde0b3; }
+  .finding.medium .finding-header { background: #fefef0; border-bottom: 1px solid #fdf0b3; }
+  .finding.low .finding-header { background: #eff6ff; border-bottom: 1px solid #bfdbfe; }
+  .finding.pass .finding-header { background: #f0fdf4; border-bottom: 1px solid #bbf7d0; }
+  .badge { display: inline-block; padding: 2px 9px; border-radius: 12px; font-size: 11px;
+            font-weight: 700; letter-spacing: 0.5px; text-transform: uppercase; white-space: nowrap; }
+  .badge.critical { background: var(--critical); color: white; }
+  .badge.high { background: var(--high); color: white; }
+  .badge.medium { background: #e6a817; color: white; }
+  .badge.low { background: var(--low); color: white; }
+  .badge.pass { background: var(--info); color: white; }
+  .finding-title { font-weight: 600; font-size: 14px; flex: 1; }
+  .finding-ref { font-size: 12px; color: var(--muted); margin-left: auto; white-space: nowrap; }
+  .finding-body { padding: 12px 16px; font-size: 13px; }
+  .finding-body p { margin-bottom: 8px; color: #444; }
+  .finding-body p:last-child { margin-bottom: 0; }
+  .finding-body strong { color: var(--text); }
+  .finding-body .action { margin-top: 10px; padding: 8px 12px; background: #f8f9fa;
+                           border-left: 3px solid #6c757d; border-radius: 0 4px 4px 0; font-size: 12px; }
+  .finding-body .action.critical { border-left-color: var(--critical); background: #fff5f5; }
+  .finding-body .action.high { border-left-color: var(--high); background: #fffbf5; }
+  .finding-body .action.medium { border-left-color: #e6a817; background: #fffef5; }
+  .finding-body .action.low { border-left-color: var(--low); background: #f5f9ff; }
+  .finding-body .action.pass { border-left-color: var(--info); background: #f5fff9; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; }
+  th { background: #f8f9fa; padding: 8px 12px; text-align: left; font-weight: 600;
+       border-bottom: 2px solid var(--border); }
+  td { padding: 7px 12px; border-bottom: 1px solid var(--border); vertical-align: top; }
+  tr:last-child td { border-bottom: none; }
+  tr:hover td { background: #fafbfc; }
+  .tag { display: inline-block; padding: 1px 7px; border-radius: 10px; font-size: 11px;
+          font-weight: 600; background: #e9ecef; color: #495057; margin: 1px; }
+  .tag.warn { background: #fde8cc; color: #974a00; }
+  .tag.ok { background: #d4edda; color: #155724; }
+  .tag.err { background: #f8d7da; color: #721c24; }
+  code { font-family: "Consolas", "Monaco", monospace; background: #f1f3f5; padding: 1px 5px;
+         border-radius: 3px; font-size: 12px; }
+  .stackup-table { font-size: 12px; }
+  .stackup-table .copper { background: #fff7e0; }
+  .stackup-table .dielectric { background: #f0f7ff; }
+  .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+  @media (max-width: 700px) { .two-col { grid-template-columns: 1fr; }
+    .summary-bar { grid-template-columns: repeat(3, 1fr); } }
+  .pill-row { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+  hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+  .note { font-size: 12px; color: var(--muted); font-style: italic; }
+  .bom-warning { display: flex; gap: 8px; padding: 10px 14px; background: #fef9f0;
+                  border: 1px solid #fde0b3; border-radius: 6px; margin-bottom: 8px; font-size: 13px; }
+  footer { text-align: center; color: var(--muted); font-size: 12px; padding: 32px 24px; }
+</style>
+</head>
+<body>
+
+<div class="page-header">
+  <h1>Orthrus-TX &mdash; PCB Design Review Report</h1>
+  <div class="subtitle">RC Radio Transmitter Controller &nbsp;|&nbsp; 8-Layer Impedance-Controlled PCB</div>
+  <div class="meta-grid">
+    <div class="meta-item"><div class="label">Project</div><div class="value">Orthrus-TX v1.0.0</div></div>
+    <div class="meta-item"><div class="label">Schematic Date</div><div class="value">2026-03-29</div></div>
+    <div class="meta-item"><div class="label">Gerbers Generated</div><div class="value">2026-05-19</div></div>
+    <div class="meta-item"><div class="label">KiCad Version</div><div class="value">10.0.2</div></div>
+    <div class="meta-item"><div class="label">Board Size</div><div class="value">49.1 &times; 49.1 mm</div></div>
+    <div class="meta-item"><div class="label">Thickness</div><div class="value">1.613 mm</div></div>
+    <div class="meta-item"><div class="label">Layers</div><div class="value">8 (Imp. Ctrl.)</div></div>
+    <div class="meta-item"><div class="label">Target Fab</div><div class="value">JLCPCB / PCBWay</div></div>
+  </div>
+</div>
+
+<div class="container">
+
+<!-- SUMMARY -->
+<div class="summary-bar" style="margin-top: 0;">
+  <div class="summary-card critical"><div class="count">0</div><div class="label">Critical</div></div>
+  <div class="summary-card high"><div class="count">2</div><div class="label">High</div></div>
+  <div class="summary-card medium"><div class="count">4</div><div class="label">Medium</div></div>
+  <div class="summary-card low"><div class="count">5</div><div class="label">Low / Info</div></div>
+  <div class="summary-card pass"><div class="count">14</div><div class="label">Checks Passed</div></div>
+</div>
+
+<!-- ═══════════════════════════ BOARD OVERVIEW ═══════════════════════════ -->
+<div class="section">
+  <div class="section-header"><span class="section-icon">📋</span><h2>Board Overview</h2></div>
+  <div class="section-body">
+    <div class="two-col">
+      <div>
+        <p><strong>Platform:</strong> RC Radio Transmitter controller based on STM32H745ZIT6 dual-core Arm Cortex-M7/M4.</p>
+        <p style="margin-top:8px"><strong>Key Interfaces:</strong> USB-C (USB 2.0 FS), 2&times; ELRS RF module connectors, 2&times; Joystick connectors (6-pin), 2&times; Encoder connectors (8-pin), Analog potentiometer connector, Digital potentiometer connector, SWD programming header, Battery power input.</p>
+        <p style="margin-top:8px"><strong>Power System:</strong> Battery input &rarr; reverse-polarity protection (AO3407A P-FET + D1 Schottky) &rarr; VCC rail &rarr; 4&times; AP2112K-3.3 LDO (600 mA each) &rarr; 3.3 V rails (LD1–LD4). STM32H745 internal SMPS (L1 = 2.2 &micro;H) used for core supply.</p>
+        <p style="margin-top:8px"><strong>EMC:</strong> DLW21SN900SQ2L CMC on USB data lines, BLM18AG102SN1D ferrite bead on USB/analog power, 7&times; SRV05-4 TVS arrays on I/O.</p>
+      </div>
+      <div>
+        <table class="stackup-table">
+          <thead><tr><th>Layer</th><th>Name</th><th>Cu &micro;m</th><th>Diel mm</th><th>&epsilon;<sub>r</sub></th></tr></thead>
+          <tbody>
+            <tr class="copper"><td>L1</td><td>F.Cu — SIG TOP</td><td>35</td><td>—</td><td>—</td></tr>
+            <tr class="dielectric"><td>—</td><td>Prepreg</td><td>—</td><td>0.421</td><td>4.40</td></tr>
+            <tr class="copper"><td>L2</td><td>In1.Cu — GND</td><td>30</td><td>—</td><td>—</td></tr>
+            <tr class="dielectric"><td>—</td><td>Core</td><td>—</td><td>0.075</td><td>3.99</td></tr>
+            <tr class="copper"><td>L3</td><td>In2.Cu — POWER</td><td>30</td><td>—</td><td>—</td></tr>
+            <tr class="dielectric"><td>—</td><td>Prepreg</td><td>—</td><td>0.138</td><td>3.91</td></tr>
+            <tr class="copper"><td>L4</td><td>In3.Cu — GND</td><td>30</td><td>—</td><td>—</td></tr>
+            <tr class="dielectric"><td>—</td><td>Core</td><td>—</td><td>0.075</td><td>3.99</td></tr>
+            <tr class="copper"><td>L5</td><td>In4.Cu — ELRS</td><td>30</td><td>—</td><td>—</td></tr>
+            <tr class="dielectric"><td>—</td><td>Prepreg</td><td>—</td><td>0.138</td><td>3.91</td></tr>
+            <tr class="copper"><td>L6</td><td>In5.Cu — GND</td><td>30</td><td>—</td><td>—</td></tr>
+            <tr class="dielectric"><td>—</td><td>Core</td><td>—</td><td>0.075</td><td>3.99</td></tr>
+            <tr class="copper"><td>L7</td><td>In6.Cu — ANALOG</td><td>30</td><td>—</td><td>—</td></tr>
+            <tr class="dielectric"><td>—</td><td>Prepreg</td><td>—</td><td>0.421</td><td>4.40</td></tr>
+            <tr class="copper"><td>L8</td><td>B.Cu — GND</td><td>35</td><td>—</td><td>—</td></tr>
+          </tbody>
+        </table>
+        <p class="note" style="margin-top:6px">Total board thickness: 1.613 mm &nbsp;|&nbsp; Impedance controlled</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ POWER ═══════════════════════════ -->
+<div class="section">
+  <div class="section-header"><span class="section-icon">⚡</span><h2>Power Architecture Review</h2></div>
+  <div class="section-body">
+
+    <div class="finding low">
+      <div class="finding-header">
+        <span class="badge low">LOW</span>
+        <span class="finding-title">AP2112K-3.3 LDO Dropout at End-of-Discharge — Acts as Implicit Low-Battery Protection</span>
+        <span class="finding-ref">LD1–LD4</span>
+      </div>
+      <div class="finding-body">
+        <p>The AP2112K-3.3 has a worst-case dropout voltage of <strong>300–600 mV at 600 mA</strong>, meaning VIN must be &ge; 3.6 V to maintain regulated 3.3 V output. A 1S LiPo discharges from 4.2 V to a hard protection cut-off of ~3.0 V. Below VIN = 3.6 V the LDO output tracks VIN &minus; V<sub>DO</sub> — the MCU will brownout-reset at approximately VCC &asymp; 3.0–3.3 V, which is well above the battery&rsquo;s 3.0 V over-discharge threshold.</p>
+        <p>This behaviour acts as <strong>implicit low-battery protection</strong>: the transmitter will fail-safe (MCU resets) before the battery is deeply discharged. No hardware change is required. Note: the KiCad symbol description states &ldquo;3.8V&ndash;6V input voltage range&rdquo; — the actual datasheet VIN(min) is 2.5 V; the 3.8 V figure is a worst-case start-up guideline from an application note (see also L1).</p>
+        <div class="action low"><strong>Recommended firmware enhancement:</strong> Monitor VCC via an MCU ADC input (resistor divider from VCC to a 3.3 V ADC-safe level) and alert the user — LED, display, or telemetry — when VCC drops below ~3.7 V. This provides advance warning before LDO dropout, preventing unexpected mid-flight power loss. Ensure any NVM or flash write operations complete before VCC falls to 3.3 V to avoid data corruption.</div>
+      </div>
+    </div>
+
+    <div class="finding high">
+      <div class="finding-header">
+        <span class="badge high">HIGH</span>
+        <span class="finding-title">USB Differential Pair Impedance Mismatch — 0.35 mm Traces Give ~140 &Omega; on 0.421 mm Prepreg</span>
+        <span class="finding-ref">J1, L2, R52, R53</span>
+      </div>
+      <div class="finding-body">
+        <p>The <code>USB_DIFF</code> netclass defines trace width 0.35 mm and gap 0.18 mm. Calculating edge-coupled microstrip impedance for F.Cu routing above L2_GND (H = 0.421 mm, &epsilon;r = 4.4, T = 35 &micro;m):</p>
+        <p>&nbsp;&nbsp;<em>Z<sub>0</sub></em> (single-ended, W = 0.35 mm) &asymp; <strong>78 &Omega;</strong></p>
+        <p>&nbsp;&nbsp;<em>Z<sub>diff</sub></em> (edge-coupled, S = 0.18 mm) &asymp; <strong>140 &Omega;</strong></p>
+        <p>USB 2.0 requires Z<sub>diff</sub> = 90 &Omega; &plusmn;15%. The current routing is approximately <strong>55% too high</strong>. To achieve 90 &Omega; differential on this layer, the trace width must be approximately <strong>0.80 mm</strong> (with gap 0.18 mm). The KiCad DRC "unable to find complementary differential pair" warning also suggests the diff pair routing is not correctly coupled.</p>
+        <div class="action high"><strong>Action:</strong> Correct the <code>USB_DIFF</code> netclass track width to 0.80 mm (or use an impedance calculator for the exact stackup). Re-route J1 USB P/N traces and verify coupling from the connector to the common-mode choke (L2) and series resistors (R52, R53 = 22 &Omega;). If board space is too tight for 0.8 mm traces near J1, consider routing USB through an inner signal layer between two closely spaced GND planes (L5 between L4_GND and L6_GND at 0.138 mm spacing, which would require much narrower traces but is impractical near the edge connector). Alternatively, accept that this is USB 2.0 Full-Speed (12 Mbps) only and verify by USB compliance testing, since FS is less sensitive to impedance than HS.</div>
+      </div>
+    </div>
+
+    <div class="finding medium">
+      <div class="finding-header">
+        <span class="badge medium">MEDIUM</span>
+        <span class="finding-title">SMPS Inductor L1 — Saturation &amp; DCR Specification Unverified</span>
+        <span class="finding-ref">L1, LCSC C48945021</span>
+      </div>
+      <div class="finding-body">
+        <p>L1 (2.2 &micro;H, 0603) is used in the STM32H745 internal SMPS loop (VLXSMPS &harr; VDDSMPS). LCSC part C48945021 is specified as 2.2 &micro;H, which matches ST&rsquo;s recommendation in AN5188. However, the SMPS output current for core supply can reach 100–200 mA peaks. The inductor must be rated for: saturation current &ge; 300 mA, DCR &le; 300 m&Omega; (to limit efficiency loss), and self-resonance frequency well above 2.1 MHz switching frequency.</p>
+        <p>The specific part number for LCSC C48945021 should be confirmed against its datasheet (rated Isat and DCR are not visible in the schematic fields).</p>
+        <div class="action medium"><strong>Action:</strong> Verify that LCSC C48945021 has Isat &ge; 300 mA and DCR &le; 300 m&Omega;. Per ST AN5188, the SMPS inductor placement is also critical — the loop (VLXSMPS, VDDSMPS, VSSSMPS, VFBSMPS) must be as compact as possible with a local 1 &micro;F + 10 nF bypass at VDDSMPS. Confirm these capacitors exist and are placed immediately adjacent to the MCU.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">USB-C VDD50USB / VDD33USB Bypass Mode — Valid</span>
+        <span class="finding-ref">STM32H745, /LD1_3.3v</span>
+      </div>
+      <div class="finding-body">
+        <p>Both VDD50USB and VDD33USB are tied to the /LD1_3.3v (3.3 V) rail. Per STM32H745 datasheet §5.1.7, when the application operates entirely at 3.3 V and does not require the 5 V USB transceiver internal supply, VDD50USB may be connected to VDD33USB (both at 3.3 V) in &ldquo;bypass mode.&rdquo; This is a valid and documented configuration for USB 2.0 operation.</p>
+        <div class="action pass"><strong>Action:</strong> None — confirmed valid. No hardware change required.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">USB-C CC Resistors (5.1 k&Omega;) — Correct for UFP/Device Mode</span>
+        <span class="finding-ref">R41, R42</span>
+      </div>
+      <div class="finding-body">
+        <p>R41 and R42 = 5.1 k&Omega; are the CC1/CC2 pull-down (Rd) resistors required by the USB-C specification for an Upstream-Facing Port (device). The USB PD specification mandates Rd = 5.1 k&Omega; &plusmn;10% for device identification. This is correct.</p>
+        <div class="action pass"><strong>Action:</strong> None — correct implementation.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">Reverse Polarity Protection — AO3407A P-FET + Schottky D1</span>
+        <span class="finding-ref">U1, D1, POWER_1</span>
+      </div>
+      <div class="finding-body">
+        <p>AO3407A (P-channel MOSFET, SOT-23-3, Vds = −20 V, Id = −4 A) with a Schottky diode (D1, LCSC C8598, ~SS14) provides low-loss reverse polarity protection on the battery input. The gate drive for U1 is typical for this topology (VBATT on source, GND through gate resistor or direct). This is a well-established approach for LiPo-powered portable devices.</p>
+        <div class="action pass"><strong>Action:</strong> None — correct design.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">4&times; Independent LDOs for Domain Isolation</span>
+        <span class="finding-ref">LD1–LD4</span>
+      </div>
+      <div class="finding-body">
+        <p>Using four separate AP2112K-3.3 regulators (each 600 mA) to create independent 3.3 V domains (USB/IO, MCU VDD, ELRS, analog) is good practice. This prevents noise coupling between high-current switching loads (ELRS RF) and sensitive analog circuitry. Each domain should have its LDO output capacitor and ferrite bead physically close to the regulator.</p>
+        <div class="action pass"><strong>Action:</strong> Confirm physical placement of each LDO relative to its load domain in PCB layout review.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════ MCU ═══════════════════════════ -->
+<div class="section">
+  <div class="section-header"><span class="section-icon">🔲</span><h2>MCU Circuitry Review — STM32H745ZIT6</h2></div>
+  <div class="section-body">
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">Crystal Load Capacitors — 12 pF Correct for TSX-3225 24 MHz</span>
+        <span class="finding-ref">Y1, C23, C24</span>
+      </div>
+      <div class="finding-body">
+        <p>TSX-3225 24.0000MF20G-AC3 has a specified load capacitance of CL = 8 pF. Using two 12 pF load capacitors (C23, C24): C<sub>L(circuit)</sub> = (C1 &times; C2)/(C1 + C2) + C<sub>stray</sub> = (12 &times; 12)/(24) + ~2 pF = 6 + 2 = <strong>8 pF</strong> &checkmark;. The 220 pF capacitor C61 appears to be a CL decoupling aid for the crystal oscillator circuit. Both C23 and C24 use LCSC C882527 (12 pF, 0603, C0G/NP0) — the correct low-tempco dielectric for crystal load capacitors.</p>
+        <div class="action pass"><strong>Action:</strong> None — correct implementation.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">VCAP Capacitors Present for STM32H745 Internal LDO</span>
+        <span class="finding-ref">VCAP pins, 2.2 &micro;F caps</span>
+      </div>
+      <div class="finding-body">
+        <p>STM32H745 requires 2.2 &micro;F (minimum) capacitors on VCAP1 (pin 75) and VCAP2 (pin 99), connected directly to GND. Multiple 2.2 &micro;F capacitors (LCSC C23630, 0603) are present in the BOM. These are the internal voltage regulator stabilisation capacitors and are required for proper CPU operation.</p>
+        <div class="action pass"><strong>Action:</strong> Verify in layout that VCAP capacitors are placed within 0.5 mm of the MCU pads with direct GND via connections.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">MCU Decoupling Capacitor Network — Well-Defined</span>
+        <span class="finding-ref">C3–C62 (various)</span>
+      </div>
+      <div class="finding-body">
+        <p>The BOM shows a comprehensive decoupling network: 100 nF (LCSC C24452) bulk bypass capacitors, 10 nF (C3836718) high-frequency bypass, 4.7 &micro;F (C19666) bulk capacitors, and 1 &micro;F (C2177011) mid-frequency bypass. This multi-tier bypassing strategy is appropriate for an LQFP-144 MCU at frequencies up to 480 MHz (STM32H745 max CPU clock).</p>
+        <div class="action pass"><strong>Action:</strong> Ensure bypass capacitors are evenly distributed around all four sides of the LQFP-144 package in layout.</div>
+      </div>
+    </div>
+
+    <div class="finding medium">
+      <div class="finding-header">
+        <span class="badge medium">MEDIUM</span>
+        <span class="finding-title">BOOT0 Pin Configuration — Pull-Down Resistor Value to Verify</span>
+        <span class="finding-ref">BOOT0, R1/R2</span>
+      </div>
+      <div class="finding-body">
+        <p>The STM32H745 BOOT0 pin must be pulled LOW (to GND) for normal flash boot. R1 and R2 are both 10 k&Omega;, which appear to be used for BOOT0 control (possibly a pull-down to GND with optional pull-up via programming connector). The STM32H745 internal BOOT0 pull-down is approximately 40 k&Omega; (weak), so an external pull-down of 10 k&Omega; is appropriate. Verify the net connectivity ensures BOOT0 is de-asserted during normal power-up.</p>
+        <div class="action medium"><strong>Action:</strong> Confirm that BOOT0 is connected through R1/R2 such that it defaults LOW (GND) at power-on. Ensure the PROGRAMMING_1 connector pins are clearly labelled and that a test plan verifies booting into user flash after programming.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════ BOM ═══════════════════════════ -->
+<div class="section">
+  <div class="section-header"><span class="section-icon">📦</span><h2>Bill of Materials Review</h2></div>
+  <div class="section-body">
+
+    <div class="finding high">
+      <div class="finding-header">
+        <span class="badge high">HIGH</span>
+        <span class="finding-title">10 nF Capacitor LCSC Part Number Conflict Between Netlist and CSV BOM</span>
+        <span class="finding-ref">C19, C25–C28, C32–C37, C45</span>
+      </div>
+      <div class="finding-body">
+        <p>The exported CSV BOM groups <code>C19, C25, C26, C27, C28, C32, C33, C34, C35, C36, C37, C45</code> as <strong>10 nF</strong> with LCSC <code>C3836718</code>. However, the netlist (generated 2026-05-31) assigns LCSC <code>C24452</code> (a <strong>100 nF</strong> part) to these same components, while retaining the value field as "10nF". This creates an ordering conflict: purchasing C24452 will yield 100 nF capacitors placed in positions intended for 10 nF.</p>
+        <p>This discrepancy suggests either (a) the LCSC field was accidentally changed to C24452 for these components without updating the value, or (b) the CSV BOM is stale and the designer intentionally changed them to 100 nF. In either case, the two sources are inconsistent and must be resolved before ordering.</p>
+        <div class="action high"><strong>Action:</strong> Open the schematic and verify the intended value for C19, C25–C28, C32–C37, C45. If 10 nF: correct the LCSC number to C3836718. If 100 nF: update the value field. Then re-export the BOM and ensure the netlist LCSC field matches. Do not order parts until this is reconciled.</div>
+      </div>
+    </div>
+
+    <div class="finding low">
+      <div class="finding-header">
+        <span class="badge low">LOW</span>
+        <span class="finding-title">AP2112K-3.3 Symbol Description Overstates Minimum Input Voltage</span>
+        <span class="finding-ref">LD1–LD4</span>
+      </div>
+      <div class="finding-body">
+        <p>The KiCad library description for AP2112K-3.3 states "3.8V–6V input voltage range". The actual AP2112K datasheet (Diodes Inc.) specifies VIN(min) = 2.5 V (absolute minimum) and VOUT(min) + Vdropout as the functional minimum, which is approximately 3.6 V at full load for 3.3 V output. The "3.8V" figure in the library description is a typical worst-case start-up voltage from an older application note and is not an absolute minimum. This mismatch could cause confusion during design review but does not affect function.</p>
+        <div class="action low"><strong>Action:</strong> Update the KiCad symbol description field to "VIN 2.5V–6V, Vdropout typ 300mV @ 600mA" for clarity. This is a documentation issue only.</div>
+      </div>
+    </div>
+
+    <div class="finding low">
+      <div class="finding-header">
+        <span class="badge low">LOW</span>
+        <span class="finding-title">Test Points TP1/TP2 Have No LCSC Numbers</span>
+        <span class="finding-ref">TP1, TP2</span>
+      </div>
+      <div class="finding-body">
+        <p>TP1 and TP2 are listed in the BOM without LCSC part numbers. If these are copper pad test points (no physical component), they should be marked DNP (Do Not Place) in the BOM to avoid assembly errors. If they use solderable test point pins, a part number is required.</p>
+        <div class="action low"><strong>Action:</strong> Mark TP1/TP2 as DNP in the schematic BOM fields if they are bare pad test points. Otherwise, assign the appropriate LCSC part number.</div>
+      </div>
+    </div>
+
+    <hr>
+    <h3 style="font-size:13px; font-weight:600; margin-bottom:12px; color:var(--muted)">COMPLETE COMPONENT SUMMARY</h3>
+    <table>
+      <thead><tr><th>Category</th><th>Components</th><th>Key Values</th><th>LCSC</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>MCU</td><td>U3 (STM32H745ZIT6)</td><td>LQFP-144, Dual-core H7, 480 MHz</td><td>—</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>LDO Regulator</td><td>LD1–LD4 (AP2112K-3.3)</td><td>3.3 V, 600 mA, SOT-23-5</td><td>C23380830</td><td><span class="tag ok">OK — implicit battery protection</span></td></tr>
+        <tr><td>P-FET Protect</td><td>U1 (AO3407A)</td><td>−20 V / −4 A, SOT-23-3</td><td>—</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>TVS / ESD</td><td>U2–U8 (SRV05-4)</td><td>SOT-23-6, 5-line TVS array</td><td>—</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>USB-C Connector</td><td>J1 (HRO-TYPE-C-31-M-13x)</td><td>USB 2.0, edge-mount, dual-sided fp</td><td>C963373</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>CMC (USB)</td><td>L2 (DLW21SN900SQ2L)</td><td>90 &Omega; @ 100 MHz, 0805</td><td>C97856</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Ferrite Bead</td><td>L3 (BLM18AG102SN1D)</td><td>1 k&Omega; @ 100 MHz, 0402</td><td>C85824</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>SMPS Inductor</td><td>L1 (2.2 &micro;H)</td><td>0603, Isat TBD</td><td>C48945021</td><td><span class="tag warn">Verify Isat—see M1</span></td></tr>
+        <tr><td>Crystal</td><td>Y1 (TSX-3225 24 MHz)</td><td>24.0000 MHz, ±20 ppm, 3.2×2.5</td><td>—</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Schottky Diode</td><td>D1</td><td>SOD-123, 40V 1A (C8598)</td><td>C8598</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>ELRS Connectors</td><td>ELRS_1, ELRS_2 (5034800800)</td><td>8-pin 0.5 mm FPC, Molex</td><td>C293338</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Joystick Connectors</td><td>JOYSTICK_1/2 (532610671)</td><td>6-pin 0.5 mm FPC, Molex</td><td>C17393620</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Encoder Connectors</td><td>ENCODER_1/2 (532610871)</td><td>8-pin 0.5 mm FPC, Molex</td><td>C293349</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Power Connector</td><td>POWER_1 (532610371)</td><td>3-pin 0.5 mm FPC, Molex</td><td>C293630</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Prog. Connector</td><td>PROGRAMMING_1 (532610871)</td><td>8-pin 0.5 mm FPC (SWD+UART)</td><td>C293349</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>10 nF Caps</td><td>C19, C25–C28, C32–C37, C45</td><td>0603, 10 nF</td><td><span style="color:var(--critical);font-weight:700">CONFLICT</span></td><td><span class="tag err">Resolve—see H3</span></td></tr>
+        <tr><td>100 nF Caps</td><td>C4–C16, C21, C31, C38, etc.</td><td>0603, 100 nF, C24452</td><td>C24452</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>4.7 &micro;F Caps</td><td>C3, C17, C29, C40</td><td>0603, 4.7 &micro;F, C19666</td><td>C19666</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>2.2 &micro;F Caps (VCAP)</td><td>C18, C30, C59, C63, C64</td><td>0603, 2.2 &micro;F, C23630</td><td>C23630</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>1 &micro;F Caps</td><td>C20, C42–C44, C46, C49</td><td>0603, 1 &micro;F, C2177011</td><td>C2177011</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>USB Series Resistors</td><td>R52, R53</td><td>22 &Omega;, 0603</td><td>—</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Pull-up / Pull-down</td><td>R1, R2 (10 k&Omega;), R13–R25 (10 k&Omega;)</td><td>0603</td><td>C95204</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Series Damping R</td><td>R3–R12 (100 &Omega;)</td><td>0603</td><td>C122970</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Crystal Load Caps</td><td>C23, C24 (12 pF)</td><td>0603, C0G/NP0, C882527</td><td>C882527</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Test Points</td><td>TP1, TP2</td><td>—</td><td><span style="color:var(--medium)">missing</span></td><td><span class="tag warn">Mark DNP or add PN</span></td></tr>
+      </tbody>
+    </table>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════ PCB LAYOUT ═══════════════════════════ -->
+<div class="section">
+  <div class="section-header"><span class="section-icon">🗺️</span><h2>PCB Layout Review</h2></div>
+  <div class="section-body">
+
+    <div class="finding medium">
+      <div class="finding-header">
+        <span class="badge medium">MEDIUM</span>
+        <span class="finding-title">One Undocumented DRC Clearance Exclusion</span>
+        <span class="finding-ref">Exclusion @ 165.19, 39.88 mm</span>
+      </div>
+      <div class="finding-body">
+        <p>One DRC clearance exclusion is present in the project:</p>
+        <p><code>clearance | 165190000 | 39883600 | eac3491a-4f87-4dbb-a5c6-cd6bd29327cf | 1b6a4981-23e8-49ef-a873-3edf5f8e6c4b</code></p>
+        <p>The board coordinates (165.19 mm X, 39.88 mm Y) are outside the board outline (49.1 &times; 49.1 mm), suggesting this exclusion may be from an older revision or template and is stale. Stale DRC exclusions mask real violations if the board geometry changes.</p>
+        <div class="action medium"><strong>Action:</strong> Open the DRC dialog in KiCad, inspect this exclusion, identify the two items it involves (GUIDs provided), and either document why the clearance violation is acceptable or delete the exclusion if it is stale.</div>
+      </div>
+    </div>
+
+    <div class="finding medium">
+      <div class="finding-header">
+        <span class="badge medium">MEDIUM</span>
+        <span class="finding-title">USB-C Connector Edge Clearance Exception — Fragility Risk</span>
+        <span class="finding-ref">J1, DRC rule edge_J1_exception</span>
+      </div>
+      <div class="finding-body">
+        <p>A custom DRC rule permits J1 (USB-C) pads to be only 0.1 mm from the board edge, compared to the standard 0.3 mm edge clearance rule. The HRO-TYPE-C-31-M-13x is an edge-mount USB-C receptacle, so some pads will naturally approach the board edge. However, 0.1 mm clearance to the milled edge is extremely tight. Most PCB fabs quote a ±0.1 mm router tolerance, meaning the copper could be exposed or cut in a worst-case scenario.</p>
+        <div class="action medium"><strong>Action:</strong> Confirm with your target fab (JLCPCB / PCBWay) that their edge routing tolerance and their minimum copper-to-edge for edge-mount connectors allows 0.1 mm. Consider adding a copper-free keepout around the J1 footprint edge pads if the fab requires 0.15 mm or larger clearance. Verify with the gerber viewer that edge pads are not overlapping the board outline.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">8-Layer Stackup Provides Excellent Shielding and Power Integrity</span>
+      </div>
+      <div class="finding-body">
+        <p>Four dedicated GND planes (L2, L4, L6, L8) ensure every signal layer (L1, L5, L7) and the power plane (L3) has an adjacent GND reference, minimising return path inductance. The ELRS RF signals are isolated on L5 (between L4-GND and L6-GND), providing natural shielding for sensitive RF traces. The analog layer (L7) is adjacent to the bottom GND (L8), ideal for low-noise ADC signal routing.</p>
+        <div class="action pass"><strong>Action:</strong> None — excellent layer assignment strategy.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">Teardrops Enabled on All Pad Types</span>
+      </div>
+      <div class="finding-body">
+        <p>Teardrops are enabled for PTH pads, SMD pads, and vias (as seen in <code>.kicad_pro</code>). Teardrops improve mechanical reliability at the pad-to-trace junction and reduce acid traps during etching, which is particularly important for the fine-pitch LQFP-144 STM32 pads.</p>
+        <div class="action pass"><strong>Action:</strong> None — good DFM practice.</div>
+      </div>
+    </div>
+
+    <div class="finding low">
+      <div class="finding-header">
+        <span class="badge low">LOW</span>
+        <span class="finding-title">DRC Diff Pair Rule Gap Limits May Not Match Actual Routing</span>
+        <span class="finding-ref">.kicad_dru, USB_DIFF netclass</span>
+      </div>
+      <div class="finding-body">
+        <p>The DRU specifies <code>USB_DIFF</code> diff pair gap min 0.10 mm, max 0.20 mm. The netclass in <code>.kicad_pro</code> shows <code>diff_pair_dimensions</code> with gap = 0 and width = 0 (default/placeholder values). If the diff pair was not routed using KiCad&rsquo;s interactive diff pair router, these constraints will not have been enforced during routing, and the DRC &ldquo;unable to find complementary diff pair&rdquo; warning confirms this.</p>
+        <div class="action low"><strong>Action:</strong> After correcting the track width to ~0.80 mm (see HIGH finding), re-route using the KiCad interactive diff pair router so that gap constraints are automatically enforced. Set the <code>diff_pair_dimensions</code> entry with explicit gap (0.18 mm) and width (0.80 mm) values so DRC can validate the result.</div>
+      </div>
+    </div>
+
+    <div class="finding low">
+      <div class="finding-header">
+        <span class="badge low">LOW</span>
+        <span class="finding-title">Gerber Job File Missing Surface Finish and PCB Revision</span>
+        <span class="finding-ref">Orthrus-TX-job.gbrjob</span>
+      </div>
+      <div class="finding-body">
+        <p>The gerber job file lists <code>"Finish": "None"</code> and the PCB revision field reads "rev?". For fabrication submission, the finish must be specified (HASL, ENIG, OSP, etc.) and a proper revision identifier should be filled in. ENIG is recommended for the fine-pitch LQFP-144 and 0.5 mm FPC connector footprints to ensure reliable soldering.</p>
+        <div class="action low"><strong>Action:</strong> Set the board finish in KiCad Board Setup &rarr; Board Stackup to &ldquo;ENIG&rdquo; (or intended finish) and update the revision field before final gerber export.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════ EMC ═══════════════════════════ -->
+<div class="section">
+  <div class="section-header"><span class="section-icon">📡</span><h2>EMC / Signal Integrity Review</h2></div>
+  <div class="section-body">
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">USB Common-Mode Filtering — DLW21SN900SQ2L + BLM18AG102SN1D</span>
+        <span class="finding-ref">L2, L3, J1</span>
+      </div>
+      <div class="finding-body">
+        <p>DLW21SN900SQ2L is a 2-line common-mode choke (90 &Omega; @ 100 MHz, 0805) on the USB D+/D− lines — the correct component for suppressing common-mode interference on USB 2.0. BLM18AG102SN1D (1 k&Omega; @ 100 MHz ferrite bead) on the USB VBUS/power supply rail further reduces conducted EMI into the MCU. This is a textbook USB EMI filter topology.</p>
+        <div class="action pass"><strong>Action:</strong> Ensure L2 is placed as close as possible to J1 (within 5 mm), before the 22 &Omega; series resistors R52/R53. Filter placement order from connector: J1 &rarr; L2 (CMC) &rarr; L3 (ferrite, VBUS) &rarr; R52/R53 &rarr; STM32.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">7&times; SRV05-4 ESD Arrays for I/O Protection</span>
+        <span class="finding-ref">U2–U8</span>
+      </div>
+      <div class="finding-body">
+        <p>Seven SRV05-4 (5-line TVS diode array, SOT-23-6, 5 V clamping) instances provide ESD protection on connector I/O lines. This is good practice for an RC transmitter that interfaces with external modules (ELRS, joysticks, encoders) which may be hot-plugged in the field. SRV05-4 has a typical capacitance of ~1 pF per line, which is negligible at the signal speeds used.</p>
+        <div class="action pass"><strong>Action:</strong> Ensure ESD devices are placed between the connector and the MCU/internal circuitry (not after), with short traces to a local via stitched to GND.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">ELRS RF Isolation — Dedicated Layer L5 with GND Sandwich</span>
+      </div>
+      <div class="finding-body">
+        <p>ELRS (ExpressLRS) RF module signals are routed on L5 (In4.Cu), sandwiched between L4_GND and L6_GND. This provides excellent shielding for 900 MHz / 2.4 GHz RF traces and reduces coupling into the analog and digital domains. Dedicated GND layers above and below the RF signal layer is the correct approach for RF PCB design.</p>
+        <div class="action pass"><strong>Action:</strong> Verify that stitching vias connect L4_GND to L6_GND around the ELRS connector area to form a Faraday cage effect for the RF traces.</div>
+      </div>
+    </div>
+
+    <div class="finding pass">
+      <div class="finding-header">
+        <span class="badge pass">PASS</span>
+        <span class="finding-title">Analog Domain Separation — Dedicated Layer L7 with GND Reference</span>
+      </div>
+      <div class="finding-body">
+        <p>Joystick potentiometer signals and ADC inputs are routed on L7 (In6.Cu — ANALOG), adjacent to the L8 bottom GND plane. This gives a clean reference for analog signals and minimises coupling from switching digital signals. The 10 k&Omega; pull-up resistors on ADC input lines (R3–R12, 100 &Omega; series damping) further protect the MCU ADC inputs.</p>
+        <div class="action pass"><strong>Action:</strong> Ensure the LDO domain supplying the MCU VDDA pin routes through L3_POWER and that the VDDA bypass capacitors are not shared with noisy digital supplies.</div>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<!-- ═══════════════════════════ DFM ═══════════════════════════ -->
+<div class="section">
+  <div class="section-header"><span class="section-icon">🏭</span><h2>Design for Manufacturing (DFM)</h2></div>
+  <div class="section-body">
+    <table>
+      <thead><tr><th>Item</th><th>Requirement</th><th>Design Value</th><th>Status</th></tr></thead>
+      <tbody>
+        <tr><td>Min track width</td><td>0.10 mm (DRU) / JLCPCB 0.09 mm min</td><td>0.15 mm (rule) / 0.10 mm (DRU)</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Min track spacing</td><td>0.10 mm (JLCPCB)</td><td>0.15 mm (rule)</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Min via drill</td><td>0.20 mm (DRU) — JLCPCB 8L: 0.20 mm</td><td>0.20 mm</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Min via diameter</td><td>0.40 mm (DRU)</td><td>0.40 mm</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Annular ring</td><td>0.10 mm (DRU)</td><td>0.10 mm</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Hole-to-hole (diff net)</td><td>0.50 mm (DRU)</td><td>0.50 mm</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Edge clearance</td><td>0.30 mm (general) / 0.10 mm (J1)</td><td>Rule-defined</td><td><span class="tag warn">Verify J1 with fab</span></td></tr>
+        <tr><td>Component package</td><td>All passives 0603 minimum</td><td>All 0603</td><td><span class="tag ok">OK — consistent</span></td></tr>
+        <tr><td>FPC connectors</td><td>0.5 mm pitch Molex (all connectors)</td><td>All 0.5 mm FPC</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>PCB surface finish</td><td>ENIG recommended (0.5mm FPC pads)</td><td>Not specified</td><td><span class="tag warn">Specify in setup</span></td></tr>
+        <tr><td>Board size</td><td>49.1 &times; 49.1 mm</td><td>49.1 &times; 49.1 mm</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Layer count</td><td>8 layers (impedance controlled)</td><td>8 layers</td><td><span class="tag ok">OK — JLC/PCBWay capable</span></td></tr>
+        <tr><td>Soldermask</td><td>Both sides (F.Mask, B.Mask)</td><td>Gerbers present</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Silkscreen</td><td>Both sides</td><td>Gerbers present (F + B)</td><td><span class="tag ok">OK</span></td></tr>
+        <tr><td>Drill files</td><td>PTH + NPTH separate</td><td>Separate .drl files</td><td><span class="tag ok">OK</span></td></tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ SUMMARY TABLE ═══════════════════════════ -->
+<div class="section">
+  <div class="section-header"><span class="section-icon">📊</span><h2>Findings Summary</h2></div>
+  <div class="section-body">
+    <table>
+      <thead><tr><th>#</th><th>Severity</th><th>Title</th><th>Section</th><th>Action Required Before Fab?</th></tr></thead>
+      <tbody>
+        <tr>
+          <td>H1</td><td><span class="badge low">LOW</span></td>
+          <td>AP2112K-3.3 LDO dropout at end-of-discharge — acts as implicit low-battery protection; firmware ADC monitoring recommended</td>
+          <td>Power</td>
+          <td>No — firmware enhancement only</td>
+        </tr>
+        <tr>
+          <td>H2</td><td><span class="badge high">HIGH</span></td>
+          <td>USB diff pair impedance ~140 &Omega; vs 90 &Omega; target — trace width too narrow</td>
+          <td>Power / PCB</td>
+          <td><strong>Yes</strong> — correct trace width to ~0.80 mm or accept FS-only with compliance test</td>
+        </tr>
+        <tr>
+          <td>H3</td><td><span class="badge high">HIGH</span></td>
+          <td>10 nF cap LCSC numbers conflict between netlist and BOM CSV</td>
+          <td>BOM</td>
+          <td><strong>Yes</strong> — must resolve before ordering parts</td>
+        </tr>
+        <tr>
+          <td>M1</td><td><span class="badge medium">MEDIUM</span></td>
+          <td>SMPS inductor L1 saturation current / DCR unverified</td>
+          <td>Power</td>
+          <td>Yes — verify datasheet for LCSC C48945021</td>
+        </tr>
+        <tr>
+          <td>M2</td><td><span class="badge medium">MEDIUM</span></td>
+          <td>BOOT0 pin pull-down configuration to be confirmed</td>
+          <td>MCU</td>
+          <td>Yes — verify net connectivity</td>
+        </tr>
+        <tr>
+          <td>M4</td><td><span class="badge medium">MEDIUM</span></td>
+          <td>Stale DRC clearance exclusion at off-board coordinates</td>
+          <td>PCB</td>
+          <td>Recommended — clean up before production sign-off</td>
+        </tr>
+        <tr>
+          <td>M5</td><td><span class="badge medium">MEDIUM</span></td>
+          <td>J1 USB-C edge clearance 0.1 mm — confirm with fab tolerance</td>
+          <td>PCB / DFM</td>
+          <td>Yes — get fab confirmation</td>
+        </tr>
+        <tr>
+          <td>L1</td><td><span class="badge low">LOW</span></td>
+          <td>AP2112K-3.3 library description misstates VIN(min)</td>
+          <td>BOM</td>
+          <td>No — documentation only</td>
+        </tr>
+        <tr>
+          <td>L2</td><td><span class="badge low">LOW</span></td>
+          <td>TP1/TP2 missing LCSC numbers / no DNP marker</td>
+          <td>BOM</td>
+          <td>Recommended before ordering</td>
+        </tr>
+        <tr>
+          <td>L3</td><td><span class="badge low">LOW</span></td>
+          <td>DRC diff pair dimension entries are default (0) values</td>
+          <td>PCB</td>
+          <td>After USB re-route</td>
+        </tr>
+        <tr>
+          <td>L4</td><td><span class="badge low">LOW</span></td>
+          <td>Gerber job missing surface finish and PCB revision</td>
+          <td>DFM</td>
+          <td>Yes — set before fab submission</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- ═══════════════════════════ NEXT STEPS ═══════════════════════════ -->
+<div class="section">
+  <div class="section-header"><span class="section-icon">✅</span><h2>Recommended Next Steps (Priority Order)</h2></div>
+  <div class="section-body">
+    <ol style="padding-left:20px; line-height:2;">
+      <li><strong>[H3] Reconcile 10 nF capacitor LCSC part numbers</strong> — open schematic, fix C19/C25–C28/C32–C37/C45, re-export BOM and netlist.</li>
+      <li><strong>[H2] Correct USB diff pair trace width</strong> — change <code>USB_DIFF</code> netclass track width to ~0.80 mm, re-route with interactive diff pair router, run DRC to confirm 90 &Omega; routing, and run DRC with no diff pair warnings.</li>
+      <li><strong>[M2] Verify BOOT0 default state</strong> — trace R1/R2 connectivity to confirm BOOT0 is LOW at power-on.</li>
+      <li><strong>[M1] Verify L1 inductor specification</strong> — confirm LCSC C48945021 datasheet: Isat &ge; 300 mA, DCR &le; 300 m&Omega;.</li>
+      <li><strong>[M4] Clear stale DRC exclusion</strong> — open DRC, delete the off-board coordinate exclusion if stale.</li>
+      <li><strong>[M5] Confirm J1 edge clearance with fab</strong> — email JLCPCB/PCBWay with the 0.1 mm edge clearance question before ordering.</li>
+      <li><strong>[H1/L] Firmware low-battery warning</strong> — add ADC monitoring of VCC via resistor divider; alert user (LED/display/telemetry) at VCC &asymp; 3.7 V before LDO dropout. Protect flash writes against VCC &lt; 3.3 V.</li>
+      <li><strong>[L4] Update gerber job file</strong> — set finish to ENIG, set PCB revision, re-export gerbers.</li>
+      <li><strong>[L2] Mark TP1/TP2 as DNP</strong> — update BOM fields.</li>
+    </ol>
+  </div>
+</div>
+
+</div><!-- /container -->
+
+<footer>
+  <p>Orthrus-TX Hardware Design Review &nbsp;|&nbsp; Generated by GitHub Copilot design review analysis &nbsp;|&nbsp; KiCad 10.0.2 &nbsp;|&nbsp; Review date: 2026-05-31</p>
+  <p style="margin-top:4px">This report is based on static analysis of KiCad project files (schematic, PCB, BOM, DRU rules, gerbers). Physical verification, SPICE simulation, and compliance testing are outside the scope of this review.</p>
+</footer>
+</body>
+</html>
