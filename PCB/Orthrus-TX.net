@@ -2,7 +2,7 @@
 	(version "E")
 	(design
 		(source "D:\\KiCad\\Projects\\Orthrus-TX\\PCB\\Orthrus-TX.kicad_sch")
-		(date "2026-05-31T18:24:06")
+		(date "2026-06-17T18:36:57")
 		(tool "Eeschema 10.0.2")
 		(sheet
 			(number "1")
@@ -4021,66 +4021,6 @@
 			)
 		)
 		(comp
-			(ref "D1")
-			(value "D_Schottky")
-			(footprint "Diode_SMD:D_SOD-123")
-			(description "Schottky diode")
-			(fields
-				(field
-					(name "LCSC") "C8598")
-				(field
-					(name "Footprint") "Diode_SMD:D_SOD-123")
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Schottky diode")
-			)
-			(libsource
-				(lib "Device")
-				(part "D_Schottky")
-				(description "Schottky diode")
-			)
-			(property
-				(name "LCSC")
-				(value "C8598")
-			)
-			(property
-				(name "Sheetname")
-				(value "Root")
-			)
-			(property
-				(name "Sheetfile")
-				(value "Orthrus-TX.kicad_sch")
-			)
-			(property
-				(name "ki_keywords")
-				(value "diode Schottky")
-			)
-			(property
-				(name "ki_fp_filters")
-				(value "TO-???* *_Diode_* *SingleDiode* D_*")
-			)
-			(sheetpath
-				(names "/")
-				(tstamps "/")
-			)
-			(tstamps "efaf1dce-172d-40f1-9de4-c387c9ce7ad5")
-			(units
-				(unit
-					(name "A")
-					(pins
-						(pin
-							(num "1")
-						)
-						(pin
-							(num "2")
-						)
-					)
-				)
-			)
-		)
-		(comp
 			(ref "ELRS_1")
 			(value "5034800800")
 			(footprint "Custom-Library:CON_5034800800_MOL")
@@ -5270,28 +5210,22 @@
 		)
 		(comp
 			(ref "POWER_1")
-			(value "532610371")
-			(footprint "Custom-Library:CONN_532610001-SD_03_MOL")
-			(datasheet "https://www.molex.com/en-us/products/part-detail-pdf/532610371?display=pdf")
+			(value "532610571")
+			(footprint "CONN_532610001-SD_05_MOL")
+			(datasheet "https://www.molex.com/en-us/products/part-detail-pdf/532610571?display=pdf")
 			(fields
 				(field
-					(name "LCSC") "C293630")
+					(name "Footprint") "CONN_532610001-SD_05_MOL")
 				(field
-					(name "Footprint") "Custom-Library:CONN_532610001-SD_03_MOL")
-				(field
-					(name "Datasheet") "https://www.molex.com/en-us/products/part-detail-pdf/532610371?display=pdf")
+					(name "Datasheet") "https://www.molex.com/en-us/products/part-detail-pdf/532610571?display=pdf")
 				(field
 					(name "Description")
 				)
 			)
 			(libsource
-				(lib "CONN_532610001-SD_03_MOL")
-				(part "532610371")
+				(lib "CONN_532610001-SD_05_MOL")
+				(part "532610571")
 				(description "")
-			)
-			(property
-				(name "LCSC")
-				(value "C293630")
 			)
 			(property
 				(name "Sheetname")
@@ -5303,17 +5237,17 @@
 			)
 			(property
 				(name "ki_keywords")
-				(value "532610371")
+				(value "532610571")
 			)
 			(property
 				(name "ki_fp_filters")
-				(value "CONN_532610001-SD_03_MOL")
+				(value "CONN_532610001-SD_05_MOL")
 			)
 			(sheetpath
 				(names "/")
 				(tstamps "/")
 			)
-			(tstamps "db65d9cd-8fa5-4700-bf39-330a2f25741b")
+			(tstamps "7faa1c2d-e5f0-43a9-8f53-f2324fadea16")
 			(units
 				(unit
 					(name "A")
@@ -5326,6 +5260,12 @@
 						)
 						(pin
 							(num "3")
+						)
+						(pin
+							(num "4")
+						)
+						(pin
+							(num "5")
 						)
 					)
 				)
@@ -10588,34 +10528,6 @@
 	(groups
 		(group
 			(name "")
-			(uuid "5fd7481b-b08a-43f9-b507-7519c87c5ed2")
-			(lib_id "")
-			(members
-				(member
-					(uuid "ddfe2b7a-67ad-432a-b3c9-544db67c3731")
-				)
-				(member
-					(uuid "2ce4b5a8-b06e-4a55-b58a-d09ff50db65b")
-				)
-				(member
-					(uuid "3c56f5f8-6605-476c-8224-4f30f709e018")
-				)
-				(member
-					(uuid "4286aff8-4589-4076-9fd1-f155c74ffe3f")
-				)
-				(member
-					(uuid "5e681e0c-a140-41fe-b15e-9b4dc106fe95")
-				)
-				(member
-					(uuid "71222ec5-f713-460a-9703-b4b1c7ef9a27")
-				)
-				(member
-					(uuid "c59d4054-7c67-4f69-91b4-1c6f6a202710")
-				)
-			)
-		)
-		(group
-			(name "")
 			(uuid "0b666d4d-f6ec-4574-b3d4-aa2ca4ddc43c")
 			(lib_id "")
 			(members
@@ -10632,10 +10544,10 @@
 					(uuid "c83fa84b-517a-41d4-b75e-c80d0569a7f5")
 				)
 				(member
-					(uuid "e9a28fb1-0a10-4baf-80ef-5aa6ee11b772")
+					(uuid "c9386443-5434-4321-b424-34b106aac8ec")
 				)
 				(member
-					(uuid "c9386443-5434-4321-b424-34b106aac8ec")
+					(uuid "e9a28fb1-0a10-4baf-80ef-5aa6ee11b772")
 				)
 			)
 		)
@@ -10654,25 +10566,6 @@
 		)
 		(group
 			(name "")
-			(uuid "d1a08f5d-6f70-4454-a0d2-3402ffad681f")
-			(lib_id "")
-			(members
-				(member
-					(uuid "6bff8497-40bd-4aab-8805-6cfdaea860d9")
-				)
-				(member
-					(uuid "1dc7a7de-717b-4f89-8c47-7c37e6c20cee")
-				)
-				(member
-					(uuid "3d0def63-a46b-4c72-b671-92ae99568243")
-				)
-				(member
-					(uuid "74cd4fca-b724-49c9-92dc-7aee4c344579")
-				)
-			)
-		)
-		(group
-			(name "")
 			(uuid "58bd0e75-fffc-43a0-b5d2-61d2c58792d4")
 			(lib_id "")
 			(members
@@ -10683,10 +10576,10 @@
 					(uuid "73dd156e-d509-4bd0-9c24-cfc33ea2f726")
 				)
 				(member
-					(uuid "9e5a3df1-21bb-4edd-9335-0cc40e847dd9")
+					(uuid "908d8a37-f0ab-4fdf-aee5-dfa8a77d7b32")
 				)
 				(member
-					(uuid "908d8a37-f0ab-4fdf-aee5-dfa8a77d7b32")
+					(uuid "9e5a3df1-21bb-4edd-9335-0cc40e847dd9")
 				)
 				(member
 					(uuid "f51ffbd8-30a1-4b23-8255-2b401947f5f7")
@@ -10695,9 +10588,50 @@
 		)
 		(group
 			(name "")
-			(uuid "21578446-f26c-4313-88b0-dbfe195401a5")
+			(uuid "5fd7481b-b08a-43f9-b507-7519c87c5ed2")
 			(lib_id "")
-			(members)
+			(members
+				(member
+					(uuid "c59d4054-7c67-4f69-91b4-1c6f6a202710")
+				)
+				(member
+					(uuid "2ce4b5a8-b06e-4a55-b58a-d09ff50db65b")
+				)
+				(member
+					(uuid "3c56f5f8-6605-476c-8224-4f30f709e018")
+				)
+				(member
+					(uuid "4286aff8-4589-4076-9fd1-f155c74ffe3f")
+				)
+				(member
+					(uuid "5e681e0c-a140-41fe-b15e-9b4dc106fe95")
+				)
+				(member
+					(uuid "71222ec5-f713-460a-9703-b4b1c7ef9a27")
+				)
+				(member
+					(uuid "ddfe2b7a-67ad-432a-b3c9-544db67c3731")
+				)
+			)
+		)
+		(group
+			(name "")
+			(uuid "d1a08f5d-6f70-4454-a0d2-3402ffad681f")
+			(lib_id "")
+			(members
+				(member
+					(uuid "1dc7a7de-717b-4f89-8c47-7c37e6c20cee")
+				)
+				(member
+					(uuid "3d0def63-a46b-4c72-b671-92ae99568243")
+				)
+				(member
+					(uuid "6bff8497-40bd-4aab-8805-6cfdaea860d9")
+				)
+				(member
+					(uuid "74cd4fca-b724-49c9-92dc-7aee4c344579")
+				)
+			)
 		)
 		(group
 			(name "")
@@ -10705,28 +10639,28 @@
 			(lib_id "")
 			(members
 				(member
-					(uuid "07f520ca-1825-44bf-9a70-38ece1a8c055")
-				)
-				(member
-					(uuid "1d4bbb75-c6c9-4ceb-a7ec-75024628ba88")
-				)
-				(member
-					(uuid "209b0c2a-5673-4b4b-bbe8-406e8304204e")
+					(uuid "eff8203d-9689-4ee0-b65e-e370e3144ff3")
 				)
 				(member
 					(uuid "1827340b-614d-4dc6-bb0a-a29b5759e411")
 				)
 				(member
+					(uuid "07f520ca-1825-44bf-9a70-38ece1a8c055")
+				)
+				(member
 					(uuid "4b4ec7ef-654a-4a6d-9ca3-3755fc8f3939")
+				)
+				(member
+					(uuid "209b0c2a-5673-4b4b-bbe8-406e8304204e")
+				)
+				(member
+					(uuid "1d4bbb75-c6c9-4ceb-a7ec-75024628ba88")
 				)
 				(member
 					(uuid "8563db83-887b-42c6-ae82-29a1cb26cc5a")
 				)
 				(member
 					(uuid "8d0f4b20-9376-48b4-b86f-8f3b57dc3093")
-				)
-				(member
-					(uuid "eff8203d-9689-4ee0-b65e-e370e3144ff3")
 				)
 			)
 		)
@@ -10736,28 +10670,28 @@
 			(lib_id "")
 			(members
 				(member
-					(uuid "0a94cb18-46ac-42c1-953a-4532c8d9bd67")
+					(uuid "2297dbec-4d9a-46c6-9920-73d7b65cfb61")
 				)
 				(member
 					(uuid "1025be6c-516c-4e69-9604-730b549f3f1f")
 				)
 				(member
-					(uuid "19e7b672-fbc5-4385-afd5-4964fb4118b0")
+					(uuid "0a94cb18-46ac-42c1-953a-4532c8d9bd67")
 				)
 				(member
-					(uuid "2297dbec-4d9a-46c6-9920-73d7b65cfb61")
+					(uuid "f9fd51ec-1fa4-45d4-ae91-ab7d1c78e247")
+				)
+				(member
+					(uuid "19e7b672-fbc5-4385-afd5-4964fb4118b0")
 				)
 				(member
 					(uuid "3d098c03-b100-40ae-8ede-224928a3f1b9")
 				)
 				(member
-					(uuid "c438fca1-d18f-4da7-a095-b8cfc0b565cb")
-				)
-				(member
 					(uuid "be215190-2806-4872-8d17-80f6bb3e5cea")
 				)
 				(member
-					(uuid "f9fd51ec-1fa4-45d4-ae91-ab7d1c78e247")
+					(uuid "c438fca1-d18f-4da7-a095-b8cfc0b565cb")
 				)
 				(member
 					(uuid "c60ca770-e093-4c47-9681-07977fe06892")
@@ -10770,19 +10704,19 @@
 			(lib_id "")
 			(members
 				(member
-					(uuid "9adb58e6-0aa1-456f-bb35-28bdb9b9d211")
-				)
-				(member
 					(uuid "74736dd4-587b-46f9-9d24-58d06196645b")
 				)
 				(member
 					(uuid "a8987f92-d577-40e0-ab11-3bb0cee0692d")
 				)
 				(member
+					(uuid "911ab1d4-4f31-4840-b442-7d9d902d65ca")
+				)
+				(member
 					(uuid "8920f453-a902-40a5-aa80-6d60049becd1")
 				)
 				(member
-					(uuid "911ab1d4-4f31-4840-b442-7d9d902d65ca")
+					(uuid "9adb58e6-0aa1-456f-bb35-28bdb9b9d211")
 				)
 			)
 		)
@@ -10871,44 +10805,6 @@
 			)
 		)
 		(libpart
-			(lib "CONN_532610001-SD_03_MOL")
-			(part "532610371")
-			(docs "https://www.molex.com/en-us/products/part-detail-pdf/532610371?display=pdf")
-			(footprints
-				(fp "CONN_532610001-SD_03_MOL")
-			)
-			(fields
-				(field
-					(name "Reference") "J")
-				(field
-					(name "Value") "532610371")
-				(field
-					(name "Footprint") "CONN_532610001-SD_03_MOL")
-				(field
-					(name "Datasheet") "https://www.molex.com/en-us/products/part-detail-pdf/532610371?display=pdf")
-				(field
-					(name "Description")
-				)
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "1")
-					(type "unspecified")
-				)
-				(pin
-					(num "2")
-					(name "2")
-					(type "unspecified")
-				)
-				(pin
-					(num "3")
-					(name "3")
-					(type "unspecified")
-				)
-			)
-		)
-		(libpart
 			(lib "CONN_532610001-SD_04_MOL")
 			(part "532610471")
 			(docs "https://www.molex.com/en-us/products/part-detail-pdf/532610471?display=pdf")
@@ -10947,6 +10843,54 @@
 				(pin
 					(num "4")
 					(name "4")
+					(type "unspecified")
+				)
+			)
+		)
+		(libpart
+			(lib "CONN_532610001-SD_05_MOL")
+			(part "532610571")
+			(docs "https://www.molex.com/en-us/products/part-detail-pdf/532610571?display=pdf")
+			(footprints
+				(fp "CONN_532610001-SD_05_MOL")
+			)
+			(fields
+				(field
+					(name "Reference") "J")
+				(field
+					(name "Value") "532610571")
+				(field
+					(name "Footprint") "CONN_532610001-SD_05_MOL")
+				(field
+					(name "Datasheet") "https://www.molex.com/en-us/products/part-detail-pdf/532610571?display=pdf")
+				(field
+					(name "Description")
+				)
+			)
+			(pins
+				(pin
+					(num "1")
+					(name "1")
+					(type "unspecified")
+				)
+				(pin
+					(num "2")
+					(name "2")
+					(type "unspecified")
+				)
+				(pin
+					(num "3")
+					(name "3")
+					(type "unspecified")
+				)
+				(pin
+					(num "4")
+					(name "4")
+					(type "unspecified")
+				)
+				(pin
+					(num "5")
+					(name "5")
 					(type "unspecified")
 				)
 			)
@@ -11258,43 +11202,6 @@
 				(pin
 					(num "2")
 					(name "")
-					(type "passive")
-				)
-			)
-		)
-		(libpart
-			(lib "Device")
-			(part "D_Schottky")
-			(description "Schottky diode")
-			(footprints
-				(fp "TO-???*")
-				(fp "*_Diode_*")
-				(fp "*SingleDiode*")
-				(fp "D_*")
-			)
-			(fields
-				(field
-					(name "Reference") "D")
-				(field
-					(name "Value") "D_Schottky")
-				(field
-					(name "Footprint")
-				)
-				(field
-					(name "Datasheet")
-				)
-				(field
-					(name "Description") "Schottky diode")
-			)
-			(pins
-				(pin
-					(num "1")
-					(name "K")
-					(type "passive")
-				)
-				(pin
-					(num "2")
-					(name "A")
 					(type "passive")
 				)
 			)
@@ -12541,12 +12448,12 @@
 			(uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_532610271/KiCADv6/CONN_532610001-SD_02_MOL.kicad_sym")
 		)
 		(library
-			(logical "CONN_532610001-SD_03_MOL")
-			(uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_532610371/KiCADv6/CONN_532610001-SD_03_MOL.kicad_sym")
-		)
-		(library
 			(logical "CONN_532610001-SD_04_MOL")
 			(uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_532610471/KiCADv6/CONN_532610001-SD_04_MOL.kicad_sym")
+		)
+		(library
+			(logical "CONN_532610001-SD_05_MOL")
+			(uri "${KIPRJMOD}/libraries/Symbol Libraries/ul_532610571/KiCADv6/CONN_532610001-SD_05_MOL.kicad_sym")
 		)
 		(library
 			(logical "CONN_532610001-SD_06_MOL")
@@ -12608,6 +12515,41 @@
 	(nets
 		(net
 			(code "1")
+			(name "/BATT_CHARGE")
+			(class "Default")
+			(node
+				(ref "J1")
+				(pin "A4")
+				(pinfunction "VBUS_A4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "A9")
+				(pinfunction "VBUS_A9")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "B4")
+				(pinfunction "VBUS_B4")
+				(pintype "passive")
+			)
+			(node
+				(ref "J1")
+				(pin "B9")
+				(pinfunction "VBUS_B9")
+				(pintype "passive")
+			)
+			(node
+				(ref "POWER_1")
+				(pin "5")
+				(pinfunction "5_5")
+				(pintype "unspecified")
+			)
+		)
+		(net
+			(code "2")
 			(name "/BATT_IN")
 			(class "Default")
 			(node
@@ -12622,8 +12564,8 @@
 			)
 			(node
 				(ref "POWER_1")
-				(pin "1")
-				(pinfunction "1_1")
+				(pin "2")
+				(pinfunction "2_2")
 				(pintype "unspecified")
 			)
 			(node
@@ -12634,7 +12576,7 @@
 			)
 		)
 		(net
-			(code "2")
+			(code "3")
 			(name "/BOOT0")
 			(class "Default")
 			(node
@@ -12656,7 +12598,7 @@
 			)
 		)
 		(net
-			(code "3")
+			(code "4")
 			(name "/LD1_3.3v")
 			(class "Power,Default")
 			(node
@@ -12741,6 +12683,11 @@
 			)
 			(node
 				(ref "C5")
+				(pin "2")
+				(pintype "passive")
+			)
+			(node
+				(ref "C54")
 				(pin "2")
 				(pintype "passive")
 			)
@@ -13068,6 +13015,12 @@
 				(pintype "power_in")
 			)
 			(node
+				(ref "U2")
+				(pin "5")
+				(pinfunction "VP_5")
+				(pintype "passive")
+			)
+			(node
 				(ref "U5")
 				(pin "5")
 				(pinfunction "VP_5")
@@ -13093,7 +13046,7 @@
 			)
 		)
 		(net
-			(code "4")
+			(code "5")
 			(name "/LD2_3.3v")
 			(class "Power,Default")
 			(node
@@ -13133,7 +13086,7 @@
 			)
 		)
 		(net
-			(code "5")
+			(code "6")
 			(name "/LD3_3.3v")
 			(class "Power,Default")
 			(node
@@ -13160,7 +13113,7 @@
 			)
 		)
 		(net
-			(code "6")
+			(code "7")
 			(name "/LD4_3.3v")
 			(class "Default")
 			(node
@@ -13249,7 +13202,7 @@
 			)
 		)
 		(net
-			(code "7")
+			(code "8")
 			(name "/NRST")
 			(class "Default")
 			(node
@@ -13282,7 +13235,7 @@
 			)
 		)
 		(net
-			(code "8")
+			(code "9")
 			(name "/PA0")
 			(class "Analog,Default")
 			(node
@@ -13303,7 +13256,7 @@
 			)
 		)
 		(net
-			(code "9")
+			(code "10")
 			(name "/PA1")
 			(class "Analog,Default")
 			(node
@@ -13324,7 +13277,7 @@
 			)
 		)
 		(net
-			(code "10")
+			(code "11")
 			(name "/PA2")
 			(class "Analog,Default")
 			(node
@@ -13345,7 +13298,7 @@
 			)
 		)
 		(net
-			(code "11")
+			(code "12")
 			(name "/PA3")
 			(class "Analog,Default")
 			(node
@@ -13366,7 +13319,7 @@
 			)
 		)
 		(net
-			(code "12")
+			(code "13")
 			(name "/PA4")
 			(class "Analog,Default")
 			(node
@@ -13392,7 +13345,7 @@
 			)
 		)
 		(net
-			(code "13")
+			(code "14")
 			(name "/PA5")
 			(class "Default")
 			(node
@@ -13403,7 +13356,7 @@
 			)
 		)
 		(net
-			(code "14")
+			(code "15")
 			(name "/PA6")
 			(class "Default")
 			(node
@@ -13414,7 +13367,7 @@
 			)
 		)
 		(net
-			(code "15")
+			(code "16")
 			(name "/PA7")
 			(class "Default")
 			(node
@@ -13430,7 +13383,7 @@
 			)
 		)
 		(net
-			(code "16")
+			(code "17")
 			(name "/PA8")
 			(class "Default")
 			(node
@@ -13446,7 +13399,7 @@
 			)
 		)
 		(net
-			(code "17")
+			(code "18")
 			(name "/PA9")
 			(class "Default")
 			(node
@@ -13469,7 +13422,7 @@
 			)
 		)
 		(net
-			(code "18")
+			(code "19")
 			(name "/PA10")
 			(class "Default")
 			(node
@@ -13492,7 +13445,7 @@
 			)
 		)
 		(net
-			(code "19")
+			(code "20")
 			(name "/PA13")
 			(class "Default")
 			(node
@@ -13515,7 +13468,7 @@
 			)
 		)
 		(net
-			(code "20")
+			(code "21")
 			(name "/PA14")
 			(class "Default")
 			(node
@@ -13538,7 +13491,7 @@
 			)
 		)
 		(net
-			(code "21")
+			(code "22")
 			(name "/PB0")
 			(class "Default")
 			(node
@@ -13560,7 +13513,7 @@
 			)
 		)
 		(net
-			(code "22")
+			(code "23")
 			(name "/PB1")
 			(class "Default")
 			(node
@@ -13582,7 +13535,7 @@
 			)
 		)
 		(net
-			(code "23")
+			(code "24")
 			(name "/PB2")
 			(class "Default")
 			(node
@@ -13604,7 +13557,7 @@
 			)
 		)
 		(net
-			(code "24")
+			(code "25")
 			(name "/PB3")
 			(class "Default")
 			(node
@@ -13627,7 +13580,7 @@
 			)
 		)
 		(net
-			(code "25")
+			(code "26")
 			(name "/PB4")
 			(class "Default")
 			(node
@@ -13638,7 +13591,7 @@
 			)
 		)
 		(net
-			(code "26")
+			(code "27")
 			(name "/PB5")
 			(class "Default")
 			(node
@@ -13661,7 +13614,7 @@
 			)
 		)
 		(net
-			(code "27")
+			(code "28")
 			(name "/PB6")
 			(class "Default")
 			(node
@@ -13672,7 +13625,7 @@
 			)
 		)
 		(net
-			(code "28")
+			(code "29")
 			(name "/PB7")
 			(class "Default")
 			(node
@@ -13683,7 +13636,7 @@
 			)
 		)
 		(net
-			(code "29")
+			(code "30")
 			(name "/PB8")
 			(class "Default")
 			(node
@@ -13706,7 +13659,7 @@
 			)
 		)
 		(net
-			(code "30")
+			(code "31")
 			(name "/PB14")
 			(class "Default")
 			(node
@@ -13733,7 +13686,7 @@
 			)
 		)
 		(net
-			(code "31")
+			(code "32")
 			(name "/PB15")
 			(class "Default")
 			(node
@@ -13760,7 +13713,7 @@
 			)
 		)
 		(net
-			(code "32")
+			(code "33")
 			(name "/PC0")
 			(class "Analog,Default")
 			(node
@@ -13781,7 +13734,7 @@
 			)
 		)
 		(net
-			(code "33")
+			(code "34")
 			(name "/PC1")
 			(class "Analog,Default")
 			(node
@@ -13802,7 +13755,7 @@
 			)
 		)
 		(net
-			(code "34")
+			(code "35")
 			(name "/PC2")
 			(class "Analog,Default")
 			(node
@@ -13823,7 +13776,7 @@
 			)
 		)
 		(net
-			(code "35")
+			(code "36")
 			(name "/PC3")
 			(class "Analog,Default")
 			(node
@@ -13844,7 +13797,7 @@
 			)
 		)
 		(net
-			(code "36")
+			(code "37")
 			(name "/PC4")
 			(class "Analog,Default")
 			(node
@@ -13865,7 +13818,7 @@
 			)
 		)
 		(net
-			(code "37")
+			(code "38")
 			(name "/PC5")
 			(class "Analog,Default")
 			(node
@@ -13886,7 +13839,7 @@
 			)
 		)
 		(net
-			(code "38")
+			(code "39")
 			(name "/PC6")
 			(class "Default")
 			(node
@@ -13908,7 +13861,7 @@
 			)
 		)
 		(net
-			(code "39")
+			(code "40")
 			(name "/PC7")
 			(class "Default")
 			(node
@@ -13930,7 +13883,7 @@
 			)
 		)
 		(net
-			(code "40")
+			(code "41")
 			(name "/PC8")
 			(class "Default")
 			(node
@@ -13952,7 +13905,7 @@
 			)
 		)
 		(net
-			(code "41")
+			(code "42")
 			(name "/PC9")
 			(class "Default")
 			(node
@@ -13974,7 +13927,7 @@
 			)
 		)
 		(net
-			(code "42")
+			(code "43")
 			(name "/PC10")
 			(class "Default")
 			(node
@@ -13996,7 +13949,7 @@
 			)
 		)
 		(net
-			(code "43")
+			(code "44")
 			(name "/PC11")
 			(class "Default")
 			(node
@@ -14018,7 +13971,7 @@
 			)
 		)
 		(net
-			(code "44")
+			(code "45")
 			(name "/PC12")
 			(class "Default")
 			(node
@@ -14040,7 +13993,7 @@
 			)
 		)
 		(net
-			(code "45")
+			(code "46")
 			(name "/PD0")
 			(class "Default")
 			(node
@@ -14062,7 +14015,7 @@
 			)
 		)
 		(net
-			(code "46")
+			(code "47")
 			(name "/PD1")
 			(class "Default")
 			(node
@@ -14084,7 +14037,7 @@
 			)
 		)
 		(net
-			(code "47")
+			(code "48")
 			(name "/PD2")
 			(class "Default")
 			(node
@@ -14106,7 +14059,7 @@
 			)
 		)
 		(net
-			(code "48")
+			(code "49")
 			(name "/PD3")
 			(class "Default")
 			(node
@@ -14128,7 +14081,7 @@
 			)
 		)
 		(net
-			(code "49")
+			(code "50")
 			(name "/PD4")
 			(class "Default")
 			(node
@@ -14150,7 +14103,7 @@
 			)
 		)
 		(net
-			(code "50")
+			(code "51")
 			(name "/PD6")
 			(class "Default")
 			(node
@@ -14166,7 +14119,7 @@
 			)
 		)
 		(net
-			(code "51")
+			(code "52")
 			(name "/PD7")
 			(class "Default")
 			(node
@@ -14193,7 +14146,7 @@
 			)
 		)
 		(net
-			(code "52")
+			(code "53")
 			(name "/PD8")
 			(class "Default")
 			(node
@@ -14216,7 +14169,7 @@
 			)
 		)
 		(net
-			(code "53")
+			(code "54")
 			(name "/PD9")
 			(class "Default")
 			(node
@@ -14239,7 +14192,7 @@
 			)
 		)
 		(net
-			(code "54")
+			(code "55")
 			(name "/PD10")
 			(class "Default")
 			(node
@@ -14262,7 +14215,7 @@
 			)
 		)
 		(net
-			(code "55")
+			(code "56")
 			(name "/PD11")
 			(class "Default")
 			(node
@@ -14285,7 +14238,7 @@
 			)
 		)
 		(net
-			(code "56")
+			(code "57")
 			(name "/PD12")
 			(class "Default")
 			(node
@@ -14307,7 +14260,7 @@
 			)
 		)
 		(net
-			(code "57")
+			(code "58")
 			(name "/PD13")
 			(class "Default")
 			(node
@@ -14329,7 +14282,7 @@
 			)
 		)
 		(net
-			(code "58")
+			(code "59")
 			(name "/PD14")
 			(class "Default")
 			(node
@@ -14351,7 +14304,7 @@
 			)
 		)
 		(net
-			(code "59")
+			(code "60")
 			(name "/PD15")
 			(class "Default")
 			(node
@@ -14373,7 +14326,7 @@
 			)
 		)
 		(net
-			(code "60")
+			(code "61")
 			(name "/PE2")
 			(class "Default")
 			(node
@@ -14390,7 +14343,7 @@
 			)
 		)
 		(net
-			(code "61")
+			(code "62")
 			(name "/PE3")
 			(class "Default")
 			(node
@@ -14407,7 +14360,7 @@
 			)
 		)
 		(net
-			(code "62")
+			(code "63")
 			(name "/PE4")
 			(class "Default")
 			(node
@@ -14424,7 +14377,7 @@
 			)
 		)
 		(net
-			(code "63")
+			(code "64")
 			(name "/PE5")
 			(class "Default")
 			(node
@@ -14441,7 +14394,7 @@
 			)
 		)
 		(net
-			(code "64")
+			(code "65")
 			(name "/PE6")
 			(class "Default")
 			(node
@@ -14458,7 +14411,7 @@
 			)
 		)
 		(net
-			(code "65")
+			(code "66")
 			(name "/PE7")
 			(class "Default")
 			(node
@@ -14481,7 +14434,7 @@
 			)
 		)
 		(net
-			(code "66")
+			(code "67")
 			(name "/PE8")
 			(class "Default")
 			(node
@@ -14504,7 +14457,7 @@
 			)
 		)
 		(net
-			(code "67")
+			(code "68")
 			(name "/PE9")
 			(class "Default")
 			(node
@@ -14521,7 +14474,7 @@
 			)
 		)
 		(net
-			(code "68")
+			(code "69")
 			(name "/PE10")
 			(class "Default")
 			(node
@@ -14543,7 +14496,7 @@
 			)
 		)
 		(net
-			(code "69")
+			(code "70")
 			(name "/PE11")
 			(class "Default")
 			(node
@@ -14565,7 +14518,7 @@
 			)
 		)
 		(net
-			(code "70")
+			(code "71")
 			(name "/PE12")
 			(class "Default")
 			(node
@@ -14587,7 +14540,7 @@
 			)
 		)
 		(net
-			(code "71")
+			(code "72")
 			(name "/PF11")
 			(class "Default")
 			(node
@@ -14609,7 +14562,7 @@
 			)
 		)
 		(net
-			(code "72")
+			(code "73")
 			(name "/PF14")
 			(class "Default")
 			(node
@@ -14631,7 +14584,7 @@
 			)
 		)
 		(net
-			(code "73")
+			(code "74")
 			(name "/PF15")
 			(class "Default")
 			(node
@@ -14653,7 +14606,7 @@
 			)
 		)
 		(net
-			(code "74")
+			(code "75")
 			(name "/PG6")
 			(class "Default")
 			(node
@@ -14675,7 +14628,7 @@
 			)
 		)
 		(net
-			(code "75")
+			(code "76")
 			(name "/PG7")
 			(class "Default")
 			(node
@@ -14697,7 +14650,7 @@
 			)
 		)
 		(net
-			(code "76")
+			(code "77")
 			(name "/PG8")
 			(class "Default")
 			(node
@@ -14719,7 +14672,7 @@
 			)
 		)
 		(net
-			(code "77")
+			(code "78")
 			(name "/PG11")
 			(class "Default")
 			(node
@@ -14746,7 +14699,7 @@
 			)
 		)
 		(net
-			(code "78")
+			(code "79")
 			(name "/PG12")
 			(class "Default")
 			(node
@@ -14773,7 +14726,7 @@
 			)
 		)
 		(net
-			(code "79")
+			(code "80")
 			(name "/PG13")
 			(class "Default")
 			(node
@@ -14801,7 +14754,7 @@
 			)
 		)
 		(net
-			(code "80")
+			(code "81")
 			(name "/PH0")
 			(class "Default")
 			(node
@@ -14823,7 +14776,7 @@
 			)
 		)
 		(net
-			(code "81")
+			(code "82")
 			(name "/PH1")
 			(class "Default")
 			(node
@@ -14839,13 +14792,13 @@
 			)
 		)
 		(net
-			(code "82")
+			(code "83")
 			(name "/RAW")
 			(class "Default")
 			(node
 				(ref "POWER_1")
-				(pin "2")
-				(pinfunction "2_2")
+				(pin "3")
+				(pinfunction "3_3")
 				(pintype "unspecified")
 			)
 			(node
@@ -14855,7 +14808,7 @@
 			)
 		)
 		(net
-			(code "83")
+			(code "84")
 			(name "/SD_CLK")
 			(class "Default")
 			(node
@@ -14877,7 +14830,7 @@
 			)
 		)
 		(net
-			(code "84")
+			(code "85")
 			(name "/USB_D_N")
 			(class "Default")
 			(node
@@ -14894,7 +14847,7 @@
 			)
 		)
 		(net
-			(code "85")
+			(code "86")
 			(name "/USB_D_P")
 			(class "Default")
 			(node
@@ -14911,7 +14864,7 @@
 			)
 		)
 		(net
-			(code "86")
+			(code "87")
 			(name "/USB_N")
 			(class "USB_DIFF,Default")
 			(node
@@ -14940,7 +14893,7 @@
 			)
 		)
 		(net
-			(code "87")
+			(code "88")
 			(name "/USB_P")
 			(class "USB_DIFF,Default")
 			(node
@@ -14969,7 +14922,7 @@
 			)
 		)
 		(net
-			(code "88")
+			(code "89")
 			(name "/VCAP")
 			(class "SMPS,Default")
 			(node
@@ -15019,7 +14972,7 @@
 			)
 		)
 		(net
-			(code "89")
+			(code "90")
 			(name "/VDDA")
 			(class "Default")
 			(node
@@ -15051,7 +15004,7 @@
 			)
 		)
 		(net
-			(code "90")
+			(code "91")
 			(name "/VLXSMPS")
 			(class "SMPS,Default")
 			(node
@@ -15073,7 +15026,7 @@
 			)
 		)
 		(net
-			(code "91")
+			(code "92")
 			(name "/VREF+")
 			(class "Default")
 			(node
@@ -15099,7 +15052,7 @@
 			)
 		)
 		(net
-			(code "92")
+			(code "93")
 			(name "GND")
 			(class "Default")
 			(node
@@ -15610,8 +15563,14 @@
 			)
 			(node
 				(ref "POWER_1")
-				(pin "3")
-				(pinfunction "3_3")
+				(pin "1")
+				(pinfunction "1_1")
+				(pintype "unspecified")
+			)
+			(node
+				(ref "POWER_1")
+				(pin "4")
+				(pinfunction "4_4")
 				(pintype "unspecified")
 			)
 			(node
@@ -15856,7 +15815,7 @@
 			)
 		)
 		(net
-			(code "93")
+			(code "94")
 			(name "Net-(BUZZER_1-Pad1)")
 			(class "Default")
 			(node
@@ -15872,7 +15831,7 @@
 			)
 		)
 		(net
-			(code "94")
+			(code "95")
 			(name "Net-(BUZZER_1-Pad2)")
 			(class "Default")
 			(node
@@ -15888,7 +15847,7 @@
 			)
 		)
 		(net
-			(code "95")
+			(code "96")
 			(name "Net-(C24-Pad1)")
 			(class "Default")
 			(node
@@ -15906,52 +15865,6 @@
 				(pin "3")
 				(pinfunction "3_3")
 				(pintype "unspecified")
-			)
-		)
-		(net
-			(code "96")
-			(name "Net-(D1-A)")
-			(class "Default")
-			(node
-				(ref "C54")
-				(pin "2")
-				(pintype "passive")
-			)
-			(node
-				(ref "D1")
-				(pin "2")
-				(pinfunction "A_2")
-				(pintype "passive")
-			)
-			(node
-				(ref "J1")
-				(pin "A4")
-				(pinfunction "VBUS_A4")
-				(pintype "passive")
-			)
-			(node
-				(ref "J1")
-				(pin "A9")
-				(pinfunction "VBUS_A9")
-				(pintype "passive")
-			)
-			(node
-				(ref "J1")
-				(pin "B4")
-				(pinfunction "VBUS_B4")
-				(pintype "passive")
-			)
-			(node
-				(ref "J1")
-				(pin "B9")
-				(pinfunction "VBUS_B9")
-				(pintype "passive")
-			)
-			(node
-				(ref "U2")
-				(pin "5")
-				(pinfunction "VP_5")
-				(pintype "passive")
 			)
 		)
 		(net
@@ -16285,12 +16198,6 @@
 			(node
 				(ref "C40")
 				(pin "1")
-				(pintype "passive")
-			)
-			(node
-				(ref "D1")
-				(pin "1")
-				(pinfunction "K_1")
 				(pintype "passive")
 			)
 			(node
